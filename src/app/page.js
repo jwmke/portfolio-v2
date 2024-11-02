@@ -7,8 +7,6 @@ import Image from "next/image";
 import AsymDiagonalCornerContainer from "./components/AsymDiagonalCornerContainer";
 import NameTag from "./components/Nametag";
 import RightBox from "./components/RightBox";
-import ImageBox from "./components/ImageBox";
-import CornerClip from "./components/CornerClip";
 
 export default function Home() {
   return (
