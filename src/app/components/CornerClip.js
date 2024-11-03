@@ -3,7 +3,7 @@ import Image from "next/image";
 const CornerClip = ({ 
     size = 129,
     strokeWidth = 1,
-    corner = 'bottomRight' // can be: topRight, topLeft, bottomRight, bottomLeft
+    corner = 'bottomRight'
   }) => {
     const getPath = () => {
       switch(corner) {

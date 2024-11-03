@@ -7,6 +7,8 @@ import Image from "next/image";
 import AsymDiagonalCornerContainer from "./components/AsymDiagonalCornerContainer";
 import NameTag from "./components/Nametag";
 import RightBox from "./components/RightBox";
+import LeftSideExtension from "./components/LeftSideExtension";
+import RightSideExtension from "./components/RightSideExtension";
 
 export default function Home() {
   return (
@@ -21,8 +23,10 @@ export default function Home() {
       }}
     >
       <Grain opacity={.95} blendMode="multiply" />
-      
-      <div className="relative z-10 flex min-h-screen p-6">
+      <div className="relative z-10 flex min-h-screen py-6 px-2">
+        <div className="w-6 h-full mt-[45vh] z-20 -right-[1px] relative">
+          <LeftSideExtension />
+        </div>
         <DiagonalCornerContainer className="w-full" size={64}>
           <div className="w-full flex justify-between relative">
           <div className="w-1/3 rounded-[50%] h-full flex flex-col items-start justify-between">
@@ -52,6 +56,9 @@ export default function Home() {
             </div>
           </div>
         </DiagonalCornerContainer>
+        <div className="w-6 h-full mt-[20vh] z-20 -left-[1px] relative">
+          <RightSideExtension />
+        </div>
       </div>
     </div>
     </div>

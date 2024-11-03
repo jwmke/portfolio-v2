@@ -23,7 +23,7 @@ const NameTag = ({
     size = 52 
   }) => {
     const outerClipPath = `polygon(
-      -1px  0,
+      -1px 0,
       100% 0,
       100% calc(100% - ${size}px),
       calc(100% - ${size}px) 100%,
