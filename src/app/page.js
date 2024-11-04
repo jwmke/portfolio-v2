@@ -1,7 +1,6 @@
 import DiagonalCornerContainer from "./components/DiagonalCornerContainer";
 import Grain from "./components/Grain";
 import CyberGrid from "./components/CyberGrid";
-import SecondCyberGrid from "./components/SecondCyberGrid";
 import Scene from "./components/Scene";
 import Image from "next/image";
 import AsymDiagonalCornerContainer from "./components/AsymDiagonalCornerContainer";
@@ -9,6 +8,8 @@ import NameTag from "./components/Nametag";
 import RightBox from "./components/RightBox";
 import LeftSideExtension from "./components/LeftSideExtension";
 import RightSideExtension from "./components/RightSideExtension";
+import LeftTopBox from "./components/LeftTopBox";
+import RobotBox from "./components/RobotBox";
 
 export default function Home() {
   return (
@@ -24,17 +25,14 @@ export default function Home() {
     >
       <Grain opacity={.95} blendMode="multiply" />
       <div className="relative z-10 flex min-h-screen py-6 px-2">
-        <div className="w-6 h-full mt-[45vh] z-20 -right-[1px] relative">
+        <div className="w-6 h-full mt-[45.7vh] z-20 -right-[1px] relative">
           <LeftSideExtension />
         </div>
         <DiagonalCornerContainer className="w-full" size={64}>
           <div className="w-full flex justify-between relative">
-          <div className="w-1/3 rounded-[50%] h-full flex flex-col items-start justify-between">
-              <SecondCyberGrid>
-                  <div className="h-[30rem]">
-                    <div className="h-40 w-40 bg-red-500"/>
-                  </div> 
-              </SecondCyberGrid>
+            <div className="w-1/3 min-h-full flex flex-col justify-between -ml-6">
+              <LeftTopBox />
+              <RobotBox />
             </div>
             <div className="w-1/3 h-full flex flex-col items-end justify-between">
               <div className="w-full flex justify-end">

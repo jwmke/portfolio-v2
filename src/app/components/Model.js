@@ -25,7 +25,7 @@ export default function Model() {
     if (o.isMesh) {
       const geometry = new THREE.EdgesGeometry(o.geometry, 20);
       const wireMaterial = new THREE.LineBasicMaterial({ 
-        color: 0x5bdec4,
+        color: 0x2dd4bf,
         transparent: true,
         opacity: 0.8,
         depthWrite: false,
@@ -39,11 +39,11 @@ export default function Model() {
       o.add(wireframe);
       
       o.material = new THREE.MeshPhongMaterial({
-        color: 0x5bdec4,
-        emissive: 0x5bdec4,
+        color: 0x2dd4bf ,
+        emissive: 0x2dd4bf ,
         emissiveIntensity: 0.3,
         shininess: 30,
-        specular: 0x5bdec4,
+        specular: 0x2dd4bf,
         wireframe: false,
         polygonOffset: true,
         polygonOffsetFactor: 1,

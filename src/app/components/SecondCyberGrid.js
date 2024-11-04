@@ -20,7 +20,7 @@ const SecondCyberGrid = ({ children, darkness = 37.5 }) => {
   const safeValue = Math.max(0, Math.min(255, darkness));
   
   return (
-    <div className="relative overflow-hidden w-full h-full rounded-[50%]">
+    <div className="absolute -bottom-6 overflow-hidden w-[22vw] h-[27rem] rounded-[50%] z-30 ">
       {/* Grid container */}
       <div className="relative w-full h-full">
         {/* Horizontal lines */}

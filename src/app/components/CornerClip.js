@@ -32,7 +32,7 @@ const CornerClip = ({
             fill="transparent"
           />
         </svg>
-        <Image className="absolute bottom-1.5 right-1.5" src={"/img/logo.svg"} width={65} height={40} alt={"Rose"} />
+        {corner === "bottomRight" ? <Image className="absolute bottom-1.5 right-1.5" src={"/img/logo.svg"} width={65} height={40} alt={"Rose"} /> : null}
       </div>
     );
   };

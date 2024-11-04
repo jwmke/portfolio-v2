@@ -18,7 +18,7 @@ const RightBox = () => {
                 <div className="mb-[1.75rem]">
                 <CornerClip />
                 </div>
-            <ImageBox className="">
+            <ImageBox className="relative inline-block">
                 <Image className="" src={"/img/eeg2t.png"} width={130} height={200} alt="EEG"/>
             </ImageBox>
         </div>

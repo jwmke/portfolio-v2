@@ -46,12 +46,12 @@ const RightSideExtension = ({
       className="relative z-10 flex"
       style={{ clipPath: outerClipPath }}
     >
-        <div className="h-[5.5rem] w-3 ml-1 mr-2 mt-2.5">
-            <div className="h-[1px] mb-0.5 w-2.5 bg-white"/>
-            <div className="h-0.5 mb-[3px] w-2.5 bg-white"/>
-            <div className="h-2 mb-1 w-2.5 bg-white"/>
-            <div className="h-4 mb-2 w-2.5 bg-white"/>
-            <div className="h-10 mb-4 w-2.5 bg-white"/>
+        <div className="h-[5.4rem] w-3 ml-1.5 mr-2 mt-2.5">
+            <div className="h-[1px] mb-0.5 w-2 bg-white"/>
+            <div className="h-0.5 mb-[3px] w-2 bg-white"/>
+            <div className="h-2 mb-1 w-2 bg-white"/>
+            <div className="h-4 mb-2 w-2 bg-white"/>
+            <div className="h-10 mb-4 w-2 bg-white"/>
         </div>
     </div>
 </div>
