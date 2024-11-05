@@ -15,9 +15,9 @@ const block = Flow_Block({
 const RightBox = () => {
     return <div className="relative min-w-[30rem] 2xl:min-w-[35.5rem] max-w-[38rem]">
         <div className="absolute h-[27.75rem] bottom-[17.5rem] left-1 flex flex-col justify-end">
-                <div className="mb-[1.75rem]">
+            <div className="mb-[1.75rem]">
                 <CornerClip />
-                </div>
+            </div>
             <ImageBox className="relative inline-block">
                 <Image className="" src={"/img/eeg2t.png"} width={130} height={200} alt="EEG"/>
             </ImageBox>

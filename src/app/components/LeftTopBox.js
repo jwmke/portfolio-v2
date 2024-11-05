@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ImageBox from "./ImageBox";
-import CornerClip from "./CornerClip";
+import PolyCornerClip from "./PolyCornerClip";
 import DiagonalPolygon from "./DiagonalPolygon";
 
 const LeftTopBox = () => {
@@ -18,14 +18,22 @@ const LeftTopBox = () => {
                 <ImageBox className="relative inline-block">
                     <Image className="" src={'/img/col.png'} height={320} width={155} alt="Col"/>
                 </ImageBox>
-                <div className="flex flex-col space-y-6 justify-between">
+                <div className="flex flex-col space-y-5 justify-between">
                     <div className="relative w-[24rem]">
-                        {/* <CornerClip corner="topLeft" size={80}/> */}
+                    <PolyCornerClip corner="topLeft"/>
                         <DiagonalPolygon size={110}>
-                            <div className="h-[8.5rem] relative">
-                                <div className="absolute z-50 ml-[7.5rem] ">
-                                    <Image className="" src={'/img/ggreen.png'} height={130} width={130} alt="Col"/>
+                            <div className="h-[9rem] relative text-teal-400 text-[.59rem] leading-[.8rem]">
+                                <div className="border border-teal-400 w-[5.5rem] h-8 m-1 px-1 p-[2px] absolute bottom-0">
+                                    Headquartered in Los Angeles
                                 </div>
+                                <div className="absolute z-50 ml-[7.5rem] ">
+                                    <Image className="mt-1.5" src={'/img/ggreen.png'} height={130} width={130} alt="Globe"/>
+                                </div>
+                                <div className="border border-teal-400 w-[5.5rem] h-8 m-1 px-1 p-[2px] absolute right-0">
+                                    Midwestern Expatriate
+                                </div>
+                                <div className="bg-teal-400 absolute right-[5.65rem] top-[2.8rem] -rotate-12 w-24 h-[1px]"/>
+                                <div className="bg-teal-400 absolute left-[5.15rem] bottom-[3.8rem] -rotate-[40deg] w-20 h-[1px]"/>
                             </div>
                         </DiagonalPolygon>
                     </div>

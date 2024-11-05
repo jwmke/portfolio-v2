@@ -1,6 +1,8 @@
 import SecondCyberGrid from "./SecondCyberGrid";
 import Image from "next/image";
 import ImageBox from "./ImageBox";
+import 'katex/dist/katex.min.css';
+import { InlineMath } from 'react-katex';
 
 const RobotBox = () => {
     return <div className="w-full">
@@ -16,6 +18,23 @@ const RobotBox = () => {
             <div className="relative w-10 -ml-10 h-[1px] bg-white"/>
             <div className="relative -mt-6 w-[1px] h-6 bg-white"/>
             <div className="relative -mt-[8.5rem] -ml-[1px] w-[1px] h-6 bg-white"/>
+            <div className="flex flex-col items-end text-white text-[.35rem] -mt-[7.75rem] -ml-[8.25rem] space-y-4">
+                <div>
+                <InlineMath>{`f(n) \\in O(g(n)) \\Leftrightarrow \\lim \\sup_{n \\to \\infty} \\frac{|f(n)|}{|g(n)|} < \\infty`}</InlineMath>
+                </div>
+                <div>
+                <InlineMath>{`Y = \\lambda f.(\\lambda x.f(x\\ x))(\\lambda x.f(x\\ x))`}</InlineMath>
+                </div>
+                <div>
+                <InlineMath>{`P(A|B) = \\frac{P(B|A) \\cdot P(A)}{P(B)}`}</InlineMath>
+                </div>
+                <div>
+                <InlineMath>{`\\binom{n}{k} = \\frac{n!}{k!(n-k)!}`}</InlineMath>
+                </div>
+                <div>
+                <InlineMath>{`P = NP`}</InlineMath>
+                </div>
+            </div>
         </div>
         <Image className="z-50 absolute bottom-[5.5rem] left-[4vw]" src={'/img/bot_final.png'} height={270} width={270} alt="Robot"/>
         <Image className="z-50 absolute bottom-[16.5rem] -left-6 rotate-[135deg]" src={'/img/top_final.png'} height={145} width={145} alt="Top"/>
