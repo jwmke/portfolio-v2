@@ -10,6 +10,8 @@ import LeftSideExtension from "./components/LeftSideExtension";
 import RightSideExtension from "./components/RightSideExtension";
 import LeftTopBox from "./components/LeftTopBox";
 import RobotBox from "./components/RobotBox";
+import TodayBox from "./components/TodayBox";
+import YesterdayBox from "./components/YesterdayBox";
 
 export default function Home() {
   return (
@@ -33,6 +35,10 @@ export default function Home() {
             <div className="w-1/3 min-h-full flex flex-col justify-between -ml-6">
               <LeftTopBox />
               <RobotBox />
+            </div>
+            <div className="w-1/3 min-h-full flex flex-col justify-between relative">
+              <TodayBox/>
+              <YesterdayBox/>
             </div>
             <div className="w-1/3 h-full flex flex-col items-end justify-between">
               <div className="w-full flex justify-end">
