@@ -1,6 +1,9 @@
 import DiagonalCornerContainer from "./components/DiagonalCornerContainer";
 import Grain from "./components/Grain";
 import CyberGrid from "./components/CyberGrid";
+import SecondCyberGrid from "./components/SecondCyberGrid";
+import Scene from "./components/Scene";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,20 +17,31 @@ export default function Home() {
           rgb(31, 31, 31) 100%)`
       }}
     >
-      <Grain opacity={0.75} blendMode="multiply" />
+      <Grain opacity={.95} blendMode="multiply" />
       
-      <div className="relative z-10 flex min-h-screen p-8">
-        <DiagonalCornerContainer className="my-2 w-full" size={64}>
-          <DiagonalCornerContainer className="w-1/2 h-96 -top-1 -left-1" size={48}>
-          <div className="relative -top-6 -left-6 w-[calc(100%+3rem)]">
-            <CyberGrid>
-                <div className="h-[24rem]">
-                  aaa
-                </div>
-            </CyberGrid>
+      <div className="relative z-10 flex min-h-screen p-6">
+        <DiagonalCornerContainer className="w-full" size={64}>
+          <div className="w-full flex justify-end relative">
+            <div className="w-1/4 rounded-[50%]">
+              <SecondCyberGrid>
+                    <div className="h-[30rem]">
+                      {/* <div className="h-20 w-20 bg-red-500"/> */}
+                    </div>
+                </SecondCyberGrid>
+            </div>
+            <DiagonalCornerContainer className="w-1/4 h-[30rem] -top-1 -left-1" size={52}>
+              <div className="relative -top-6 -left-6 w-[calc(100%+3rem)]">
+                <CyberGrid>
+                    <div className="h-[30rem]">
+                      <div className="h-80 w-80 absolute -right-20 -top-8">
+                        <Image src={'/img/tree.png'} height={150} width={300} alt="Olive Tree" />
+                      </div>
+                      <Scene />
+                    </div>
+                </CyberGrid>
+              </div>
+            </DiagonalCornerContainer>
           </div>
-          </DiagonalCornerContainer>
-          
         </DiagonalCornerContainer>
       </div>
     </div>
