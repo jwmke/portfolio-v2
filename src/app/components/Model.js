@@ -7,6 +7,9 @@ import * as THREE from 'three'
 export default function Model() {
   const model = useGLTF("./models/thinker.glb");
   const modelRef = useRef();
+
+  const x_offset = -62;
+  const y_offset = -74;
   
   useFrame((state) => {
     if (modelRef.current) {
@@ -14,7 +17,7 @@ export default function Model() {
       const hoverSpeed = .8;
       
       const hover = Math.sin(state.clock.elapsedTime * hoverSpeed) * hoverAmplitude;
-      modelRef.current.position.y = -76 + hover; 
+      modelRef.current.position.y = y_offset + hover; 
     }
   });
   
@@ -52,7 +55,7 @@ export default function Model() {
 
   return <mesh ref={modelRef}>
     <primitive object={model.scene} 
-      position={[-62, 0, -160.0]}
+      position={[x_offset, 0, -160.0]}
       rotation={[0.2, 5.2, 0]}
       scale={[1.1, 1.1, 1.1]}
     />
