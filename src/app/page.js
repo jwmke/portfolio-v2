@@ -33,8 +33,8 @@ export default function Home() {
               <div className="relative -top-6 -left-6 w-[calc(100%+3rem)]">
                 <CyberGrid>
                     <div className="h-[30rem]">
-                      <div className="h-80 w-80 absolute -right-20 -top-8">
-                        <Image src={'/img/tree.png'} height={150} width={300} alt="Olive Tree" />
+                      <div className="h-40 w-80 absolute -right-10 -top-12 z-50">
+                        <Image src={'/img/tree.png'} height={300} width={500} alt="Olive Tree" className="select-none" />
                       </div>
                       <Scene />
                     </div>

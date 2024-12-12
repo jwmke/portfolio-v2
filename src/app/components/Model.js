@@ -1,36 +1,60 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 
 export default function Model() {
-  const model = useGLTF("./models/hat.glb");
+  const model = useGLTF("./models/thinker.glb");
+  const modelRef = useRef();
+  
+  useFrame((state) => {
+    if (modelRef.current) {
+      const hoverAmplitude = 1.;
+      const hoverSpeed = .8;
+      
+      const hover = Math.sin(state.clock.elapsedTime * hoverSpeed) * hoverAmplitude;
+      modelRef.current.position.y = -76 + hover; 
+    }
+  });
   
   model.scene.traverse((o) => {
-      if (o.isMesh) {
-          var geometry = new THREE.EdgesGeometry( o.geometry, 15 );
-          var material = new THREE.LineBasicMaterial( { color: 0x000000 } );
-          var wireframe = new THREE.LineSegments( geometry, material );
-          o.add( wireframe );
-          o.material = new THREE.MeshBasicMaterial({color: 0x0000ff, wireframe: false, wireframeLinewidth: 1, transparent: true, opacity: 0.5});
-      }
+    if (o.isMesh) {
+      const geometry = new THREE.EdgesGeometry(o.geometry, 20);
+      const wireMaterial = new THREE.LineBasicMaterial({ 
+        color: 0x5bdec4,
+        transparent: true,
+        opacity: 0.8,
+        depthWrite: false,
+        polygonOffset: true,
+        polygonOffsetFactor: -1,
+        polygonOffsetUnits: -1
+      });
+      const wireframe = new THREE.LineSegments(geometry, wireMaterial);
+      wireframe.renderOrder = 1;
+      wireframe.position.add(new THREE.Vector3(0, 0, -0.001));
+      o.add(wireframe);
+      
+      o.material = new THREE.MeshPhongMaterial({
+        color: 0x5bdec4,
+        emissive: 0x5bdec4,
+        emissiveIntensity: 0.4,
+        shininess: 30,
+        specular: 0x5bdec4,
+        wireframe: false,
+        polygonOffset: true,
+        polygonOffsetFactor: 1,
+        polygonOffsetUnits: 1
+      });
+      o.renderOrder = 0;
+    }
   });
 
-  const [hatMesh, setHatMesh] = useState(null);
-
-  useEffect(() => {
-    setTimeout(() => {
-        setHatMesh(
-          <mesh>
-              <primitive object={model.scene} 
-              position={[0, 0, 0]}
-              rotation={[0.15, -.9, 0]}
-              scale={[0.1, 0.1, 0.1]}
-              />
-          </mesh>
-        )
-      }, 1000);
-  }, []);
-
-  return hatMesh;
+  return <mesh ref={modelRef}>
+    <primitive object={model.scene} 
+      position={[-62, 0, -160.0]}
+      rotation={[0.2, 5.2, 0]}
+      scale={[1.1, 1.1, 1.1]}
+    />
+  </mesh>;
 }
