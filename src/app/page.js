@@ -5,6 +5,8 @@ import SecondCyberGrid from "./components/SecondCyberGrid";
 import Scene from "./components/Scene";
 import Image from "next/image";
 import AsymDiagonalCornerContainer from "./components/AsymDiagonalCornerContainer";
+import NameTag from "./components/Nametag";
+import RightBox from "./components/RightBox";
 
 export default function Home() {
   return (
@@ -30,18 +32,27 @@ export default function Home() {
                     </div>
                 </SecondCyberGrid>
             </div> */}
-            <AsymDiagonalCornerContainer className="w-1/4 h-[32rem] -top-1 -left-1" size={52}>
-              <div className="relative -top-6 -left-6 w-[calc(100%+3rem)]">
-                <CyberGrid>
+            <div className="w-1/3 h-full flex flex-col items-end justify-between">
+              <AsymDiagonalCornerContainer className="w-2/3 h-[32rem] -top-1 -left-1 min-w-72" size={52}>
+                <div className="relative -top-6 -left-6 w-[calc(100%+3rem)]">
+                  <CyberGrid>
                     <div className="h-[32rem]">
                       <div className="h-40 w-80 absolute -right-10 -top-12 z-50">
                         <Image src={'/img/tree.png'} height={300} width={500} alt="Olive Tree" className="select-none" />
                       </div>
                       <Scene />
                     </div>
-                </CyberGrid>
+                  </CyberGrid>
+                </div>
+              </AsymDiagonalCornerContainer>
+              <div className="text-white flex flex-col items-start w-full relative pt-4">
+                <div className="font-bold absolute bottom-14 left-3">Occupation</div>
+                <div className="font-thin text-5xl absolute bottom-2 left-2">Digital Artisan</div>
+                
               </div>
-            </AsymDiagonalCornerContainer>
+              <RightBox/>
+              <NameTag/>
+            </div>
           </div>
         </DiagonalCornerContainer>
       </div>

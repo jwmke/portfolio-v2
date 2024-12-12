@@ -14,7 +14,7 @@ export default function Model() {
   useFrame((state) => {
     if (modelRef.current) {
       const hoverAmplitude = 1.;
-      const hoverSpeed = .8;
+      const hoverSpeed = 1.2;
       
       const hover = Math.sin(state.clock.elapsedTime * hoverSpeed) * hoverAmplitude;
       modelRef.current.position.y = y_offset + hover; 
@@ -41,7 +41,7 @@ export default function Model() {
       o.material = new THREE.MeshPhongMaterial({
         color: 0x5bdec4,
         emissive: 0x5bdec4,
-        emissiveIntensity: 0.4,
+        emissiveIntensity: 0.3,
         shininess: 30,
         specular: 0x5bdec4,
         wireframe: false,
