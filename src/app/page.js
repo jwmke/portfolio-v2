@@ -45,11 +45,6 @@ export default function Home() {
                   </CyberGrid>
                 </div>
               </AsymDiagonalCornerContainer>
-              <div className="text-white flex flex-col items-start w-full relative pt-4">
-                <div className="font-bold absolute bottom-14 left-3">Occupation</div>
-                <div className="font-thin text-5xl absolute bottom-2 left-2">Digital Artisan</div>
-                
-              </div>
               <RightBox/>
               <NameTag/>
             </div>

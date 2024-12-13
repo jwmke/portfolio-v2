@@ -14,7 +14,7 @@ export default function Model() {
   useFrame((state) => {
     if (modelRef.current) {
       const hoverAmplitude = 1.;
-      const hoverSpeed = 1.2;
+      const hoverSpeed = 1.5;
       
       const hover = Math.sin(state.clock.elapsedTime * hoverSpeed) * hoverAmplitude;
       modelRef.current.position.y = y_offset + hover; 

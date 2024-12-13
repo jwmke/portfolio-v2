@@ -1,12 +1,23 @@
 import Image from "next/image";
 import Grain from "./Grain";
 
-import { Libre_Barcode_128 } from "next/font/google";
+import { Libre_Barcode_128, Protest_Revolution, Saira_Stencil_One } from "next/font/google";
 
 const barcode = Libre_Barcode_128({
     subsets: ['latin'],
     weight: ["400"]
 });
+
+const protest = Protest_Revolution({
+  subsets: ['latin'],
+  weight: ["400"]
+});
+
+const saira = Saira_Stencil_One({
+  subsets: ['latin'],
+  weight: ["400"]
+});
+
 
 const NameTag = ({ 
     size = 52 
@@ -28,7 +39,7 @@ const NameTag = ({
     )`;
   
     return (
-      <div className="relative min-w-[35rem] max-h-36 overflow-hidden">
+      <div className="relative min-w-[37rem] max-h-36 overflow-hidden">
         <div
           className="absolute inset-0 bg-white"
           style={{
@@ -68,16 +79,18 @@ const NameTag = ({
                     <p>셉</p>
                 </div>
                 <div className="flex flex-col">
-              <span className="text-7xl font-bold">Joseph Weller</span>
+              <span className="text-7xl font-bold tracking-[.3rem]">
+                <p className={saira.className}>Joseph Weller</p>
+              </span>
                     <div className="flex items-center gap-3 pt-1">
                         <span className="text-3xl font-thin">00</span>
                         <Image className="mx-2" src={'/img/right.svg'} height={20} width={30} alt="Right" />
                         <span className="text-3xl font-thin">24</span>
                         
                         <div className="flex items-center gap-2 ml-auto">
-                            <Image className="" src={'/img/globe.png'} height={30} width={50} alt="Globe" />
-                            <div className="text-4xl pt-1.5 relative leading-[0.5rem] mr-8">
-                                <span className={barcode.className}>Ride the Tiger</span>
+                            <Image className="pb-1" src={'/img/globe.png'} height={30} width={50} alt="Globe" />
+                            <div className="text-4xl pt-2 relative leading-[0.5rem] mr-12">
+                                <p className={barcode.className}>Ride the Tiger</p>
                             </div>
                             {/* <div className="w-10"/> */}
                         </div>
