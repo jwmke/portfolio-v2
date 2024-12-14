@@ -7,6 +7,8 @@ import Image from "next/image";
 import AsymDiagonalCornerContainer from "./components/AsymDiagonalCornerContainer";
 import NameTag from "./components/Nametag";
 import RightBox from "./components/RightBox";
+import ImageBox from "./components/ImageBox";
+import CornerClip from "./components/CornerClip";
 
 export default function Home() {
   return (
@@ -33,6 +35,15 @@ export default function Home() {
                 </SecondCyberGrid>
             </div> */}
             <div className="w-1/3 h-full flex flex-col items-end justify-between">
+              <div className="w-full flex justify-between">
+                <div className="relative h-[27.75rem] flex flex-col justify-end 2xl:left-11">
+                  <div className="mb-[1.75rem]">
+                    <CornerClip />
+                  </div>
+                  <ImageBox className="">
+                    <Image className="" src={"/img/eeg2t.png"} width={130} height={200} alt="EEG"/>
+                  </ImageBox>
+                </div>
               <AsymDiagonalCornerContainer className="w-2/3 h-[32rem] -top-1 -left-1 min-w-72" size={52}>
                 <div className="relative -top-6 -left-6 w-[calc(100%+3rem)]">
                   <CyberGrid>
@@ -45,6 +56,7 @@ export default function Home() {
                   </CyberGrid>
                 </div>
               </AsymDiagonalCornerContainer>
+              </div>
               <RightBox/>
               <NameTag/>
             </div>
