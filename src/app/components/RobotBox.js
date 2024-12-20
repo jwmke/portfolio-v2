@@ -5,7 +5,7 @@ import 'katex/dist/katex.min.css';
 import { InlineMath } from 'react-katex';
 
 const RobotBox = () => {
-    return <div className="w-full min-w-[31rem]">
+    return <div className="w-full min-w-[31rem] min-[1350px]:block hidden">
         {/* <div className="w-6 -mt-[.6rem] -left-[calc(3rem-1px)] absolute">
           <LeftSideExtension />
         </div> */}

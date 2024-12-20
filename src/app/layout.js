@@ -12,9 +12,16 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const nicoMoji = localFont({
+    src: "./fonts/NicoMoji.ttf",
+    // subsets: ['latin'],
+    variable: "--font-nico-moji",
+    weight: "100 400 900",
+});
+
 export const metadata = {
   title: "Joe Weller",
-  description: "Portfolio.",
+  description: "Portfolio",
 };
 
 export default function RootLayout({ children }) {

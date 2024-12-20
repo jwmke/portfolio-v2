@@ -3,13 +3,19 @@ import ImageBox from "./ImageBox";
 import PolyCornerClip from "./PolyCornerClip";
 import DiagonalPolygon from "./DiagonalPolygon";
 
-const LeftTopBox = () => {
-    return <div className="w-full min-w-[32rem] max-w-[36.7rem] relative">
+import { Lato } from "next/font/google";
 
+const text = Lato({
+    subsets: ['latin'],
+    weight: ["400"]
+});
+
+const LeftTopBox = () => {
+    return <div className="w-full min-w-[32rem] max-w-[36.7rem] relative hidden min-[1350px]:block">
         <div className="absolute -right-8 -mr-[75%] w-[75%] h-[1px] mt-4 bg-white"/>
         <div className="absolute -right-[2.15rem] w-[.9rem] -rotate-45 h-[1px] top-[1.3rem] bg-white"/>
         <div className="absolute w-[1px] h-24 -right-[1.35rem] top-[1.6rem] bg-white"/>
-        <div className="absolute w-[1px] h-[9.9rem] right-[2.1rem] top-[6.2rem] bg-white rotate-45"/>
+        <div className="absolute w-[1px] h-[9.9rem] right-[2.15rem] top-[6.2rem] bg-white rotate-45"/>
         <div className="absolute w-[1px] h-[11.5rem] top-[14.6rem] bg-white -ml-[1px] right-[5.65rem]"/>
         <div className="pl-6 h-[3.75rem] relative -mt-1">
             <p className="text-white text-[.62rem] ml-[2.75rem] -mt-1 mr-4 italic absolute">
@@ -36,13 +42,17 @@ const LeftTopBox = () => {
                         <DiagonalPolygon size={110}>
                             <div className="h-[9rem] relative text-teal-400 text-[.59rem] leading-[.8rem]">
                                 <div className="border border-teal-400 w-[5.5rem] h-8 m-1 px-1 p-[2px] absolute bottom-0">
-                                    Headquartered in Los Angeles
+                                    <p className={text.className}>
+                                        Headquartered in Los Angeles
+                                    </p>
                                 </div>
                                 <div className="absolute z-50 ml-[7.5rem] ">
                                     <Image className="mt-1.5" src={'/img/ggreen.png'} height={130} width={130} alt="Globe"/>
                                 </div>
                                 <div className="border border-teal-400 w-[4.5rem] h-8 m-1 px-1 p-[2px] absolute right-0">
-                                    Midwestern Expatriate
+                                    <p className={text.className}>
+                                        Midwestern Expatriate
+                                    </p>
                                 </div>
                                 <div className="bg-teal-400 absolute right-[4.5rem] top-[3rem] -rotate-12 w-32 h-[1px]"/>
                                 <div className="bg-teal-400 absolute left-[5.15rem] bottom-[3.8rem] -rotate-[40deg] w-20 h-[1px]"/>

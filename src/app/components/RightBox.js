@@ -4,9 +4,14 @@ import { PiIntersectThreeLight } from "react-icons/pi";
 import ImageBox from "./ImageBox";
 import CornerClip from "./CornerClip";
 
-import { Flow_Block } from "next/font/google";
+import { Flow_Block, Lato } from "next/font/google";
 
 const block = Flow_Block({
+    subsets: ['latin'],
+    weight: ["400"]
+});
+
+const text = Lato({
     subsets: ['latin'],
     weight: ["400"]
 });
@@ -15,8 +20,8 @@ const block = Flow_Block({
 const RightBox = () => {
     return <div className="relative min-w-[30rem] 2xl:min-w-[35.5rem] max-w-[38rem]">
 
-        <div className="absolute w-[75%] 2xl:right-[25.5rem] right-[20.5rem] -top-[32rem] h-[1px] mt-4 bg-white"/>
-        <div className="absolute w-[15.75rem] -rotate-45 h-[1px] 2xl:right-[23.25rem] right-[18.25rem] -top-[25.4rem] bg-white"/>
+        <div className="absolute w-[75%] 2xl:right-[25.5rem] right-[20.25rem] -top-[32rem] h-[1px] mt-4 bg-white"/>
+        <div className="absolute w-[15.75rem] -rotate-45 h-[1px] 2xl:right-[23.25rem] right-[18rem] -top-[25.4rem] bg-white"/>
 
         <div className="absolute h-[27.75rem] bottom-[17.5rem] left-1 flex flex-col justify-end">
             <div className="mb-[1.75rem]">
@@ -27,14 +32,22 @@ const RightBox = () => {
             </ImageBox>
         </div>
         <div className="text-white flex flex-col items-start w-full relative pt-[1.125rem]">
-            <div className="absolute bottom-[3.5rem] 2xl:bottom-[3.75rem] text-sm left-0.5">Occupation</div>
-            <div className="font-thin text-[2.5rem] 2xl:text-[2.8rem] absolute bottom-1 2xl:bottom-0.5">Bit Manipulator</div>
+            <div className="absolute bottom-[3.5rem] 2xl:bottom-[3.75rem] text-sm left-0.5">
+                <p className={text.className}>
+                    Occupation
+                </p>
+            </div>
+            <div className="font-thin text-[2.5rem] 2xl:text-[2.8rem] absolute bottom-1 2xl:bottom-0.5">
+                <p className={text.className}>
+                    Bit Manipulator
+                </p>
+            </div>
         </div>
         <div className="w-[calc(100%-2.4rem)] h-[1px] bg-white"/>
         <div className="h-48 w-full flex 2xl:justify-between justify-end">
-            <div className="w-[30rem] absolute -top-[17.5rem] -left-[31.25rem] h-[30rem] rotate-90 text-white text-[.25rem] tracking-[.85em]">
+            <div className="w-[33rem] absolute -top-[17rem] -left-[32.75rem] h-[30rem] rotate-90 text-white text-[.25rem] tracking-[.65em]">
                 <p className={block.className}>
-                    The Industrial Revolution and its consequences have been a disaster for the human race. 
+                    &quot;The Industrial Revolution and its consequences have been a disaster for the human race.&quot; - Dr. Kaczynski
                 </p>
             </div>
             <div className="absolute -right-16 -top-6 w-[7.5rem] h-[1px] bg-white -rotate-45"/>
