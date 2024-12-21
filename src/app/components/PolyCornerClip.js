@@ -17,6 +17,7 @@ const PolyCornerClip = ({
             patternUnits="userSpaceOnUse"
             width="100" 
             height="20"
+            className="rotate-45"
           >
             <rect width="100" height="20" fill="#1f1f1f"/>
             <path 

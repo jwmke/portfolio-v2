@@ -2,6 +2,7 @@ import Image from "next/image";
 import ImageBox from "./ImageBox";
 import PolyCornerClip from "./PolyCornerClip";
 import DiagonalPolygon from "./DiagonalPolygon";
+import localFont from "next/font/local";
 
 import { Lato } from "next/font/google";
 
@@ -9,6 +10,14 @@ const text = Lato({
     subsets: ['latin'],
     weight: ["400"]
 });
+
+const header = localFont({
+    src: "../fonts/NicoMoji.ttf",
+    subsets: ['latin'],
+    variable: "--font-nico-moji",
+    weight: "100 400 900",
+});
+
 
 const LeftTopBox = () => {
     return <div className="w-full min-w-[32rem] max-w-[36.7rem] relative hidden min-[1350px]:block">
@@ -56,6 +65,11 @@ const LeftTopBox = () => {
                                 </div>
                                 <div className="bg-teal-400 absolute right-[4.5rem] top-[3rem] -rotate-12 w-32 h-[1px]"/>
                                 <div className="bg-teal-400 absolute left-[5.15rem] bottom-[3.8rem] -rotate-[40deg] w-20 h-[1px]"/>
+                                <div className="text-white font-thin absolute -right-2 text-sm bottom-[2.5rem] -rotate-45">
+                                    <p className={header.className}>
+                                        Pax Americana
+                                    </p>
+                                </div>
                             </div>
                         </DiagonalPolygon>
                     </div>

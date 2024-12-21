@@ -8,8 +8,8 @@ const header = localFont({
 });
 
 const YesterdayBox = () => {
-    return <div className="w-full h-[32.5rem]">
-        <h1 className="text-white font-thin text-[3.75rem] min-[1700px]:text-[4.5rem] leading-[5.5rem]">
+    return <div className="w-full h-[31.75rem] relative -left-[calc(31vw-26rem)] min-[1700px]:ml-20 ml-1">
+        <h1 className="text-white font-thin text-[3.25rem] min-[1700px]:text-[4.5rem] leading-[5.5rem]">
             <p className={header.className}>
                 Yesterday
             </p>
