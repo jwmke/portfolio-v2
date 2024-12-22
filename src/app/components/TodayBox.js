@@ -1,10 +1,52 @@
 import { Lato, Vollkorn_SC } from "next/font/google";
 import localFont from "next/font/local";
+import Image from "next/image";
+import Link from 'next/link';
 
 // const header = Vollkorn_SC({
 //     subsets: ['latin'],
 //     weight: ["400"]
 // });
+
+const blogRecents = [
+    {
+        "title": "Neuroscience",
+        "path": "/img/blog/Neuro.jpg",
+        "date": "06/24",
+        "route": "/neuroscience"
+    },
+    {
+        "title": "BCIs",
+        "path": "/img/blog/Waves.png",
+        "date": "04/24",
+        "route": "/"
+    },
+    {
+        "title": "Doom",
+        "path": "/img/blog/Romanticization.jpg",
+        "date": "07/23",
+        "route": "/"
+    },
+    {
+        "title": "Context",
+        "path": "/img/blog/Window2.jpg",
+        "date": "05/23",
+        "route": "/"
+    },
+    {
+        "title": "Cereal",
+        "path": "/img/blog/Bowl.jpg",
+        "date": "04/23",
+        "route": "/"
+    },
+    {
+        "title": "Graduation",
+        "path": "/img/blog/Grad.jpg",
+        "date": "12/22",
+        "route": "/"
+    },
+
+]
 
 const header = localFont({
     src: "../fonts/NicoMoji.ttf",
@@ -15,7 +57,7 @@ const header = localFont({
 
 const text = Lato({
     subsets: ['latin'],
-    weight: ["400"]
+    weight: ["100", "400"]
 });
 
 const TodayBox = () => {
@@ -51,7 +93,7 @@ const TodayBox = () => {
                 </li>
             </ul>
         </div>
-        <div className="w-[10vw] text-nowrap h-20 text-xs top-[8rem] absolute text-white left-[calc(57.5vw-46rem)] min-[1775px]:block hidden">
+        <div className="w-[10vw] text-nowrap h-20 text-xs top-[7.9rem] absolute text-white left-[calc(57.5vw-44rem)] min-[1850px]:left-[calc(57.5vw-46rem)] min-[1775px]:block hidden">
             <div className="justify-between flex">
                 <div className="w-1/2 border-white border-r px-3 pb-3 pt-2.5 flex justify-end border-b">
                     <p className={text.className}>
@@ -81,16 +123,63 @@ const TodayBox = () => {
             </div>
         </div>
         
-        <div className="w-[90%] h-24 bg-red-500 absolute -bottom-2 right-36 flex space-x-2">
-            <div className="text-white -rotate-90 font-bold absolute bottom-8 -left-8 flex space-x-2 text-sm">
+        <div className="w-[90%] h-24 absolute -bottom-2 flex space-x-3 -left-[calc(31vw-26rem)] min-[1700px]:ml-20 ml-1">
+            <div className="text-white -rotate-90 absolute bottom-[1.45rem] -left-8 flex space-x-2 text-[2rem]">
                 <p className={text.className}>
                     Recent
                 </p>
-                <p className={text.className}>
-                    Posts
-                </p>
             </div>
+            <div className="z-40 min-[1900px]:w-[102%] min-[1800px]:w-[90%] min-[1600px]:w-[80%] w-[70%] h-24 left-8 absolute text-white grid grid-cols-3 min-[1600px]:grid-cols-4 min-[1800px]:grid-cols-5 min-[1900px]:grid-cols-6 overflow-hidden">
+            {blogRecents.map((blogInfo, idx) => (
+    <Link 
+      key={idx} 
+      href={blogInfo.route}
+      className="h-24 w-24 border-white border relative overflow-hidden group"
+    >
+      <div className="absolute inset-0">
+        <div className="absolute inset-0" style={{
+          clipPath: 'polygon(100% 0, 0 0, 100% 100%)'
+        }}>
+          <Image
+            src={blogInfo.path}
+            alt={blogInfo.title}
+            fill
+            className="object-cover"
+            sizes="96px"
+          />
+          <div className="absolute inset-0 bg-teal-600 bg-opacity-40 transition-opacity duration-50 group-hover:opacity-0" />
+        </div>
+      </div>
 
+      <div className="absolute inset-0">
+        <div 
+          className="absolute h-[1px] w-[141.4%] bg-white" 
+          style={{
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%) rotate(45deg)',
+            transformOrigin: 'center'
+          }}
+        />
+      </div>
+
+      <div className="absolute inset-0" style={{
+        clipPath: 'polygon(0 0, 0 100%, 100% 100%)'
+      }}>
+        <div className="absolute bottom-[2rem] -left-1.5 text-[.7rem] font-thin max-w-[90%] -rotate-90">
+          <p className={text.className}>
+            {blogInfo.date}
+          </p>
+        </div>
+        <div className="absolute bottom-1 left-1 text-[.65rem] font-bold max-w-[90%]">
+          <p className={text.className}>
+            {blogInfo.title}
+          </p>
+        </div>
+      </div>
+    </Link>
+  ))}
+            </div>
         </div>
     </div>
 }
