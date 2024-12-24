@@ -56,7 +56,7 @@ const RightBox = () => {
                 </p>
             </div>
             <div className="absolute -right-16 -top-6 w-[7.5rem] h-[1px] bg-white -rotate-45"/>
-            <div className="text-[.55rem] text-teal-600 mt-6 relative left-0 hidden 2xl:block">
+            <div className="text-[.55rem] text-teal-700 mt-6 relative left-0 hidden 2xl:block">
                 <p>buffer = OPENSSL_malloc(1 + 2 + payload + padding);</p>
                 <p className="h-3"/>
                 <p>bp = buffer;</p>
