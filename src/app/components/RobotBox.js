@@ -48,7 +48,9 @@ const RobotBox = () => {
             </ImageBox>
         </div>
         <Image className="z-50 absolute bottom-4 left-4" src={'/img/arml_final.png'} width={180} height={170} alt="Arm"/>
-        <SecondCyberGrid/>
+        <div className="absolute bottom-2">
+            <SecondCyberGrid/>
+        </div>
     </div>
 }
 
