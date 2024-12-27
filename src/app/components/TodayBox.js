@@ -112,7 +112,7 @@ const TodayBox = () => {
                     <p>&#8226;</p>
                 </li>
                 <li className="flex items-center space-x-4 justify-end mr-10">
-                    <p className={text.className}>Running trails, climbing rocks, & weight training</p>
+                    <p className={text.className}>Running trails, climbing rocks, & lifting weights</p>
                     <p>&#8226;</p>
                 </li>
             </ul>
@@ -169,7 +169,7 @@ const TodayBox = () => {
             className="object-cover"
             sizes="96px"
           />
-          <div className="absolute inset-0 bg-teal-600 bg-opacity-40 transition-opacity duration-50 group-hover:opacity-0" />
+          <div className="absolute inset-0 bg-teal-600 bg-opacity-40 transition-opacity duration-75 group-hover:opacity-0" />
         </div>
       </div>
 

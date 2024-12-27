@@ -28,7 +28,7 @@ const ProjectBox = ({
     <div className={`relative ${className} w-52`}>
       {/* Border container */}
       <div
-        className="absolute inset-0 bg-white"
+        className="absolute inset-0 bg-white "
         style={{
           clipPath: outerClipPath,
         }}
@@ -38,7 +38,7 @@ const ProjectBox = ({
           className="absolute inset-0 overflow-hidden"
           style={{
             clipPath: innerClipPath,
-            backgroundColor: 'rgb(31, 31, 31)',
+            backgroundColor: 'rgb(31, 31, 31)'
           }}
         >
           {/* Grain effect */}
@@ -48,30 +48,31 @@ const ProjectBox = ({
         </div>
       </div>
       
-      {/* Content container */}
-      <div
-        className="relative z-10 h-[5.95rem] hover:bg-teal-700 hover:cursor-pointer"
-        style={{ clipPath: outerClipPath }}
-      >
-        <div className="px-2 py-1">
-          <h2 className="text-[.825rem] font-bold mb-1 text-white mt-0.5">{title}</h2>
-          
-          <div className="mb-2 mt-0.5 h-[1px] w-8 bg bg-white"/>
+      <a href={link ? link : "/"} target="_blank" referrerPolicy="noopener noreferrer">
+        <div
+          className="relative z-10 h-[5.95rem] hover:bg-teal-700 duration-75 transition-colors"
+          style={{ clipPath: outerClipPath }}
+        >
+          <div className="px-2 py-1">
+            <h2 className="text-[.825rem] font-bold mb-1 text-white mt-0.5">{title}</h2>
+            
+            <div className="mb-2 mt-0.5 h-[1px] w-8 bg bg-white"/>
 
-          <p className="text-[.55rem] mb-1.5 text-white pr-4">{description}</p>
-          
-          <div className="flex flex-wrap gap-1.5 mt-1.5">
-            {tags.map((tag, index) => (
-              <span
-                key={index}
-                className="px-1.5 py-[1px] bg-white text-black  font-extrabold text-[.5rem]"
-              >
-                {tag}
-              </span>
-            ))}
+            <p className="text-[.55rem] mb-1.5 text-white pr-4">{description}</p>
+            
+            <div className="flex flex-wrap gap-1.5 mt-1.5">
+              {tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className="px-1.5 py-[1px] bg-white text-black  font-extrabold text-[.5rem]"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 };

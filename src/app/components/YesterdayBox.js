@@ -1,6 +1,8 @@
 import localFont from "next/font/local";
 import { Lato } from "next/font/google";
 import ProjectBox from "./ProjectBox";
+import ImageBox from "./ImageBox";
+import Image from "next/image";
 
 const header = localFont({
     src: "../fonts/NicoMoji.ttf",
@@ -172,6 +174,65 @@ const YesterdayBox = () => {
             {projectData.map((data, idx) => (
                 <ProjectBox key={idx} {...data} />
             ))}
+        </div>
+        <div className="border-white w-[19.25rem] h-[17rem] absolute bottom-0 -left-[3.25rem] text-white">
+            <div className="flex h-full w-full justify-between">
+                <div className="flex flex-col">
+                    <div className="font-bold">
+                        <p className={text.className}>
+                            Recipes
+                        </p>
+                    </div>
+                    <ul className="text-xs mt-2">
+                        <li className="flex items-center space-x-2">
+                            <p>&#8226;</p>
+                            <p className={text.className}>Vanilla Matcha Latte</p>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                            <p>&#8226;</p>
+                            <p className={text.className}>PX Orange Chicken</p>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                            <p>&#8226;</p>
+                            <p className={text.className}>Simple Avocado Toast</p>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                            <p>&#8226;</p>
+                            <p className={text.className}>Zeus&apos; Protein Shake</p>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                            <p>&#8226;</p>
+                            <p className={text.className}>Garlic Fried Rice</p>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                            <p>&#8226;</p>
+                            <p className={text.className}>Perfect NYC Pizza</p>
+                        </li>
+                        {/* <li className="flex items-center space-x-2 mt-1 text-teal-500">
+                            <p className={text.className}>To be continued...</p>
+                        </li> */}
+                    </ul>
+                </div>
+                <div className="flex flex-col items-end">
+                    <div className="font-bold">
+                        <p className={text.className}>
+                            Pictures
+                        </p>
+                    </div>
+                    <ul className="text-xs mt-2">
+                        <li className="flex items-center space-x-2 justify-end">
+                            <p className={text.className}>Italia in Autunno</p>
+                            <p>&#8226;</p>
+                        </li>
+                        {/* <li className="flex items-center space-x-2 justify-end mt-1 text-teal-500">
+                            <p className={text.className}>To be continued...</p>
+                        </li> */}
+                    </ul>
+                </div>
+            </div>
+            {/* <ImageBox className="z-50 absolute bottom-0"> */}
+            <Image src="/img/sound.png" alt="Landscape" width={310} height={200} className="z-50 absolute bottom-0"/>
+            {/* </ImageBox> */}
         </div>
     </div>
 }
