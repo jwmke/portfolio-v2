@@ -4,7 +4,10 @@ const ProjectBox = ({
   title,
   description,
   tags,
+<<<<<<< HEAD
   link,
+=======
+>>>>>>> 9351164f95e95487b6b3f0c42395636d42c6b35b
   className = '',
   size = 42,
 }) => {
