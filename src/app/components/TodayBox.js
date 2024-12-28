@@ -81,11 +81,11 @@ const TodayBox = () => {
                 </li>
                 <li className="flex items-center space-x-4 -ml-5">
                     <p>&#8226;</p>
-                    <p className={text.className}>Learning & building neurotech in public</p>
+                    <p className={text.className}>Mentoring the next generation w/ team 4201</p>
                 </li>
                 <li className="flex items-center space-x-4 -ml-10">
                     <p>&#8226;</p>
-                    <p className={text.className}>Sharpening my blade in AoC 2024</p>
+                    <p className={text.className}>Learning & building neurotech in public</p>
                 </li>
                 <li className="flex items-center space-x-4 min-[1800px]:hidden -ml-[calc(1.25rem*3)]">
                     <p>&#8226;</p>

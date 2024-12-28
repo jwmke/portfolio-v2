@@ -1,6 +1,6 @@
 import SecondCyberGrid from "./SecondCyberGrid";
 import Image from "next/image";
-import ImageBox from "./ImageBox";
+import ImageBox from "./SmallImageBox";
 import 'katex/dist/katex.min.css';
 import { InlineMath } from 'react-katex';
 
@@ -44,7 +44,7 @@ const RobotBox = () => {
         <Image className="z-50 absolute bottom-[16.5rem] -left-6 rotate-[135deg]" src={'/img/top_final.png'} height={145} width={145} alt="Top"/>
         <div className="w-full relative">
             <ImageBox className="z-50 absolute bottom-2 left-[calc(50%+2.5rem)]">
-                <Image className="p-1.5" src={'/img/rollt_final.png'} height={70} width={70} alt="Roller"/>
+                <Image className="p-1.5 pr-2" src={'/img/rollt_final.png'} height={70} width={70} alt="Roller"/>
             </ImageBox>
         </div>
         <Image className="z-50 absolute bottom-4 left-4" src={'/img/arml_final.png'} width={180} height={170} alt="Arm"/>

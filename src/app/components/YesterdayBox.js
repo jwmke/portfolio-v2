@@ -208,9 +208,9 @@ const YesterdayBox = () => {
                             <p>&#8226;</p>
                             <p className={text.className}>Perfect NYC Pizza</p>
                         </li>
-                        {/* <li className="flex items-center space-x-2 mt-1 text-teal-500">
-                            <p className={text.className}>To be continued...</p>
-                        </li> */}
+                        <li className="flex items-center space-x-2 mt-1 text-teal-500">
+                            <p className={text.className}>See All Recipes</p>
+                        </li>
                     </ul>
                 </div>
                 <div className="flex flex-col items-end">
@@ -221,12 +221,12 @@ const YesterdayBox = () => {
                     </div>
                     <ul className="text-xs mt-2">
                         <li className="flex items-center space-x-2 justify-end">
-                            <p className={text.className}>Italia in Autunno</p>
+                            <p className={text.className}>Italia en Autunno</p>
                             <p>&#8226;</p>
                         </li>
-                        {/* <li className="flex items-center space-x-2 justify-end mt-1 text-teal-500">
+                        <li className="flex items-center space-x-2 justify-end mt-1 text-teal-500">
                             <p className={text.className}>To be continued...</p>
-                        </li> */}
+                        </li>
                     </ul>
                 </div>
             </div>
