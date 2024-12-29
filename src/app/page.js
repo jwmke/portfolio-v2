@@ -28,14 +28,14 @@ export default function Home() {
       >
         <Grain opacity={.95} blendMode="multiply" />
        
-        <ZoomPaddingContainer>
+        {/* <ZoomPaddingContainer> */}
           <div className="flex py-6 px-2">
           <div className="w-6 h-full mt-[45.7vh] z-20 -right-[1px] relative">
             <LeftSideExtension />
           </div>
           <DiagonalCornerContainer className="w-full" size={64}>
             <div className="w-full flex justify-between relative">
-              <div className="w-1/3 min-h-full flex flex-col justify-between -ml-6">
+              <div className="w-1/3 min-h-full min-[1400px]:flex hidden flex-col justify-between -ml-6">
                 <LeftTopBox />
                 <RobotBox />
               </div>
@@ -67,7 +67,7 @@ export default function Home() {
             <RightSideExtension />
           </div>
         </div>
-        </ZoomPaddingContainer>
+        {/* </ZoomPaddingContainer> */}
       </div>
     </div>
   );

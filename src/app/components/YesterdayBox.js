@@ -35,7 +35,7 @@ const TealGradient = () => {
     tealColors.reverse()
   
     return (
-      <div className="flex flex-row absolute top-[11.75rem]">
+      <div className="flex-row absolute top-[11.75rem] 2xl:ml-0 ml-10 min-[1700px]:flex 2xl:hidden flex">
         {/* <div
             style={{
                 backgroundColor: 'rgb(31, 35, 35)'
@@ -98,11 +98,11 @@ const projectData = [
 
 const YesterdayBox = () => {
     return <div className="w-full h-[31.75rem] relative -left-[calc(31vw-26rem)] min-[1700px]:ml-20 ml-1 ">
-        <h1 className="text-white font-thin absolute text-[3.25rem] min-[1700px]:text-[4.5rem] flex leading-[5.5rem] w-[115%] gap-4">
+        <h1 className="text-white font-thin absolute text-[3.25rem] min-[1700px]:ml-0 min-[1450px]:ml-6 ml-2 min-[1700px]:text-[4.5rem] flex leading-[5.5rem] w-[115%] gap-4">
             <p className={header.className}>
                 Yesterday
             </p>
-            <svg viewBox="0 0 200 100" className="h-24">
+            <svg viewBox="0 0 200 100" className="h-24 min-[1900px]:block hidden ">
                 {/* Inner curved sections, made larger and connecting at center */}
                 {[0, 90, 180, 270].map((angle) => (
                 <path
@@ -150,7 +150,7 @@ const YesterdayBox = () => {
         </h1>
         {/* <TealGradient /> */}
         <div className="">
-            <ul className="space-y-0.5 text-xs text-white mt-[6.25rem]">
+            <ul className="space-y-0.5 min-[1700px]:w-80 2xl:w-[32%] text-xs text-white mt-[6.25rem] min-[1700px]:ml-0 ml-10">
                 <li className="flex items-center space-x-4">
                     <p>&#8226;</p>
                     <p className={text.className}>Helped advance the future of mining @ Durin</p>
@@ -170,13 +170,13 @@ const YesterdayBox = () => {
             </ul>
         </div>
         <TealGradient />
-        <div className="absolute -right-[6.25rem] top-[6.45rem] grid grid-cols-2 gap-x-2 gap-y-2">
+        <div className="absolute min-[1900px]:left-[calc(40vw-31rem)] left-[calc(55vw-41rem)] w-[27rem] top-[6.45rem] grid min-[1900px]:grid-cols-2 grid-cols-1 2xl:h-[25.35rem] h-0 overflow-hidden gap-x-2 gap-y-2">
             {projectData.map((data, idx) => (
                 <ProjectBox key={idx} {...data} />
             ))}
         </div>
-        <div className="border-white w-[19.25rem] h-[17rem] absolute bottom-0 -left-[3.25rem] text-white">
-            <div className="flex h-full w-full justify-between">
+        <div className="border-white min-[1700px]:ml-0 ml-10 w-[19.25rem] h-[17rem] absolute bottom-0 -left-[3.25rem] text-white">
+            <div className="flex h-full w-full justify-between min-[1700px]:flex-row 2xl:flex-col flex-row">
                 <div className="flex flex-col">
                     <div className="font-bold">
                         <p className={text.className}>
@@ -195,7 +195,7 @@ const YesterdayBox = () => {
                         <li className="flex items-center space-x-2">
                             <p>&#8226;</p>
                             <p className={text.className}>Simple Avocado Toast</p>
-                        </li>
+                         </li>
                         <li className="flex items-center space-x-2">
                             <p>&#8226;</p>
                             <p className={text.className}>Zeus&apos; Protein Shake</p>
@@ -213,7 +213,7 @@ const YesterdayBox = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="flex flex-col items-end">
+                <div className="flex flex-col min-[1700px]:items-end items-start">
                     <div className="font-bold">
                         <p className={text.className}>
                             Pictures
@@ -225,13 +225,13 @@ const YesterdayBox = () => {
                             <p>&#8226;</p>
                         </li>
                         <li className="flex items-center space-x-2 justify-end mt-1 text-teal-500">
-                            <p className={text.className}>To be continued...</p>
+                            <p className={text.className}>More coming soon...</p>
                         </li>
                     </ul>
                 </div>
             </div>
             {/* <ImageBox className="z-50 absolute bottom-0"> */}
-            <Image src="/img/sound.png" alt="Landscape" width={310} height={200} className="z-50 absolute bottom-0"/>
+            <Image src="/img/sound.png" alt="Landscape" width={310} height={200} className="z-50 absolute bottom-0 min-[1700px]:block hidden 2xl:hidden min-[1450px]:block"/>
             {/* </ImageBox> */}
         </div>
     </div>

@@ -145,7 +145,7 @@ const TodayBox = () => {
             </div> */}
         </div>
         
-        <div className="w-[90%] h-24 absolute -bottom-0 flex space-x-3 -left-[calc(31vw-26rem)] min-[1700px]:ml-20 ml-1">
+        <div className="w-[90%] h-24 absolute -bottom-0 flex space-x-3 -left-[calc(31vw-26rem)] min-[1700px]:ml-20 min-[1450px]:ml-6 ml-2">
             <div className="text-white -rotate-90 absolute bottom-[1.45rem] -left-8 flex space-x-2 text-[2rem]">
                 <p className={text.className}>
                     Recent
