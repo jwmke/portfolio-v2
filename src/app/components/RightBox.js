@@ -23,10 +23,10 @@ const text = Lato({
 
 
 const RightBox = () => {
-    return <div className="relative min-w-[30rem] 2xl:min-w-[35.5rem] max-w-[38rem]">
+    return <div className="relative min-[1400px]:min-w-[30rem] min-w-[35.5rem] 2xl:min-w-[35.5rem] max-w-[38rem]">
 
-        <div className="absolute w-[75%] 2xl:right-[25.5rem] right-[20.25rem] -top-[32rem] h-[1px] mt-4 bg-white"/>
-        <div className="absolute w-[15.75rem] -rotate-45 h-[1px] 2xl:right-[23.25rem] right-[18rem] -top-[25.4rem] bg-white"/>
+        <div className="absolute w-[75%] 2xl:right-[25.5rem] min-[1400px]:right-[20.25rem] min-[1400px]:block hidden -top-[32rem] h-[1px] mt-4 bg-white"/>
+        <div className="absolute w-[15.75rem] -rotate-45 h-[1px] 2xl:right-[23.25rem] min-[1400px]:right-[18rem] right-[23.25rem] -top-[25.4rem] bg-white"/>
 
         <div className="absolute h-[27.75rem] bottom-[17.5rem] left-1 flex flex-col justify-end">
             <div className="mb-[1.75rem]">
@@ -49,14 +49,14 @@ const RightBox = () => {
             </div>
         </div>
         <div className="w-[calc(100%-2.4rem)] h-[1px] bg-white"/>
-        <div className="h-48 w-full flex 2xl:justify-between justify-end">
+        <div className="h-48 w-full flex 2xl:justify-between min-[1400px]:justify-end justify-between">
             <div className="w-[33rem] absolute -top-[17rem] -left-[32.75rem] h-[30rem] rotate-90 text-white text-[.25rem] tracking-[.65em]">
                 <p className={block.className}>
                     &quot;The Industrial Revolution and its consequences have been a disaster for the human race.&quot; - Dr. Kaczynski
                 </p>
             </div>
             <div className="absolute -right-16 -top-6 w-[7.5rem] h-[1px] bg-white -rotate-45"/>
-            <div className="text-[.55rem] text-teal-700 mt-6 relative left-0 hidden 2xl:block">
+            <div className="text-[.55rem] text-teal-700 mt-6 relative left-0 min-[1400px]:hidden block 2xl:block">
                 <p>buffer = OPENSSL_malloc(1 + 2 + payload + padding);</p>
                 <p className="h-3"/>
                 <p>bp = buffer;</p>
@@ -69,7 +69,7 @@ const RightBox = () => {
                 <p>r = dtls1_write_bytes(s, TLS1_RT_HEARTBEAT, buffer,</p>
                 <p>3 + payload + padding);</p>
             </div>
-            <div className="absolute 2xl:top-[4.5rem] left-6 top-[3.5rem] 2xl:left-[11.75rem] rotate-[0deg]">
+            <div className="absolute 2xl:top-[4.5rem] top-[4.5rem] min-[1400px]:left-6 min-[1400px]:top-[3.5rem] 2xl:left-[11.75rem] left-[11.75rem] rotate-[0deg]">
                 <Image src={"/img/molecule.png"} height={150} width={200} alt="Molecule"/>
             </div>
             <div className="-rotate-90 relative right-6 -top-10">

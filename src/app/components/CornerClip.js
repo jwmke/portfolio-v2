@@ -25,10 +25,11 @@ const CornerClip = ({
       >
         <defs>
           <pattern 
-            id="wavePattern" 
+            id="wave" 
             patternUnits="userSpaceOnUse"
             width="100" 
             height="20"
+            className="rotate-45"
           >
             <rect width="100" height="20" fill="#1f1f1f"/>
             <path 
@@ -43,9 +44,9 @@ const CornerClip = ({
         {/* Pattern-filled triangle */}
         <path
           d={`M 0 ${size} L ${size} ${size} L ${size} 0 Z`}
-          stroke="url(#wavePattern)"
+          stroke="url(#wave)"
           strokeWidth={strokeWidth}
-          fill="url(#wavePattern)"
+          fill="url(#wave)"
           transform={getTransform()}
         />
         
