@@ -2,6 +2,7 @@ import { Lato, Vollkorn_SC } from "next/font/google";
 import localFont from "next/font/local";
 import Image from "next/image";
 import Link from 'next/link';
+import PolyCornerClip from "./BulletCorner";
 
 // const header = Vollkorn_SC({
 //     subsets: ['latin'],
@@ -62,18 +63,69 @@ const text = Lato({
 
 const TodayBox = () => {
     return <div className="w-[120%] mt-7 relative h-[19.5rem]">
-        <h1 className="text-white font-thin text-[3.25rem] ml-12 min-[1700px]:ml-0 min-[1700px]:text-[4.5rem] min-[1650px]:leading-[5.5rem] leading-[5rem] absolute  left-[calc(52.5vw-40rem)] 2xl:left-[calc(53vw-38.5rem)] mt-1">
+        <h1 className="text-white font-thin min-[1400px]:text-[3.25rem] text-[4.5rem] ml-12 min-[1700px]:ml-0 min-[1700px]:text-[4.5rem] min-[1650px]:leading-[5.5rem] min-[1400px]:leading-[5rem] leading-[1rem] absolute left-0 min-[1400px]:left-[calc(52.5vw-40rem)] 2xl:left-[calc(53vw-38.5rem)] mt-1">
             <p className={header.className}>
                 Today
             </p>
         </h1>
+        <svg viewBox="0 0 200 100" className="h-24 min-[1400px]:hidden relative -top-8 left-[22rem]">
+            {/* Inner curved sections, made larger and connecting at center */}
+            {[0, 90, 180, 270].map((angle) => (
+            <path
+                key={`curve-${angle}`}
+                d="M 50 30 Q 50 50, 35 50 L 65 50 Q 50 50, 50 30"
+                fill="white"
+                transform={`rotate(${angle}, 50, 50)`}
+            />
+            ))}
+
+            {/* Three normal spikes (top, left, bottom) */}
+            {[0].map((angle) => (
+            <line
+                key={`spike-${angle}`}
+                x1="50"
+                y1="15"
+                x2="50"
+                y2="85"
+                stroke="white"
+                strokeWidth="1"
+                transform={`rotate(${angle}, 50, 50)`}
+            />
+            ))}
+
+            {/* Extended right spike (2x length) */}
+            {/* <line
+                key="spike-extended"
+                x1="50"
+                y1="10"
+                x2="50"
+                y2="85"
+                stroke="white"
+                strokeWidth="1"
+                transform="rotate(90, 50, 50)"
+            /> */}
+
+            {/* Small center circle to smooth out any gaps */}
+            <circle 
+            cx="50" 
+            cy="50" 
+            r="3" 
+            fill="white" 
+            />
+        </svg>
+        <div className="min-[1400px]:hidden relative -top-[calc(5rem+1px)] left-[22.75rem]">
+            <div className="h-[1px] w-[calc(200%-40rem)] bg-white"/>
+        </div>
         <div className="text-[.55rem] text-teal-700 mt-1.5 leading-4 ml-6 min-[1700px]:ml-4 max-h-20 overflow-hidden min-[1650px]:block hidden 2xl:max-w-[calc(52.5vw-39.5rem)]">
             <p>{"(g=Array(20).fill().map(_=>Array(20).fill().map(_=>Math.random()<.3)))&&setInterval(_=>{"}</p>
             <p>{"g=g.map((r,i)=>r.map((c,j)=>{let n=[-1,0,1].flatMap(x=>[-1,0,1].map(y=>[i+x,j+y]))"}</p>
             <p>{".filter(([x,y])=>x>=0&&x<20&&y>=0&&y<20&&!(x==i&&y==j)).reduce((s,[x,y])=>s+(g[x][y]?1:0),0);return n==3||(c&&n==2)}));"}</p>
             <p>{"console.clear();console.log(g.map(r=>r.map(c=>c?'O':' ').join``).join`\\n`)},200)"}</p>
-            </div>
-        <div className="absolute min-[1800px]:top-[8rem] top-[6rem] w-full text-white 2xl:max-w-[calc(52.5vw-31.5rem)] ml-[5.5rem] left-10 min-[1800px]:left-0 2xl:ml-3 text-xs">
+        </div>
+        <div className="absolute left-6 top-[5.25rem] min-[1400px]:hidden">
+            <PolyCornerClip />
+        </div>
+        <div className="absolute min-[1800px]:top-[8rem] min-[1400px]:top-[6rem] top-[5rem] w-full text-white 2xl:max-w-[calc(52.5vw-31.5rem)] ml-[5.5rem] left-10 min-[1800px]:left-0 2xl:ml-3 text-xs">
             <ul className="space-y-0.5">
                 <li className="flex items-center space-x-4">
                     <p>&#8226;</p>
@@ -85,7 +137,7 @@ const TodayBox = () => {
                 </li>
                 <li className="flex items-center space-x-4 -ml-10">
                     <p>&#8226;</p>
-                    <p className={text.className}>Learning & building neurotech in public</p>
+                    <p className={text.className}>Learning & building neurotech / BCIs in public</p>
                 </li>
                 <li className="flex items-center space-x-4 min-[1800px]:hidden -ml-[calc(1.25rem*3)]">
                     <p>&#8226;</p>
@@ -145,13 +197,13 @@ const TodayBox = () => {
             </div> */}
         </div>
         
-        <div className="w-[90%] h-24 absolute -bottom-0 flex space-x-3 -left-[calc(31vw-26rem)] min-[1700px]:ml-20 min-[1450px]:ml-6 ml-2">
+        <div className="w-[90%] h-24 absolute -bottom-0 flex space-x-3 min-[1400px]:-left-[calc(31vw-26rem)] left-0 min-[1700px]:ml-20 min-[1450px]:ml-6 ml-2">
             <div className="text-white -rotate-90 absolute bottom-[1.45rem] -left-8 flex space-x-2 text-[2rem]">
                 <p className={text.className}>
                     Recent
                 </p>
             </div>
-            <div className="z-40 min-[1900px]:w-[102%] min-[1800px]:w-[90%] min-[1600px]:w-[80%] w-[70%] h-24 left-8 absolute text-white grid grid-cols-3 min-[1600px]:grid-cols-4 min-[1800px]:grid-cols-5 min-[1900px]:grid-cols-6 overflow-hidden">
+            <div className="z-40 min-[1900px]:w-[102%] min-[1800px]:w-[90%] min-[1600px]:w-[80%] min-[1400px]:w-[70%] min-[1350px]:w-[130%] min-[1225px]:w-[110%] w-[90%] h-24 left-8 absolute text-white grid grid-cols-3 min-[1225px]:grid-cols-4 min-[1350px]:grid-cols-5 min-[1400px]:grid-cols-3 min-[1600px]:grid-cols-4 min-[1800px]:grid-cols-5 min-[1900px]:grid-cols-6 overflow-hidden">
             {blogRecents.map((blogInfo, idx) => (
     <Link 
       key={idx} 

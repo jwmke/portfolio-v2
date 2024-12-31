@@ -26,7 +26,7 @@ const RightBox = () => {
     return <div className="relative min-[1400px]:min-w-[30rem] min-w-[35.5rem] 2xl:min-w-[35.5rem] max-w-[38rem]">
 
         <div className="absolute w-[75%] 2xl:right-[25.5rem] min-[1400px]:right-[20.25rem] min-[1400px]:block hidden -top-[32rem] h-[1px] mt-4 bg-white"/>
-        <div className="absolute w-[15.75rem] -rotate-45 h-[1px] 2xl:right-[23.25rem] min-[1400px]:right-[18rem] right-[23.25rem] -top-[25.4rem] bg-white"/>
+        <div className="absolute min-[1400px]:w-[15.75rem] -rotate-45 h-[1px] 2xl:right-[23.25rem] w-[20rem] min-[1400px]:right-[18rem] right-[19.9rem] -top-[26.75rem] min-[1400px]:-top-[25.4rem] bg-white"/>
 
         <div className="absolute h-[27.75rem] bottom-[17.5rem] left-1 flex flex-col justify-end">
             <div className="mb-[1.75rem]">
