@@ -63,12 +63,12 @@ const text = Lato({
 
 const TodayBox = () => {
     return <div className="w-[120%] mt-7 relative h-[19.5rem]">
-        <h1 className="text-white font-thin min-[1400px]:text-[3.25rem] text-[4.5rem] ml-12 min-[1700px]:ml-0 min-[1700px]:text-[4.5rem] min-[1650px]:leading-[5.5rem] min-[1400px]:leading-[5rem] leading-[1rem] absolute left-0 min-[1400px]:left-[calc(52.5vw-40rem)] 2xl:left-[calc(53vw-38.5rem)] mt-1">
+        <h1 className="text-white font-thin min-[1400px]:text-[3.25rem] min-[1250px]:text-[4.5rem] text-[3.25rem] ml-12 min-[1700px]:ml-0 min-[1700px]:text-[4.5rem] min-[1650px]:leading-[5.5rem] min-[1400px]:leading-[5rem] leading-[1rem] absolute left-0 min-[1400px]:left-[calc(52.5vw-40rem)] 2xl:left-[calc(53vw-38.5rem)] mt-1">
             <p className={header.className}>
                 Today
             </p>
         </h1>
-        <svg viewBox="0 0 200 100" className="h-24 min-[1400px]:hidden relative -top-8 left-[22rem]">
+        <svg viewBox="0 0 200 100" className="h-24 min-[1400px]:hidden relative -top-8 min-[1250px]:left-[22rem] left-[17.5rem]">
             {/* Inner curved sections, made larger and connecting at center */}
             {[0, 90, 180, 270].map((angle) => (
             <path
@@ -113,8 +113,8 @@ const TodayBox = () => {
             fill="white" 
             />
         </svg>
-        <div className="min-[1400px]:hidden relative -top-[calc(5rem+1px)] left-[22.75rem]">
-            <div className="h-[1px] w-[calc(200%-40rem)] bg-white"/>
+        <div className="min-[1400px]:hidden relative -top-[calc(5rem+1px)] min-[1250px]:left-[22.75rem] left-[18.25rem]">
+            <div className="h-[1px] min-[1250px]:w-[calc(200%-40rem)] w-[calc(200%-36rem)] bg-white"/>
         </div>
         <div className="text-[.55rem] text-teal-700 mt-1.5 leading-4 ml-6 min-[1700px]:ml-4 max-h-20 overflow-hidden min-[1650px]:block hidden 2xl:max-w-[calc(52.5vw-39.5rem)]">
             <p>{"(g=Array(20).fill().map(_=>Array(20).fill().map(_=>Math.random()<.3)))&&setInterval(_=>{"}</p>

@@ -43,7 +43,7 @@ export default function Home() {
                 <TodayBox/>
                 <YesterdayBox/>
               </div>
-              <div className="w-1/3 h-full flex flex-col items-end justify-between">
+              <div className="w-1/3 h-full flex-col items-end justify-between min-[1100px]:flex hidden">
                 <div className="w-full flex justify-end">
                 <AsymDiagonalCornerContainer className="w-2/3 min-[1400px]:min-w-[20rem] min-w-[25.4rem] 2xl:min-w-[25.4rem] h-[32rem] -top-1 -left-1" size={52}>
                   <div className="relative -top-6 -left-6 w-[calc(100%+3rem)]">

@@ -35,7 +35,7 @@ const TealGradient = () => {
     tealColors.reverse()
   
     return (
-      <div className="flex-row absolute top-[11.75rem] 2xl:ml-0 ml-10 min-[1700px]:flex 2xl:hidden flex">
+      <div className="flex-row absolute top-[11.75rem] 2xl:ml-0 min-[1400px]:ml-10 ml-0 min-[1700px]:flex 2xl:hidden min-[1250px]:flex hidden">
         {/* <div
             style={{
                 backgroundColor: 'rgb(31, 35, 35)'
@@ -97,8 +97,8 @@ const projectData = [
 ];
 
 const YesterdayBox = () => {
-    return <div className="w-full h-[31.75rem] relative -left-[calc(31vw-26rem)] min-[1700px]:ml-20 ml-1 ">
-        <h1 className="text-white font-thin absolute text-[3.25rem] min-[1700px]:ml-0 min-[1450px]:ml-6 ml-2 min-[1700px]:text-[4.5rem] flex leading-[5.5rem] w-[115%] gap-4">
+    return <div className="w-full h-[31.75rem] relative min-[1400px]:-left-[calc(31vw-26rem)] min-[1700px]:ml-20 ml-1 ">
+        <h1 className="text-white font-thin absolute min-[1250px]:text-[4.5rem] text-[3.25rem] min-[1400px]:text-[3.25rem] min-[1700px]:ml-0 min-[1450px]:ml-6 min-[1400px]:ml-2 min-[1700px]:text-[4.5rem] flex leading-[5.5rem] w-[115%] gap-4">
             <p className={header.className}>
                 Yesterday
             </p>
@@ -150,7 +150,7 @@ const YesterdayBox = () => {
         </h1>
         {/* <TealGradient /> */}
         <div className="">
-            <ul className="space-y-0.5 min-[1700px]:w-80 2xl:w-[32%] text-xs text-white mt-[6.25rem] min-[1700px]:ml-0 ml-10">
+            <ul className="space-y-0.5 min-[1700px]:w-80 2xl:w-[32%] min-[1250px]:w-auto w-40 text-xs text-white mt-[6.25rem] min-[1700px]:ml-0 min-[1400px]:ml-10 min-[1250px]:ml-0 -ml-6">
                 <li className="flex items-center space-x-4">
                     <p>&#8226;</p>
                     <p className={text.className}>Helped advance the future of mining @ Durin</p>
@@ -170,13 +170,13 @@ const YesterdayBox = () => {
             </ul>
         </div>
         <TealGradient />
-        <div className="absolute min-[1900px]:left-[calc(40vw-31rem)] left-[calc(55vw-41rem)] w-[27rem] top-[6.45rem] grid min-[1900px]:grid-cols-2 grid-cols-1 2xl:h-[25.35rem] h-0 overflow-hidden gap-x-2 gap-y-2">
+        <div className="absolute min-[1900px]:left-[calc(40vw-31rem)] min-[1400px]:left-[calc(55vw-41rem)] left-[calc(90vw-52.5rem)] w-[27rem] top-[6.45rem] grid min-[1900px]:grid-cols-2 grid-cols-1 2xl:h-[25.35rem] min-[1400px]:h-0 h-[25.35rem] overflow-hidden gap-x-2 gap-y-2">
             {projectData.map((data, idx) => (
                 <ProjectBox key={idx} {...data} />
             ))}
         </div>
-        <div className="border-white min-[1700px]:ml-0 ml-10 w-[19.25rem] h-[17rem] absolute bottom-0 -left-[3.25rem] text-white">
-            <div className="flex h-full w-full justify-between min-[1700px]:flex-row 2xl:flex-col flex-row">
+        <div className="border-white min-[1700px]:ml-0 ml-10 w-[19.25rem] min-[1300px]:h-[17rem] h-[14rem] absolute bottom-10 min-[1300px]:bottom-0 min-[1300px]:-left-[3.25rem] -left-[2.75rem] text-white">
+            <div className="flex h-full w-full justify-between min-[1700px]:flex-row 2xl:flex-col min-[1300px]:flex-row flex-col">
                 <div className="flex flex-col">
                     <div className="font-bold">
                         <p className={text.className}>
