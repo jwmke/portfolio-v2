@@ -8,11 +8,6 @@ const barcode = Libre_Barcode_128({
     weight: ["400"]
 });
 
-const protest = Protest_Revolution({
-  subsets: ['latin'],
-  weight: ["400"]
-});
-
 const saira = Saira_Stencil_One({
   subsets: ['latin'],
   weight: ["400"]

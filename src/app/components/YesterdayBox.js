@@ -209,7 +209,7 @@ const YesterdayBox = () => {
                             <p className={text.className}>Perfect NYC Pizza</p>
                         </li>
                         <li className="flex items-center space-x-2 mt-1 text-teal-500">
-                            <p className={text.className}>See All Recipes</p>
+                            <p className={text.className}>All Recipes...</p>
                         </li>
                     </ul>
                 </div>

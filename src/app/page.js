@@ -13,6 +13,7 @@ import RobotBox from "./components/RobotBox";
 import TodayBox from "./components/TodayBox";
 import YesterdayBox from "./components/YesterdayBox";
 import ZoomPaddingContainer from "./components/ZoomPaddingContainer";
+import VerticalNameTag from "./components/VerticalNameTag";
 
 export default function Home() {
   return (
@@ -61,9 +62,12 @@ export default function Home() {
                 <RightBox/>
                 <NameTag/>
               </div>
+              <div className="min-[1100px]:hidden min-h-full flex-col justify-end flex">
+                <VerticalNameTag />
+              </div>
             </div>
           </DiagonalCornerContainer>
-          <div className="w-6 h-full mt-[20vh] z-20 -left-[1px] relative">
+          <div className="w-6 h-full min-[1100px]:mt-[20vh] mt-[48vh] z-20 -left-[1px] relative">
             <RightSideExtension />
           </div>
         </div>
