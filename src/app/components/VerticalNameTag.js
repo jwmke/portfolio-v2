@@ -33,7 +33,7 @@ const VerticalNameTag = ({
     )`;
     
     return (
-        <div className="relative w-36 h-[38.5rem] overflow-hidden">
+        <div className="relative w-36 h-[37.75rem] overflow-hidden">
             <div
                 className="absolute inset-0 bg-white"
                 style={{
@@ -70,16 +70,16 @@ const VerticalNameTag = ({
                 <div className="flex flex-col h-full relative">
                     <div className="text-3xl font-thin flex tracking-[.4rem] ml-1.5 justify-center mt-3">김조셉</div>
                     
-                    <div className="mt-auto flex flex-col items-center gap-2 mb-16 h-[30rem] w-12 absolute right-2 top-[3.75rem]">
+                    <div className="mt-auto flex flex-col items-center gap-2 mb-16 h-[30rem] w-12 absolute right-2 top-[3.5rem]">
                         <div className="text-3xl">00</div>
                         <Image src={'/img/right.svg'} height={16} width={30} alt="Triangle" className="my-2 rotate-90"/>
                         <div className="text-3xl">24</div>
-                        <Image src={'/img/globe.png'} height={20} width={50} alt="Globe" className="mt-[9rem] rotate-90"/>
+                        <Image src={'/img/globe.png'} height={20} width={50} alt="Globe" className="mt-[8.5rem] rotate-90"/>
                         <div className="text-4xl mt-24 mr-3 rotate-90 w-[12rem]">
                             <p className={barcode.className}>Ride the Tiger</p>
                         </div>
                     </div>
-                    <div className="rotate-90 -right-[11rem] top-[18.25rem] absolute">
+                    <div className="rotate-90 -right-[11rem] top-[18rem] absolute">
                         <span className={`text-7xl font-bold tracking-[.3rem] whitespace-nowrap ${saira.className}`}>
                             Joseph Weller
                         </span>

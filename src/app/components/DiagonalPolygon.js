@@ -6,6 +6,7 @@ const DiagonalPolygonContainer = ({
   children,
   className = '',
   size = 60,
+  high = false
 }) => {
   // Points for polygon with diagonal corners only on top-left and bottom-right
   const outerClipPath = `polygon(

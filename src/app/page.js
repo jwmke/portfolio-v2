@@ -14,6 +14,8 @@ import TodayBox from "./components/TodayBox";
 import YesterdayBox from "./components/YesterdayBox";
 import ZoomPaddingContainer from "./components/ZoomPaddingContainer";
 import VerticalNameTag from "./components/VerticalNameTag";
+import { MdRecycling } from "react-icons/md";
+import { PiIntersectThreeLight } from "react-icons/pi";
 
 export default function Home() {
   return (
@@ -30,7 +32,7 @@ export default function Home() {
         <Grain opacity={.95} blendMode="multiply" />
        
         {/* <ZoomPaddingContainer> */}
-          <div className="flex py-6 px-2">
+          <div className="py-6 px-2 min-[650px]:flex hidden">
           <div className="w-6 h-full mt-[45.7vh] z-20 -right-[1px] relative">
             <LeftSideExtension />
           </div>
@@ -62,7 +64,20 @@ export default function Home() {
                 <RightBox/>
                 <NameTag/>
               </div>
-              <div className="min-[1100px]:hidden min-h-full flex-col justify-end flex">
+              <div className="min-[1100px]:hidden min-h-full flex-col justify-end flex space-y-7 right-0 absolute">
+                <div className="flex flex-col space-y-2 w-full items-end">
+                <MdRecycling className="text-white text-[2.5rem]"/>
+                    <div className="flex space-x-2">
+                    <Image src={"/img/fire2.png"} width={30} height={40} alt="Fire"/>   
+                      <PiIntersectThreeLight className="text-white text-[2.5rem]"/>
+                    </div>
+                    <div  className="flex space-x-2">
+                      <div className="mt-0.5 mr-1">
+                          <Image src={"/img/ce.png"} width={50} height={30} alt="CE"/>
+                      </div>
+                      <Image src={"/img/trash.png"} width={36} height={30} alt="Trash"/>
+                    </div>
+                </div>
                 <VerticalNameTag />
               </div>
             </div>
