@@ -245,7 +245,7 @@ const TodayBox = () => {
                     Recent
                 </p>
             </div>
-            <div className="z-40 min-[1900px]:w-[102%] min-[1800px]:w-[90%] min-[1600px]:w-[80%] min-[1400px]:w-[70%] min-[1350px]:w-[130%] min-[1225px]:w-[110%] min-[1100px]:w-[90%] min-[950px]:w-[210%] min-[850px]:w-[200%] min-[750px]:w-[190%] w-[170%] h-24 left-8 absolute text-white grid min-[750px]:grid-cols-4 grid-cols-3 min-[850px]:grid-cols-5 min-[950px]:grid-cols-6 min-[1100px]:grid-cols-3 min-[1225px]:grid-cols-4 min-[1350px]:grid-cols-5 min-[1400px]:grid-cols-3 min-[1600px]:grid-cols-4 min-[1800px]:grid-cols-5 min-[1900px]:grid-cols-6 overflow-hidden">
+            <div className="z-40 pr-8 min-[1900px]:w-[102%] min-[1800px]:w-[90%] min-[1600px]:w-[80%] min-[1400px]:w-[70%] min-[1350px]:w-[130%] min-[1225px]:w-[110%] min-[1100px]:w-[95%] min-[950px]:w-[210%] min-[850px]:w-[200%] min-[750px]:w-[190%] w-[170%] h-24 left-8 absolute text-white grid min-[750px]:grid-cols-4 grid-cols-3 min-[850px]:grid-cols-5 min-[950px]:grid-cols-6 min-[1100px]:grid-cols-3 min-[1225px]:grid-cols-4 min-[1350px]:grid-cols-5 min-[1400px]:grid-cols-3 min-[1600px]:grid-cols-4 min-[1800px]:grid-cols-5 min-[1900px]:grid-cols-6 overflow-hidden">
             {blogRecents.map((blogInfo, idx) => (
     <Link 
       key={idx} 
@@ -295,6 +295,11 @@ const TodayBox = () => {
       </div>
     </Link>
   ))}
+  <div className="text-white rotate-90 absolute bottom-[1.5rem] -right-[2rem] flex space-x-2 text-[1.9rem]">
+                <p className={text.className}>
+                    Corpus
+                </p>
+            </div>
             </div>
         </div>
     </div>

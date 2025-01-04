@@ -30,6 +30,12 @@ export default function Home() {
         }}
       >
         <Grain opacity={.95} blendMode="multiply" />
+        <div className="p-4 min-[650px]:hidden flex min-h-screen justify-center">
+          <DiagonalCornerContainer className="w-full max-w-[450px]" size={32}>
+            <div className="w-full flex justify-between relative">
+            </div>
+            </DiagonalCornerContainer>
+        </div>
        
         {/* <ZoomPaddingContainer> */}
           <div className="py-6 px-2 min-[650px]:flex hidden">
