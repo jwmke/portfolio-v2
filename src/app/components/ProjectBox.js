@@ -7,6 +7,7 @@ const ProjectBox = ({
   link,
   className = '',
   size = 42,
+  mobile = false
 }) => {
   const outerClipPath = `polygon(
     0 0,
@@ -25,7 +26,7 @@ const ProjectBox = ({
   )`;
 
   return (
-    <div className={`relative ${className} w-52`}>
+    <div className={`relative ${className} ${mobile ? "min-w-52 w-[calc(50vw-1rem)] min-[480px]:w-[14.5rem]" : "w-52"}`}>
       {/* Border container */}
       <div
         className="absolute inset-0 bg-white "

@@ -4,14 +4,16 @@ import { OrbitControls } from '@react-three/drei'
 import { lazy } from 'react'
 const Model = lazy(() => import('./Model'))
 
-const Scene = () => {
+const Scene = ({
+  small = false
+}) => {
   return (
     <Canvas 
       camera={{
         position: [0, 0, 2],
         near: 0.001,
         far: 400,
-        zoom: 1
+        zoom: small ? 1.2 : 1
       }}
       fallback={null}
     > 

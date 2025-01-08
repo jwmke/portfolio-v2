@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Affordable EEG PCB",
+        "description": "$80 BOM 8-channel EEG PCB Pi Pico W shield using the ADS1299 ADC chip",
+        "tags": ["KiCad", "Python", "Manufacturing"]
+    },
+    {
+        "title": "BCI Bin Web App",
+        "description": "Hub for Brain-Computer-Interface datasets & learning resources",
+        "tags": ["NextJS", "S3", "Supabase", "ThreeJS"]
+    },
+    {
+        "title": "Collabify Web App",
+        "description": "Enables Spotify users to discover & visualize songs their artists have collaborated on",
+        "tags": ["Typscript", "Go", "Websockets", "D3"]
+    },
+    {
+        "title": "Autonomous VRC Robot",
+        "description": "Custom YOLOv5 model combined with D435 depth data to localize game objects for RL",
+        "tags": ["Pytorch", "OpenCV", "ROS", "TF2"]
+    },
+    {
+        "title": "Bias Compass Bot",
+        "description": "Telegram Bot that detects political bias in scraped news articles from sent link",
+        "tags": ["Langchain", "GPT-4", "Python"]
+    },
+    {
+        "title": "Lymphocite Detection",
+        "description": "Models to detect lymphocites in FTIR biopsy imagas of cancerous ovarian tissue samples",
+        "tags": ["TensorFlow", "SKLearn", "NumPy"]
+    },
+    {
+        "title": "Glomerular Assessment",
+        "description": "CV pipeline to assess severity of glomerular cell injuries for renal disease detection",
+        "tags": ["Pytorch", "Numpy", "Pandas"]
+    },
+    {
+        "title": "RSA / AES Parallelization",
+        "description": "Parallelized RSA and AES encryption algorithms to run on GPU at 100x+ speedup",
+        "tags": ["CUDA", "C++"]
+    }
+]

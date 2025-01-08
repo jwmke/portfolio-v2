@@ -16,6 +16,8 @@ import ZoomPaddingContainer from "./components/ZoomPaddingContainer";
 import VerticalNameTag from "./components/VerticalNameTag";
 import { MdRecycling } from "react-icons/md";
 import { PiIntersectThreeLight } from "react-icons/pi";
+import MobileTodayBox from "./components/MobileTodayBox";
+import MobileYesterdayBox from "./components/MobileYesterdayBox";
 
 export default function Home() {
   return (
@@ -30,10 +32,12 @@ export default function Home() {
         }}
       >
         <Grain opacity={.95} blendMode="multiply" />
-        <div className="p-4 min-[650px]:hidden flex min-h-screen justify-center">
+        <div className="p-4 min-[650px]:hidden flex  justify-center">
           <DiagonalCornerContainer className="w-full max-w-[450px]" size={32}>
-            <div className="w-full flex justify-between relative">
-            </div>
+              <div className="w-full flex flex-col">
+                <MobileTodayBox />
+                <MobileYesterdayBox />
+              </div>
             </DiagonalCornerContainer>
         </div>
        

@@ -15,12 +15,12 @@ const Grain = ({
     );
   };
   
-const SecondCyberGrid = ({ children, darkness = 37.5 }) => {
+const SecondCyberGrid = ({ children, darkness = 37.5, small = false, }) => {
   // Ensure darkness is between 0 and 255
   const safeValue = Math.max(0, Math.min(255, darkness));
   
   return (
-    <div className="absolute -bottom-6 overflow-hidden w-[22vw] h-[27rem] rounded-[50%] z-30 ">
+    <div className={`absolute -bottom-6 overflow-hidden ${small ?  "min-[480px]:w-32 w-[calc(30vw-1rem)] min-[480px]:h-48 h-[calc(50vw-1rem)]" : "w-[22vw] h-[27rem]"} rounded-[50%] z-30 `}>
       {/* Grid container */}
       <div className="relative w-full h-full">
         {/* Horizontal lines */}
@@ -31,25 +31,25 @@ const SecondCyberGrid = ({ children, darkness = 37.5 }) => {
               linear-gradient(0deg, 
                 transparent 0%,
                 rgba(6, 182, 212, 0.15) 1%,
-                rgba(6, 182, 212, 0.15) 5%,
-                transparent 4%
+                rgba(6, 182, 212, 0.15) 10%,
+                transparent 20%
               )`,
-            backgroundSize: '40px 40px'
+            backgroundSize: '20px 20px'
           }}
         />
         
         {/* Vertical lines */}
         <div 
-          className="absolute inset-[36px] w-full h-full"
+          className="absolute inset-[18px] w-full h-full"
           style={{
             backgroundImage: `
               linear-gradient(90deg, 
                 transparent 0%,
                 rgba(6, 182, 212, 0.15) 1%,
-                rgba(6, 182, 212, 0.15) 5%,
-                transparent 4%
+                rgba(6, 182, 212, 0.15) 10%,
+                transparent 20%
               )`,
-            backgroundSize: '40px 40px'
+            backgroundSize: '20px 20px'
           }}
         />
 

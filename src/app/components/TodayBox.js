@@ -5,46 +5,7 @@ import Link from 'next/link';
 import PolyCornerClip from "./BulletCorner";
 import DiagonalPolygon from "./DiagonalPolygon";
 import ParallelogramImage from "./ParallelogramImage";
-
-const blogRecents = [
-    {
-        "title": "Neuroscience",
-        "path": "/img/blog/Neuro.jpg",
-        "date": "06/24",
-        "route": "/neuroscience"
-    },
-    {
-        "title": "BCIs",
-        "path": "/img/blog/Waves.png",
-        "date": "04/24",
-        "route": "/"
-    },
-    {
-        "title": "Doom",
-        "path": "/img/blog/Romanticization.jpg",
-        "date": "07/23",
-        "route": "/"
-    },
-    {
-        "title": "Context",
-        "path": "/img/blog/Window2.jpg",
-        "date": "05/23",
-        "route": "/"
-    },
-    {
-        "title": "Cereal",
-        "path": "/img/blog/Bowl.jpg",
-        "date": "04/23",
-        "route": "/"
-    },
-    {
-        "title": "Graduation",
-        "path": "/img/blog/Grad.jpg",
-        "date": "12/22",
-        "route": "/"
-    },
-
-]
+import blogRecents from '../data/blogRecents'
 
 const header = localFont({
     src: "../fonts/NicoMoji.ttf",
@@ -66,7 +27,6 @@ const TodayBox = () => {
             </p>
         </h1>
         <svg viewBox="0 0 200 100" className="h-24 min-[1400px]:hidden min-[900px]:hidden min-[600px]:block hidden min-[1100px]:block min-[900px]:relative absolute -top-8 min-[1250px]:left-[22rem] left-[16.5rem]">
-            {/* Inner curved sections, made larger and connecting at center */}
             {[0, 90, 180, 270].map((angle) => (
             <path
                 key={`curve-${angle}`}
@@ -76,7 +36,6 @@ const TodayBox = () => {
             />
             ))}
 
-            {/* Three normal spikes (top, left, bottom) */}
             {[0].map((angle) => (
             <line
                 key={`spike-${angle}`}
