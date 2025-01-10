@@ -61,7 +61,6 @@ const YesterdayBox = () => {
                 Yesterday
             </p>
             <svg viewBox="0 0 200 100" className="h-24 min-[1900px]:block hidden ">
-                {/* Inner curved sections, made larger and connecting at center */}
                 {[0, 90, 180, 270].map((angle) => (
                 <path
                     key={`curve-${angle}`}
@@ -71,7 +70,6 @@ const YesterdayBox = () => {
                 />
                 ))}
 
-                {/* Three normal spikes (top, left, bottom) */}
                 {[0].map((angle) => (
                 <line
                     key={`spike-${angle}`}
@@ -85,7 +83,6 @@ const YesterdayBox = () => {
                 />
                 ))}
 
-                {/* Extended right spike (2x length) */}
                 <line
                     key="spike-extended"
                     x1="50"
@@ -97,7 +94,6 @@ const YesterdayBox = () => {
                     transform="rotate(90, 50, 50)"
                 />
 
-                {/* Small center circle to smooth out any gaps */}
                 <circle 
                 cx="50" 
                 cy="50" 
@@ -161,7 +157,7 @@ const YesterdayBox = () => {
             </ul>
         </div>
         <TealGradient />
-        <div className="absolute min-[1900px]:left-[calc(40vw-31rem)] min-[1400px]:left-[calc(55vw-40rem)] min-[1100px]:left-[calc(90vw-52.5rem)] min-[850px]:left-[calc(100vw-44.25rem)] left-[calc(100vw-31rem)] min-[850px]:w-[27rem] w-[14rem] top-[6.45rem] grid min-[1900px]:grid-cols-2 min-[850px]:grid-cols-2 grid-cols-1 min-[1100px]:grid-cols-1 2xl:h-[25.35rem] min-[1400px]:h-0 h-[25.35rem] overflow-hidden gap-x-2 gap-y-2">
+        <div className="absolute min-[1900px]:left-[calc(40vw-31rem)] min-[1400px]:left-[calc(55vw-40rem)] min-[1100px]:left-[calc(90vw-52.5rem)] min-[850px]:left-[calc(100vw-44.25rem)] left-[calc(100vw-31rem)] min-[1800px]:w-[27rem]  min-[1400px]:w-[14rem] min-[850px]:w-[27rem] w-[14rem] top-[6.45rem] grid min-[1900px]:grid-cols-2 min-[850px]:grid-cols-2 grid-cols-1 min-[1100px]:grid-cols-1 2xl:h-[25.35rem] min-[1400px]:h-0 h-[25.35rem] overflow-hidden gap-x-2 gap-y-2">
             {projectData.map((data, idx) => (
                 <ProjectBox key={idx} {...data} />
             ))}

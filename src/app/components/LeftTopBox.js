@@ -26,6 +26,7 @@ const LeftTopBox = () => {
         <div className="absolute w-[1px] h-24 -right-[1.35rem] top-[1.6rem] bg-white"/>
         <div className="absolute w-[1px] h-[9.9rem] right-[2.15rem] top-[6.2rem] bg-white rotate-45"/>
         <div className="absolute w-[1px] h-[11.5rem] top-[14.6rem] bg-white -ml-[1px] right-[5.65rem]"/>
+        <div className="absolute w-[3rem] h-[1px] top-[26.1rem] bg-white -ml-[1px] right-[5.65rem]"/>
         <div className="pl-6 h-[3.75rem] relative -mt-1">
             <p className="text-white text-[.62rem] ml-[2.75rem] -mt-1 mr-4 italic absolute">
                 {"The world says: \"You have needs -- satisfy them. You have as much right as the rich and the mighty. Don't hesitate to satisfy your needs; indeed, expand your needs and demand more.\" This is the worldly doctrine of today. And they believe that this is freedom. The result for the rich is isolation and suicide, for the poor, envy and murder."}
@@ -37,7 +38,7 @@ const LeftTopBox = () => {
         <div className="absolute right-0 h-[calc(3.25rem)] top-6 w-[1px] bg-white"></div>
         <div className="absolute -right-[.85rem] h-10 -top-2.5 rotate-45 w-[1px] bg-white"></div>
         <div className="absolute w-[45vw] -mt-[5px] top-[1px] left-[calc(100%+1.8rem)] -ml-[1px] h-[1px] bg-white"/>
-        <div className="ml-6 mt-3">
+        <div className="ml-6 mt-3 ">
             <div className="flex space-x-6">
                 <ImageBox className="relative inline-block">
                     <Image className="object-cover object-center h-[20.5rem] w-full" src={'/img/col.png'} height={320} width={155} alt="Col" style={{

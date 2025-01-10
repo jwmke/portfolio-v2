@@ -70,30 +70,50 @@ const TodayBox = () => {
         </div>
         <div className="absolute min-[1800px]:top-[8rem] min-[1400px]:top-[6rem] top-[5rem] min-[750px]:w-full w-[150%] text-white 2xl:max-w-[calc(52.5vw-31.5rem)] ml-[5.5rem] left-10 min-[1800px]:left-0 2xl:ml-3 text-xs">
             <ul className="space-y-0.5">
-                <li className="flex items-center space-x-4">
-                    <p>&#8226;</p>
-                    <p className={text.className}>Reading & writing about anything interesting</p>
-                </li>
-                <li className="flex items-center space-x-4 -ml-5">
-                    <p>&#8226;</p>
-                    <p className={text.className}>Mentoring the next generation w/ team 4201</p>
-                </li>
-                <li className="flex items-center space-x-4 -ml-10">
-                    <p>&#8226;</p>
-                    <p className={text.className}>Learning & building neurotech / BCIs in public</p>
-                </li>
-                <li className="flex items-center space-x-4 min-[1800px]:hidden -ml-[calc(1.25rem*3)]">
-                    <p>&#8226;</p>
-                    <p className={text.className}>Sparring aristocrats at the Gundo Book Club</p>
-                </li>
-                <li className="flex items-center space-x-4 min-[1800px]:hidden -ml-[calc(1.25rem*4)]">
+            <li className="flex items-center space-x-4">
                 <p>&#8226;</p>
-                    <p className={text.className}>Practicing the dying art of street photography</p>
-                </li>
-                <li className="flex items-center space-x-4 min-[1800px]:hidden -ml-[calc(1.25rem*5)]">
+                <p className={text.className}>
+                <a href="https://www.goodreads.com/jwmke" className="underline hover:text-teal-300" target="_blank" rel="noopener noreferrer">Reading</a>
+                {' & '}
+                <Link href="/blog" className="underline hover:text-teal-300">writing</Link>
+                {' about anything interesting'}
+                </p>
+            </li>
+            <li className="flex items-center space-x-4 -ml-5">
                 <p>&#8226;</p>
-                    <p className={text.className}>Running trails, climbing rocks & weight training</p>
-                </li>
+                <p className={text.className}>
+                Mentoring the next generation w/ {' '}
+                <a href="https://team4201.org/" className="underline hover:text-teal-300" target="_blank" rel="noopener noreferrer">Team 4201</a>
+                </p>
+            </li>
+            <li className="flex items-center space-x-4 -ml-10">
+                <p>&#8226;</p>
+                <p className={text.className}>
+                Learning & building {' '}
+                <a href="https://bcibin.com" className="underline hover:text-teal-300" target="_blank" rel="noopener noreferrer">neurotech / BCIs</a>
+                {' in public'}
+                </p>
+            </li>
+            <li className="flex items-center space-x-4 min-[1800px]:hidden -ml-[calc(1.25rem*3)]">
+                <p>&#8226;</p>
+                <p className={text.className}>
+                Sparring aristocrats at the {' '}
+                <a href="https://x.com/gundobookclub" className="underline hover:text-teal-300" target="_blank" rel="noopener noreferrer">Gundo Book Club</a>
+                </p>
+            </li>
+            <li className="flex items-center space-x-4 min-[1800px]:hidden -ml-[calc(1.25rem*4)]">
+                <p>&#8226;</p>
+                <p className={text.className}>
+                Practicing the dying art of {' '}
+                <Link href="/pics" className="underline hover:text-teal-300">street photography</Link>
+                </p>
+            </li>
+            <li className="flex items-center space-x-4 min-[1800px]:hidden -ml-[calc(1.25rem*5)]">
+                <p>&#8226;</p>
+                <p className={text.className}>
+                Running trails, climbing rocks & weight training
+                </p>
+            </li>
             </ul>
         </div>
         <div className="w-[27rem] relative -top-[2rem] left-[25.5rem] min-[1100px]:hidden">
@@ -122,7 +142,7 @@ const TodayBox = () => {
                 </div>
             </DiagonalPolygon>
         </div>
-        <div className="w-[24rem] relative top-[1.5rem] left-[23rem]">
+        <div className="w-[24rem] relative top-[1.5rem] left-[23rem] min-[1000px]:hidden min-[925px]:block hidden">
             <DiagonalPolygon size={110} className="min-[1000px]:hidden min-[925px]:block hidden">
                 <div className="h-[9rem] relative text-teal-400 text-[.59rem] leading-[.8rem]">
                     <div className="border border-teal-400 w-[5.5rem] h-8 m-1 px-1 p-[2px] absolute bottom-0">
@@ -157,16 +177,25 @@ const TodayBox = () => {
         <div className="w-[10vw] text-nowrap h-20 text-xs top-[8.05rem] absolute text-white left-[calc(55.5vw-48rem)] min-[1850px]:left-[calc(57.5vw-50.5rem)] min-[1800px]:flex hidden">
             <ul className="space-y-0.5">
                 <li className="flex items-center space-x-4 justify-end">
-                    <p className={text.className}>Sparring aristocrats at the Gundo Book Club</p>
+                    <p className={text.className}>
+                    Sparring aristocrats at the {' '}
+                    <a href="https://x.com/gundobookclub" className="underline hover:text-teal-300" target="_blank" rel="noopener noreferrer">Gundo Book Club</a>
+                    </p>
                     <p>&#8226;</p>
                 </li>
                 <li className="flex items-center space-x-4 justify-end mr-5">
-                    <p className={text.className}>Practicing the dying art of street photography</p>
+                    <p className={text.className}>
+                    Practicing the dying art of {' '}
+                    <Link href="/pics" className="underline hover:text-teal-300">street photography</Link>
+                    </p>
                     <p>&#8226;</p>
                 </li>
                 <li className="flex items-center space-x-4 justify-end mr-10">
-                    <p className={text.className}>Running trails, climbing rocks, & lifting weights</p>
+                    <p className={text.className}>
+                    Running trails, climbing rocks & weight training
+                    </p>
                     <p>&#8226;</p>
+
                 </li>
             </ul>
             {/* <div className="justify-between flex">

@@ -49,28 +49,42 @@ const MobileTodayBox = () => {
         </div>
         <ul className="space-y-0.5 min-[480px]:text-[.75rem] text-[calc(6.2vw-1rem)] text-white ml-[6.5rem] pl-[2vw] min-[480px]:px-[4.7vw]">
                 <li className="flex items-center space-x-3">
-                    {/* <p>&#8226;</p> */}
-                    <p className={text.className}>Reading & writing about anything interesting</p>
+                    <p className={text.className}>
+                        <a href="https://www.goodreads.com/jwmke" className="underline hover:text-teal-300" target="_blank" rel="noopener noreferrer">Reading</a>
+                        {' & '}
+                        <Link href="/blog" className="underline hover:text-teal-300">Writing</Link>
+                        {' about anything interesting'}
+                    </p>
                 </li>
                 <li className="flex items-center space-x-3 -ml-5">
-                    {/* <p>&#8226;</p> */}
-                    <p className={text.className}>Mentoring the next generation w/ team 4201</p>
+                    <p className={text.className}>
+                        Mentoring the next generation w/ {' '}
+                        <a href="https://team4201.org/" className="underline hover:text-teal-300" target="_blank" rel="noopener noreferrer">Team 4201</a>
+                    </p>
                 </li>
                 <li className="flex items-center space-x-3 -ml-10">
-                    {/* <p>&#8226;</p> */}
-                    <p className={text.className}>Learning & building neurotech / BCIs in public</p>
+                    <p className={text.className}>
+                        Learning & building {' '}
+                        <a href="https://bcibin.com" className="underline hover:text-teal-300" target="_blank" rel="noopener noreferrer">neurotech / BCIs</a>
+                        {' in public'}
+                    </p>
                 </li>
                 <li className="flex items-center space-x-3 min-[1800px]:hidden -ml-[calc(1.25rem*3)]">
-                    {/* <p>&#8226;</p> */}
-                    <p className={text.className}>Sparring aristocrats at the Gundo Book Club</p>
+                    <p className={text.className}>
+                        Sparring aristocrats at the {' '}
+                        <a href="https://x.com/gundobookclub" className="underline hover:text-teal-300" target="_blank" rel="noopener noreferrer">Gundo Book Club</a>
+                    </p>
                 </li>
                 <li className="flex items-center space-x-3 min-[1800px]:hidden -ml-[calc(1.25rem*4)]">
-                {/* <p>&#8226;</p> */}
-                    <p className={text.className}>Practicing the dying art of street photography</p>
+                    <p className={text.className}>
+                        Practicing the dying art of {' '}
+                        <Link href="/pics" className="underline hover:text-teal-300">street photography</Link>
+                    </p>
                 </li>
                 <li className="flex items-center space-x-3 min-[1800px]:hidden -ml-[calc(1.25rem*5)]">
-                {/* <p>&#8226;</p> */}
-                    <p className={text.className}>Running trails, climbing rocks & weight training</p>
+                    <p className={text.className}>
+                        Running trails, climbing rocks & weight training
+                    </p>
                 </li>
             </ul>
             <div className="absolute bottom-0 right-0">

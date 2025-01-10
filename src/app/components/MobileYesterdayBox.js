@@ -6,7 +6,6 @@ import projectData from '../data/projectData';
 import { MdRecycling } from "react-icons/md";
 import { PiIntersectThreeLight } from "react-icons/pi";
 import Image from "next/image";
-import Globe from "./Globe";
 import Scene from "./Scene";
 import SecondCyberGrid from "./SecondCyberGrid";
 
@@ -150,7 +149,7 @@ const MobileYesterdayBox = () => {
                                     Pictures
                                 </p>
                             </div>
-                            <ul className="text-xs mt-1 text-white">
+                            <ul className="text-[.7rem] mt-1 text-white">
                                 <li className="flex items-center space-x-2">
                                 <p>&#8226;</p>
 

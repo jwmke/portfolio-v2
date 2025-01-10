@@ -42,14 +42,14 @@ const ZoomScaleContainer = ({ children }) => {
   }, [initialWidth]);
 
   return (
-    <div className="w-full min-h-screen flex items-center justify-center overflow-hidden">
+    <div className={`w-full min-h-screen flex items-center justify-center overflow-hidden`}>
       <div 
         className="content-container"
         style={{
           transform: `scale(${scale})`,
           transformOrigin: 'center center',
           width: initialWidth ? `${initialWidth}px` : '100%',
-          maxWidth: '100%'
+          maxWidth: '100%',
         }}
       >
         {children}
