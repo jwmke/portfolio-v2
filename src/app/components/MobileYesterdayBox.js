@@ -104,7 +104,7 @@ const MobileYesterdayBox = () => {
                         </div>
                     </div>
                     <div className="flex flex-col w-24 -mr-2">
-                        <div className="w-[calc(24vw-1rem)] min-[480px]:w-24 flex justify-center h-32 z-50">
+                        <div className="w-[calc(24vw-1rem)] min-[480px]:w-[6rem] flex justify-center h-32 z-50">
                             <Scene small/>
                         </div>
                         <div className="absolute h-24 w-24 min-[480px]:top-[29.5rem] top-[calc(110vw-1rem)] min-[480px]:right-[3.5rem] min-[410px]:right-[calc(13vw-1rem)] min-[430px]:right-[calc(16vw-1rem)] right-[calc(10vw-1rem)]">

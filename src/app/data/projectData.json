@@ -2,41 +2,49 @@
     {
         "title": "Affordable EEG PCB",
         "description": "$80 BOM 8-channel EEG PCB Pi Pico W shield using the ADS1299 ADC chip",
-        "tags": ["KiCad", "Python", "Manufacturing"]
+        "tags": ["KiCad", "Python", "Manufacturing"],
+        "link": "https://github.com/jwmke/eeg"
     },
     {
         "title": "BCI Bin Web App",
         "description": "Hub for Brain-Computer-Interface datasets & learning resources",
-        "tags": ["NextJS", "S3", "Supabase", "ThreeJS"]
+        "tags": ["NextJS", "S3", "Supabase", "ThreeJS"],
+        "link": "https://bcibin.com"
     },
     {
         "title": "Collabify Web App",
         "description": "Enables Spotify users to discover & visualize songs their artists have collaborated on",
-        "tags": ["Typscript", "Go", "Websockets", "D3"]
+        "tags": ["Typscript", "Go", "Websockets", "D3"],
+        "link": "https://github.com/jwmke/Collabify"
     },
     {
         "title": "Autonomous VRC Robot",
         "description": "Custom YOLOv5 model combined with D435 depth data to localize game objects for RL",
-        "tags": ["Pytorch", "OpenCV", "ROS", "TF2"]
+        "tags": ["Pytorch", "OpenCV", "ROS", "TF2"],
+        "link": "https://github.com/msoe-vex/senior-design-cv"
     },
     {
         "title": "Bias Compass Bot",
         "description": "Telegram Bot that detects political bias in scraped news articles from sent link",
-        "tags": ["Langchain", "GPT-4", "Python"]
+        "tags": ["Langchain", "GPT-4", "Python"],
+        "link": "https://github.com/jwmke/BiasCompass"
     },
     {
         "title": "Lymphocite Detection",
         "description": "Models to detect lymphocites in FTIR biopsy imagas of cancerous ovarian tissue samples",
-        "tags": ["TensorFlow", "SKLearn", "NumPy"]
+        "tags": ["TensorFlow", "SKLearn", "NumPy"],
+        "link": "https://docs.google.com/document/d/1YkO8mkcz19KvroQULFOB0WEohKV8DlU96FI562UqiI0/edit?usp=sharing"
     },
     {
         "title": "Glomerular Assessment",
         "description": "CV pipeline to assess severity of glomerular cell injuries for renal disease detection",
-        "tags": ["Pytorch", "Numpy", "Pandas"]
+        "tags": ["Pytorch", "Numpy", "Pandas"],
+        "link": "https://docs.google.com/document/d/16fRJc6sCx7VOCY9jI98N0LgK6DeT7-75AQhBO7UmZqs/edit?usp=sharing"
     },
     {
         "title": "RSA / AES Parallelization",
         "description": "Parallelized RSA and AES encryption algorithms to run on GPU at 100x+ speedup",
-        "tags": ["CUDA", "C++"]
+        "tags": ["CUDA", "C++"],
+        "link": "https://github.com/jwmke/cs4981-cuda-encryption"
     }
 ]

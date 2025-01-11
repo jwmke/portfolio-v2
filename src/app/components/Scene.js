@@ -30,8 +30,8 @@ const Scene = ({
         intensity={0.3}
         color="#5bdec4"
       />
-      <Model />
-      <OrbitControls
+      <Model small/>
+      {!small && <OrbitControls
         maxAzimuthAngle={.7}
         minAzimuthAngle={5.8}
         maxPolarAngle={2.5}
@@ -41,7 +41,7 @@ const Scene = ({
         panSpeed={0.1}
         enableRotate={true}
         rotateSpeed={0.1}
-      />
+      />}
     </Canvas>
   )
 }

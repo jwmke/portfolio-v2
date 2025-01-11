@@ -21,7 +21,7 @@ const text = Lato({
 
 const TodayBox = () => {
     return <div className="w-[120%] mt-7 relative h-[19.5rem]">
-        <h1 className="text-white font-thin min-[1400px]:text-[3.25rem] min-[1250px]:text-[4.5rem] min-[1100px]:text-[3.25rem] text-[3.25rem] min-[900px]:text-[4.5rem] ml-12 min-[1700px]:ml-0 min-[1700px]:text-[4.5rem] min-[1650px]:leading-[5.5rem] min-[1400px]:leading-[5rem] leading-[1rem] absolute left-0 min-[1400px]:left-[calc(52.5vw-40rem)] 2xl:left-[calc(53vw-38.5rem)] mt-1">
+        <h1 className="text-white font-thin min-[1400px]:text-[3.25rem] min-[1250px]:text-[4.5rem] min-[1100px]:text-[3.25rem] text-[3.25rem] min-[900px]:text-[4.5rem] ml-12 min-[1700px]:ml-0 min-[1700px]:text-[4.5rem] min-[1650px]:leading-[5.5rem] min-[1400px]:leading-[4.5rem] leading-[1rem] absolute left-0 min-[1400px]:left-[calc(52.5vw-40rem)] 2xl:left-[calc(60vw-46.5rem)] mt-1">
             <p className={header.className}>
                 Today
             </p>
@@ -59,7 +59,7 @@ const TodayBox = () => {
         <div className="min-[1400px]:hidden min-[600px]:block hidden min-[900px]:relative absolute min-[900px]:-top-[calc(5rem+1px)] top-[calc(1rem-1px)] min-[1250px]:left-[22.75rem] left-[17.25rem]">
             <div className="h-[1px] min-[1250px]:w-[calc(200%-40rem)] min-[900px]:w-[calc(200%-36rem)] w-[10rem] bg-white"/>
         </div>
-        <div className="text-[.55rem] text-teal-700 mt-1.5 leading-4 ml-6 min-[1700px]:ml-4 max-h-20 overflow-hidden min-[1650px]:block hidden 2xl:max-w-[calc(52.5vw-39.5rem)]">
+        <div className="text-[.55rem] text-teal-700 mt-1.5 leading-4 min-[1700px]:ml-6 ml-7 min-[1900px]:ml-4 max-h-20 overflow-hidden min-[1650px]:block hidden 2xl:max-w-[calc(52.5vw-39.5rem)]">
             <p>{"(g=Array(20).fill().map(_=>Array(20).fill().map(_=>Math.random()<.3)))&&setInterval(_=>{"}</p>
             <p>{"g=g.map((r,i)=>r.map((c,j)=>{let n=[-1,0,1].flatMap(x=>[-1,0,1].map(y=>[i+x,j+y]))"}</p>
             <p>{".filter(([x,y])=>x>=0&&x<20&&y>=0&&y<20&&!(x==i&&y==j)).reduce((s,[x,y])=>s+(g[x][y]?1:0),0);return n==3||(c&&n==2)}));"}</p>
@@ -68,7 +68,7 @@ const TodayBox = () => {
         <div className="absolute left-[1.75rem] top-[5.25rem] min-[1400px]:hidden">
             <PolyCornerClip />
         </div>
-        <div className="absolute min-[1800px]:top-[8rem] min-[1400px]:top-[6rem] top-[5rem] min-[750px]:w-full w-[150%] text-white 2xl:max-w-[calc(52.5vw-31.5rem)] ml-[5.5rem] left-10 min-[1800px]:left-0 2xl:ml-3 text-xs">
+        <div className="absolute min-[1800px]:top-[8rem] min-[1650px]:top-[6rem] min-[1400px]:top-[5.5rem] top-[5rem] min-[750px]:w-full w-[150%] text-white 2xl:max-w-[calc(52.5vw-31.5rem)] ml-[5.5rem] left-10 min-[1400px]:left-[3.75rem] min-[1700px]:left-10 min-[1800px]:left-0 2xl:ml-3 text-xs">
             <ul className="space-y-0.5">
             <li className="flex items-center space-x-4">
                 <p>&#8226;</p>
@@ -174,7 +174,7 @@ const TodayBox = () => {
             className="min-[925px]:hidden min-[700px]:block hidden -bottom-[calc(1rem-1px)] left-[19rem] w-[calc(225%-15rem)] absolute"
             size={180}
         />
-        <div className="w-[10vw] text-nowrap h-20 text-xs top-[8.05rem] absolute text-white left-[calc(55.5vw-48rem)] min-[1850px]:left-[calc(57.5vw-50.5rem)] min-[1800px]:flex hidden">
+        <div className="w-[10vw] text-nowrap h-20 text-xs top-[8.05rem] absolute text-white left-[calc(55.5vw-47rem)] min-[1850px]:left-[calc(57.5vw-50.5rem)] min-[1800px]:flex hidden">
             <ul className="space-y-0.5">
                 <li className="flex items-center space-x-4 justify-end">
                     <p className={text.className}>
@@ -238,7 +238,9 @@ const TodayBox = () => {
     <Link 
       key={idx} 
       href={blogInfo.route}
-      className="h-24 w-24 border-white border relative overflow-hidden group"
+      target={blogInfo.external ? "_blank" : ""}
+      referrerPolicy="no-referrer"
+      className="h-24 w-24 border-white border relative overflow-hidden group hover:cursor-ne-resize"
     >
       <div className="absolute inset-0">
         <div className="absolute inset-0" style={{
@@ -283,11 +285,14 @@ const TodayBox = () => {
       </div>
     </Link>
   ))}
-  <div className="text-white rotate-90 absolute bottom-[1.5rem] -right-[2rem] flex space-x-2 text-[1.9rem]">
-                <p className={text.className}>
-                    Corpus
-                </p>
-            </div>
+    <div className="text-white rotate-90 absolute bottom-[1.5rem] -right-[2rem] flex space-x-2 text-[1.9rem]">
+                    <Link className="hover:text-teal-300" href={"/blog"}>
+                        <p className={text.className}>
+                            Corpus
+                        </p>
+                    </Link>
+                    
+                </div>
             </div>
         </div>
     </div>

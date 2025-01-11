@@ -4,7 +4,9 @@ import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 
-export default function Model() {
+export default function Model({
+  small = false
+}) {
   const model = useGLTF("./models/thinker.glb");
   const modelRef = useRef();
 
@@ -13,7 +15,7 @@ export default function Model() {
   
   useFrame((state) => {
     if (modelRef.current) {
-      const hoverAmplitude = 1.;
+      const hoverAmplitude = small ? 2. : 1.;
       const hoverSpeed = 1.5;
       
       const hover = Math.sin(state.clock.elapsedTime * hoverSpeed) * hoverAmplitude;

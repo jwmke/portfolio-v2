@@ -157,7 +157,7 @@ const YesterdayBox = () => {
             </ul>
         </div>
         <TealGradient />
-        <div className="absolute min-[1900px]:left-[calc(40vw-31rem)] min-[1400px]:left-[calc(55vw-40rem)] min-[1100px]:left-[calc(90vw-52.5rem)] min-[850px]:left-[calc(100vw-44.25rem)] left-[calc(100vw-31rem)] min-[1800px]:w-[27rem]  min-[1400px]:w-[14rem] min-[850px]:w-[27rem] w-[14rem] top-[6.45rem] grid min-[1900px]:grid-cols-2 min-[850px]:grid-cols-2 grid-cols-1 min-[1100px]:grid-cols-1 2xl:h-[25.35rem] min-[1400px]:h-0 h-[25.35rem] overflow-hidden gap-x-2 gap-y-2">
+        <div className="absolute min-[1900px]:left-[calc(40vw-31rem)] min-[1700px]:left-[calc(100vw-89rem)] min-[1400px]:left-[calc(100vw-84rem)] min-[1100px]:left-[calc(90vw-52rem)] min-[850px]:left-[calc(100vw-44.25rem)] left-[calc(100vw-31rem)] min-[1800px]:w-[27rem]  min-[1400px]:w-[14rem] min-[850px]:w-[27rem] w-[14rem] top-[6.45rem] grid min-[1900px]:grid-cols-2 min-[850px]:grid-cols-2 grid-cols-1 min-[1100px]:grid-cols-1 2xl:h-[25.35rem] min-[1400px]:h-0 h-[25.35rem] overflow-hidden gap-x-2 gap-y-2">
             {projectData.map((data, idx) => (
                 <ProjectBox key={idx} {...data} />
             ))}
@@ -218,7 +218,7 @@ const YesterdayBox = () => {
                 </div>
             </div>
             {/* <ImageBox className="z-50 absolute bottom-0"> */}
-            <Image src="/img/sound.png" alt="Landscape" width={310} height={200} className="z-50 absolute bottom-0 min-[1700px]:block hidden 2xl:hidden min-[1450px]:block"/>
+            <Image src="/img/sound.png" alt="Landscape" width={310} height={200} className="z-50 absolute bottom-0 min-[1700px]:block min-[1400px]:hidden min-[1400px]:mb-0 mb-3 min-[1300px]:block hidden 2xl:hidden min-[1450px]:block"/>
             {/* </ImageBox> */}
         </div>
     </div>

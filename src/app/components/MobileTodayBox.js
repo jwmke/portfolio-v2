@@ -103,6 +103,8 @@ const MobileTodayBox = () => {
                     <Link 
                     key={idx} 
                     href={blogInfo.route}
+                    target={blogInfo.external ? "_blank" : ""}
+                    referrerPolicy="no-referrer"
                     className="min-[480px]:h-24 min-[480px]:w-24 h-[calc(24vw-1rem)] w-[calc(24vw-1rem)] border-white border relative overflow-hidden group"
                     >
                     <div className="absolute inset-0">
@@ -149,9 +151,11 @@ const MobileTodayBox = () => {
                     </Link>
                 ))}
                     <div className="text-white rotate-90 absolute bottom-[1.5rem] min-[480px]:-right-8 -right-[calc(10vw-1rem)] flex space-x-2 min-[480px]:text-[1.9rem] text-[calc(9.9vw-1rem)]">
-                        <p className={text.className}>
-                            Corpus
-                        </p>
+                        <Link className="hover:text-teal-300" href={"/blog"}>
+                            <p className={text.className}>
+                                Corpus
+                            </p>
+                        </Link>
                     </div>
                 </div>
             </div>

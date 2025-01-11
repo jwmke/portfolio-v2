@@ -51,7 +51,7 @@ const ProjectBox = ({
       
       <a href={link ? link : "/"} target="_blank" referrerPolicy="noopener noreferrer">
         <div
-          className="relative z-10 h-[5.95rem] hover:bg-teal-700 duration-75 transition-colors"
+          className="relative z-10 h-[5.95rem] hover:bg-teal-700 hover:cursor-ne-resize duration-75 transition-colors"
           style={{ clipPath: outerClipPath }}
         >
           <div className="px-2 py-1">

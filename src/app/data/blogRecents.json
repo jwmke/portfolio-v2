@@ -3,36 +3,38 @@
         "title": "Neuroscience",
         "path": "/img/blog/Neuro.jpg",
         "date": "06/24",
-        "route": "/neuroscience"
+        "route": "https://www.bcibin.com/learn/neuro",
+        "external": true
     },
     {
         "title": "BCIs",
         "path": "/img/blog/Waves.png",
         "date": "04/24",
-        "route": "/"
+        "route": "https://www.bcibin.com/learn/bcis",
+        "external": true
     },
     {
         "title": "Doom",
         "path": "/img/blog/Romanticization.jpg",
         "date": "07/23",
-        "route": "/"
+        "route": "/blog/doom"
     },
     {
         "title": "Context",
         "path": "/img/blog/Window2.jpg",
         "date": "05/23",
-        "route": "/"
+        "route": "/blog/context"
     },
     {
         "title": "Cereal",
         "path": "/img/blog/Bowl.jpg",
         "date": "04/23",
-        "route": "/"
+        "route": "/blog/cereal"
     },
     {
         "title": "Graduation",
         "path": "/img/blog/Grad.jpg",
         "date": "12/22",
-        "route": "/"
+        "route": "/blog/graduation"
     }
 ]
