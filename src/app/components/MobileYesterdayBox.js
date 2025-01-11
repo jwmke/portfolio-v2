@@ -8,6 +8,7 @@ import { PiIntersectThreeLight } from "react-icons/pi";
 import Image from "next/image";
 import Scene from "./Scene";
 import SecondCyberGrid from "./SecondCyberGrid";
+import Link from "next/link";
 
 const header = localFont({
     src: "../fonts/NicoMoji.ttf",
@@ -116,49 +117,64 @@ const MobileYesterdayBox = () => {
                             </p>
                         </div>
                         <ul className="text-[.7rem] space-y-1 mt-1 text-white z-40">
+                            <Link className="hover:text-teal-300" href="/blog/matcha">
                                 <li className="flex items-center space-x-2">
                                     <p>&#8226;</p>
                                     <p className={text.className}>Vanilla Matcha Latte</p>
                                 </li>
+                            </Link>
+                            <Link className="hover:text-teal-300" href="/blog/panda">
                                 <li className="flex items-center space-x-2">
                                     <p>&#8226;</p>
                                     <p className={text.className}>PX Orange Chicken</p>
                                 </li>
+                            </Link>
+                            <Link className="hover:text-teal-300" href="/blog/avocado">
                                 <li className="flex items-center space-x-2">
                                     <p>&#8226;</p>
                                     <p className={text.className}>Easy Avocado Toast</p>
                                 </li>
+                            </Link>
+                            <Link className="hover:text-teal-300" href="/blog/protein">
                                 <li className="flex items-center space-x-2">
                                     <p>&#8226;</p>
                                     <p className={text.className}>Zeus&apos; Protein Shake</p>
                                 </li>
+                            </Link>
+                            <Link className="hover:text-teal-300" href="/blog/rice">
                                 <li className="flex items-center space-x-2">
                                     <p>&#8226;</p>
                                     <p className={text.className}>Garlic Fried Rice</p>
                                 </li>
+                            </Link>
+                            <Link className="hover:text-teal-300" href="/blog/pizza">
                                 <li className="flex items-center space-x-2">
                                     <p>&#8226;</p>
                                     <p className={text.className}>Perfect NYC Pizza</p>
                                 </li>
-                                <li className="flex items-center space-x-2 mt-2 text-teal-500">
+                            </Link>
+                            <Link className="hover:text-teal-300 text-teal-500" href="/blog">
+                                <li className="flex items-center space-x-2 mt-2">
                                     <p className={text.className}>All Recipes...</p>
                                 </li>
-                            </ul>
-                            <div className="text-white min-[480px]:text-[1.9rem] text-[calc(9.9vw-1rem)] mt-3">
-                                <p className={text.className}>
-                                    Pictures
-                                </p>
-                            </div>
-                            <ul className="text-[.7rem] mt-1 text-white">
+                            </Link>
+                        </ul>
+                        <div className="text-white min-[480px]:text-[1.9rem] text-[calc(9.9vw-1rem)] mt-3">
+                            <p className={text.className}>
+                                Pictures
+                            </p>
+                        </div>
+                        <ul className="text-[.7rem] mt-1 text-white">
+                            <Link className="hover:text-teal-300" href="/blog/italy">
                                 <li className="flex items-center space-x-2">
-                                <p>&#8226;</p>
-
+                                    <p>&#8226;</p>
                                     <p className={text.className}>Italia en Autunno</p>
                                 </li>
-                                <li className="flex items-center space-x-2 mt-2 text-teal-500">
-                                    <p className={text.className}>More coming soon...</p>
-                                </li>
-                            </ul>
+                            </Link>
+                            <li className="flex items-center space-x-2 mt-2 text-teal-500">
+                                <p className={text.className}>More coming soon...</p>
+                            </li>
+                        </ul>
                     </div>
                     
                 </div>

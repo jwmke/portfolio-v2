@@ -4,6 +4,7 @@ import ProjectBox from "./ProjectBox";
 import ImageBox from "./ImageBox";
 import Image from "next/image";
 import projectData from '../data/projectData';
+import Link from "next/link";
 
 const header = localFont({
     src: "../fonts/NicoMoji.ttf",
@@ -171,33 +172,47 @@ const YesterdayBox = () => {
                         </p>
                     </div>
                     <ul className="text-xs mt-2">
+                        <Link className="hover:text-teal-300" href="/blog/matcha">
                         <li className="flex items-center space-x-2">
                             <p>&#8226;</p>
                             <p className={text.className}>Vanilla Matcha Latte</p>
                         </li>
+                        </Link>
+                        <Link className="hover:text-teal-300" href="/blog/panda">
                         <li className="flex items-center space-x-2">
                             <p>&#8226;</p>
                             <p className={text.className}>PX Orange Chicken</p>
                         </li>
+                        </Link>
+                        <Link className="hover:text-teal-300" href="/blog/avocado">
                         <li className="flex items-center space-x-2">
                             <p>&#8226;</p>
                             <p className={text.className}>Simple Avocado Toast</p>
                          </li>
+                         </Link>
+                         <Link className="hover:text-teal-300" href="/blog/protein">
                         <li className="flex items-center space-x-2">
                             <p>&#8226;</p>
                             <p className={text.className}>Zeus&apos; Protein Shake</p>
                         </li>
+                        </Link>
+                        <Link className="hover:text-teal-300" href="/blog/rice">
                         <li className="flex items-center space-x-2">
                             <p>&#8226;</p>
                             <p className={text.className}>Garlic Fried Rice</p>
                         </li>
+                        </Link>
+                        <Link className="hover:text-teal-300" href="/blog/pizza">
                         <li className="flex items-center space-x-2">
                             <p>&#8226;</p>
                             <p className={text.className}>Perfect NYC Pizza</p>
                         </li>
-                        <li className="flex items-center space-x-2 mt-1 text-teal-500">
+                        </Link>
+                        <Link className="hover:text-teal-300 text-teal-500" href="/blog">
+                        <li className="flex items-center space-x-2 mt-1 ">
                             <p className={text.className}>All Recipes...</p>
                         </li>
+                        </Link>
                     </ul>
                 </div>
                 <div className="flex flex-col min-[1700px]:items-end items-start">
@@ -207,10 +222,12 @@ const YesterdayBox = () => {
                         </p>
                     </div>
                     <ul className="text-xs mt-2">
-                        <li className="flex items-center space-x-2 justify-end">
-                            <p className={text.className}>Italia en Autunno</p>
-                            <p>&#8226;</p>
-                        </li>
+                        <Link className="hover:text-teal-300" href="/blog/italy">
+                            <li className="flex items-center space-x-2 justify-end">
+                                <p className={text.className}>Italia en Autunno</p>
+                                <p>&#8226;</p>
+                            </li>
+                        </Link>
                         <li className="flex items-center space-x-2 justify-end mt-1 text-teal-500">
                             <p className={text.className}>More coming soon...</p>
                         </li>
