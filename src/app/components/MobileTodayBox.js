@@ -137,7 +137,7 @@ const MobileTodayBox = () => {
                     <div className="absolute inset-0" style={{
                         clipPath: 'polygon(0 0, 0 100%, 100% 100%)'
                     }}>
-                        <div className="absolute bottom-[2rem] -left-1.5 min-[480px]:text-[.7rem] text-[calc(6vw-1rem)] font-thin max-w-[90%] -rotate-90">
+                        <div className="absolute bottom-[2rem] min-[425px]:-left-1.5 -left-0.5  min-[400px]:-left-1 min-[480px]:text-[.7rem] text-[calc(6vw-1rem)] font-thin max-w-[90%] -rotate-90">
                         <p className={text.className}>
                             {blogInfo.date}
                         </p>
