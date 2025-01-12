@@ -18,6 +18,7 @@ import { MdRecycling } from "react-icons/md";
 import { PiIntersectThreeLight } from "react-icons/pi";
 import MobileTodayBox from "./components/MobileTodayBox";
 import MobileYesterdayBox from "./components/MobileYesterdayBox";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -76,17 +77,67 @@ export default function Home() {
               </div>
               <div className="min-[1100px]:hidden min-h-full flex-col justify-end flex space-y-7 right-0 absolute">
                 <div className="flex flex-col space-y-2 w-full items-end">
-                <MdRecycling className="text-white text-[2.5rem]"/>
-                    <div className="flex space-x-2">
-                    <Image src={"/img/fire2.png"} width={30} height={40} alt="Fire"/>   
-                      <PiIntersectThreeLight className="text-white text-[2.5rem]"/>
-                    </div>
-                    <div  className="flex space-x-2">
-                      <div className="mt-0.5 mr-1">
-                          <Image src={"/img/ce.png"} width={50} height={30} alt="CE"/>
+                  <a 
+                    href="https://github.com/jwmke"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MdRecycling className="text-white text-[2.5rem] hover:text-teal-700 transition-all duration-200"/>
+                  </a>
+
+                  <div className="flex space-x-2">
+                    <Link href="/blog">
+                      <div className="group">
+                        <Image 
+                          src="/img/fire2.png" 
+                          width={30} 
+                          height={40} 
+                          alt="Fire"
+                          className="transition-all duration-200 group-hover:[filter:invert(71%)_sepia(98%)_saturate(387%)_hue-rotate(123deg)_brightness(95%)_contrast(101%)]"
+                        />
                       </div>
-                      <Image src={"/img/trash.png"} width={36} height={30} alt="Trash"/>
+                    </Link>
+                    
+                    <Link href="/dojoe">
+                      <PiIntersectThreeLight className="text-white text-[2.5rem] hover:text-teal-700 transition-all duration-200"/>
+                    </Link>
+                  </div>
+
+                  <div className="flex space-x-2">
+                    <div className="mt-0.5 mr-1">
+                      <a 
+                        href="https://www.goodreads.com/jwmke" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
+                        <div className="group">
+                          <Image 
+                            src="/img/ce.png" 
+                            width={50} 
+                            height={30} 
+                            alt="CE"
+                            className="transition-all duration-200 group-hover:[filter:invert(71%)_sepia(98%)_saturate(387%)_hue-rotate(123deg)_brightness(95%)_contrast(101%)]"
+                          />
+                        </div>
+                      </a>
                     </div>
+
+                    <a 
+                      href="https://x.com/jwmke"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="group">
+                        <Image 
+                          src="/img/trash.png" 
+                          width={36} 
+                          height={30} 
+                          alt="Trash"
+                          className="transition-all duration-200 group-hover:[filter:invert(71%)_sepia(98%)_saturate(387%)_hue-rotate(123deg)_brightness(95%)_contrast(101%)]"
+                        />
+                      </div>
+                    </a>
+                  </div>
                 </div>
                 <VerticalNameTag />
               </div>

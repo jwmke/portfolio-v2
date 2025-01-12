@@ -96,13 +96,63 @@ const MobileYesterdayBox = () => {
                         </div>
                         <div className="flex min-[480px]:space-x-4 space-x-[.15rem] mt-6 min-[480px]:-ml-6 mb-2">
                             <div className="mt-0.5 mr-1">
-                                <Image src={"/img/ce.png"} width={50} height={30} alt="CE"/>
+                                <div className="group">
+                                <a 
+                                    href="https://www.goodreads.com/jwmke" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                >
+                                    <Image 
+                                    src="/img/ce.png" 
+                                    width={50} 
+                                    height={30} 
+                                    alt="CE"
+                                    className="transition-all duration-200 group-hover:[filter:invert(71%)_sepia(98%)_saturate(387%)_hue-rotate(123deg)_brightness(95%)_contrast(101%)]"
+                                    />
+                                </a>
+                                </div>
                             </div>
-                            <MdRecycling className="text-white text-[2.5rem]"/>
-                            <Image src={"/img/fire2.png"} width={30} height={40} alt="Fire"/> 
-                            <PiIntersectThreeLight className="text-white text-[2.5rem]"/>
-                            <Image src={"/img/trash.png"} width={36} height={30} alt="Trash"/>
-                        </div>
+
+                            <a 
+                                href="https://github.com/jwmke"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <MdRecycling className="text-white text-[2.5rem] hover:text-teal-700 transition-all duration-200"/>
+                            </a>
+
+                            <Link href="/blog">
+                                <div className="group">
+                                <Image 
+                                    src="/img/fire2.png" 
+                                    width={30} 
+                                    height={40} 
+                                    alt="Fire"
+                                    className="transition-all duration-200 group-hover:[filter:invert(71%)_sepia(98%)_saturate(387%)_hue-rotate(123deg)_brightness(95%)_contrast(101%)]"
+                                />
+                                </div>
+                            </Link>
+
+                            <Link href="/dojoe">
+                                <PiIntersectThreeLight className="text-white text-[2.5rem] hover:text-teal-700 transition-all duration-200"/>
+                            </Link>
+
+                            <a 
+                                href="https://x.com/jwmke"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div className="group">
+                                <Image 
+                                    src="/img/trash.png" 
+                                    width={36} 
+                                    height={30} 
+                                    alt="Trash"
+                                    className="transition-all duration-200 group-hover:[filter:invert(71%)_sepia(98%)_saturate(387%)_hue-rotate(123deg)_brightness(95%)_contrast(101%)]"
+                                />
+                                </div>
+                            </a>
+                            </div>
                     </div>
                     <div className="flex flex-col w-24 -mr-2">
                         <div className="w-[calc(24vw-1rem)] min-[480px]:w-[6rem] flex justify-center h-32 z-50">
