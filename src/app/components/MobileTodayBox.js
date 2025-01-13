@@ -78,7 +78,7 @@ const MobileTodayBox = () => {
                 <li className="flex items-center space-x-3 min-[1800px]:hidden -ml-[calc(1.25rem*4)]">
                     <p className={text.className}>
                         Practicing the dying art of {' '}
-                        <Link href="/pics" className="underline hover:text-teal-300">street photography</Link>
+                        <Link href="/gallery" className="underline hover:text-teal-300">street photography</Link>
                     </p>
                 </li>
                 <li className="flex items-center space-x-3 min-[1800px]:hidden -ml-[calc(1.25rem*5)]">

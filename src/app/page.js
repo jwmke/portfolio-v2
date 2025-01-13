@@ -41,9 +41,22 @@ export default function Home() {
               </div>
             </DiagonalCornerContainer>
         </div>
-        <div className="min-[650px]:flex hidden flex-col justify-center min-h-screen min-w-full">
+        <div className="min-[1921px]:flex hidden justify-center items-center min-h-[100vh]">
+          <DiagonalCornerContainer className="flex justify-between" size={24}>
+            <Image src={"/img/enhance.gif"} width={300} height={300} alt="Enhance" className="border border-white mt-1 mx-1" />
+            <div className="flex items-end justify-between mt-4">
+              <div className="text-white font-bold text-2xl">
+                ENHANCE
+              </div>
+              <div className="text-white ml-1.5 mb-[3px] text-sm">
+                {"zoom in to <= 1920px"}
+              </div>
+            </div>
+          </DiagonalCornerContainer>
+        </div>
+        <div className="min-[1921px]:hidden min-[650px]:flex hidden flex-col justify-center min-h-screen min-w-full">
         {/* <ZoomPaddingContainer> */}
-          <div className="py-2 px-2 min-[650px]:flex hidden">
+          <div className="py-2 px-2 min-[1921px]:hidden min-[650px]:flex hidden">
           <div className="w-6 h-full mt-[27rem] z-20 -right-[1px] top-[3px] relative transform translate-x-0">
             <LeftSideExtension />
           </div>

@@ -171,7 +171,7 @@ const YesterdayBox = () => {
                             Recipes
                         </p>
                     </div>
-                    <ul className="text-xs mt-2">
+                    <ul className="text-xs mt-1">
                         <Link className="hover:text-teal-300" href="/blog/matcha">
                         <li className="flex items-center space-x-2">
                             <p>&#8226;</p>
@@ -184,12 +184,12 @@ const YesterdayBox = () => {
                             <p className={text.className}>PX Orange Chicken</p>
                         </li>
                         </Link>
-                        <Link className="hover:text-teal-300" href="/blog/avocado">
+                        {/* <Link className="hover:text-teal-300" href="/blog/avocado">
                         <li className="flex items-center space-x-2">
                             <p>&#8226;</p>
                             <p className={text.className}>Simple Avocado Toast</p>
                          </li>
-                         </Link>
+                         </Link> */}
                          <Link className="hover:text-teal-300" href="/blog/protein">
                         <li className="flex items-center space-x-2">
                             <p>&#8226;</p>
@@ -221,7 +221,7 @@ const YesterdayBox = () => {
                             Pictures
                         </p>
                     </div>
-                    <ul className="text-xs mt-2">
+                    <ul className="text-xs mt-1">
                         <Link className="hover:text-teal-300" href="/blog/dtla">
                             <li className="flex items-center space-x-2 min-[1700px]:justify-end 2xl:justify-start min-[1300px]:justify-end justify-start">
                                 <p className="min-[1700px]:hidden 2xl:block min-[1300px]:hidden block">&#8226;</p>
@@ -236,9 +236,11 @@ const YesterdayBox = () => {
                                 <p className="min-[1700px]:block 2xl:hidden min-[1300px]:block hidden">&#8226;</p>
                             </li>
                         </Link>
-                        <li className="flex items-center space-x-2 min-[1700px]:justify-end 2xl:justify-start min-[1300px]:justify-end justify-start mt-1 text-teal-500">
-                            <p className={text.className}>More coming soon...</p>
-                        </li>
+                        <Link className="hover:text-teal-300 text-teal-500" href="/gallery">
+                            <li className="flex items-center space-x-2 min-[1700px]:justify-end 2xl:justify-start min-[1300px]:justify-end justify-start mt-1">
+                                <p className={text.className}>More coming soon...</p>
+                            </li>
+                        </Link>
                     </ul>
                 </div>
             </div>

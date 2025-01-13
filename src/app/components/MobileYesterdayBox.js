@@ -227,9 +227,11 @@ const MobileYesterdayBox = () => {
                                     <p className={text.className}>Italia en Autunno</p>
                                 </li>
                             </Link>
-                            <li className="flex items-center space-x-2 mt-2 text-teal-500">
+                            <Link className="hover:text-teal-300 text-teal-500" href="/gallery">
+                            <li className="flex items-center space-x-2 mt-2">
                                 <p className={text.className}>More coming soon...</p>
                             </li>
+                            </Link>
                         </ul>
                     </div>
                     

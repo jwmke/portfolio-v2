@@ -186,7 +186,7 @@ const TodayBox = () => {
                 <li className="flex items-center space-x-4 justify-end mr-5">
                     <p className={text.className}>
                     Practicing the dying art of {' '}
-                    <Link href="/pics" className="underline hover:text-teal-300">street photography</Link>
+                    <Link href="/gallery" className="underline hover:text-teal-300">street photography</Link>
                     </p>
                     <p>&#8226;</p>
                 </li>
