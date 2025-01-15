@@ -288,7 +288,7 @@ const TodayBox = () => {
     <div className="text-white rotate-90 absolute bottom-[1.5rem] -right-[2rem] flex space-x-2 text-[1.9rem]">
                     <Link className="hover:text-teal-300" href={"/blog"}>
                         <p className={text.className}>
-                            Corpus
+                            Library
                         </p>
                     </Link>
                     

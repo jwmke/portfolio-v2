@@ -153,7 +153,7 @@ const MobileTodayBox = () => {
                     <div className="text-white rotate-90 absolute bottom-[1.5rem] min-[480px]:-right-8 -right-[calc(10vw-1rem)] flex space-x-2 min-[480px]:text-[1.9rem] text-[calc(9.9vw-1rem)]">
                         <Link className="hover:text-teal-300" href={"/blog"}>
                             <p className={text.className}>
-                                Corpus
+                                Library
                             </p>
                         </Link>
                     </div>

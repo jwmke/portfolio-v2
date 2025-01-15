@@ -33,7 +33,7 @@ export default function Home() {
         }}
       >
         <Grain opacity={.95} blendMode="multiply" />
-        <div className="p-4 min-[650px]:hidden flex  justify-center">
+        <div className="p-4 min-[650px]:hidden flex justify-center">
           <DiagonalCornerContainer className="w-full max-w-[450px]" size={32}>
               <div className="w-full flex flex-col">
                 <MobileTodayBox />
@@ -43,13 +43,13 @@ export default function Home() {
         </div>
         <div className="min-[1921px]:flex hidden justify-center items-center min-h-[100vh]">
           <DiagonalCornerContainer className="flex justify-between" size={24}>
-            <Image src={"/img/enhance.gif"} width={300} height={300} alt="Enhance" className="border border-white mt-1 mx-1" />
-            <div className="flex items-end justify-between mt-4">
-              <div className="text-white font-bold text-2xl">
-                ENHANCE
+            <Image src={"/img/enhance.gif"} width={320} height={320} alt="Enhance" className="border border-white mt-1 mx-1" />
+            <div className="flex flex-col mt-3 w-80 space-y-2">
+              <div className="text-white ml-1.5 text-sm">
+                {"Unfortunatly, it appears that you're too far zoomed out. Or perhaps your monitor is too expensive."}
               </div>
-              <div className="text-white ml-1.5 mb-[3px] text-sm">
-                {"zoom in to <= 1920px"}
+              <div className="text-white ml-1.5 text-sm">
+                {"To view this website, please zoom in or shrink your browser's width to be <= 1920px."}
               </div>
             </div>
           </DiagonalCornerContainer>
