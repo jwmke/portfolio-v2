@@ -3,14 +3,15 @@ import Grain from "./Grain";
 const DiagonalCornerContainer = ({ 
   children, 
   className = '',
+  bottomRightStraight = false,
   size = 24,
 }) => {
   const outerClipPath = `polygon(
     ${size}px 0,
     calc(100% - ${size}px) 0,
     100% ${size}px,
-    100% calc(100% - ${size}px),
-    calc(100% - ${size}px) 100%,
+    100% ${bottomRightStraight ? '100%' : `calc(100% - ${size}px)`},
+    ${bottomRightStraight ? '100%' : `calc(100% - ${size}px)`} 100%,
     ${size}px 100%,
     0 calc(100% - ${size}px),
     0 ${size}px
@@ -20,8 +21,8 @@ const DiagonalCornerContainer = ({
     ${size + 1}px 1px,
     calc(100% - ${size + 1}px) 1px,
     calc(100% - 1px) ${size + 1}px,
-    calc(100% - 1px) calc(100% - ${size + 1}px),
-    calc(100% - ${size + 1}px) calc(100% - 1px),
+    calc(100% - 1px) ${bottomRightStraight ? 'calc(100% - 1px)' : `calc(100% - ${size + 1}px)`},
+    ${bottomRightStraight ? 'calc(100% - 1px)' : `calc(100% - ${size + 1}px)`} calc(100% - 1px),
     ${size + 1}px calc(100% - 1px),
     1px calc(100% - ${size + 1}px),
     1px ${size + 1}px
