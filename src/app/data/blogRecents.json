@@ -2,6 +2,7 @@
     {
         "title": "Neuroscience",
         "full_title": "Neuroscience Fundamentals",
+        "tag_line": "All of the essentials from your 9th grade biology course that you'll need to fully understand BCIs.",
         "path": "/img/blog/Neuro.jpg",
         "date": "06/24",
         "route": "https://www.bcibin.com/learn/neuro",
@@ -9,7 +10,8 @@
     },
     {
         "title": "BCIs",
-        "full_title": "",
+        "full_title": "An Introduction to BCI Types",
+        "tag_line": "An beginner's guide to all of the major types of sensing BCIs (Invasive & Non-Invasive).",
         "path": "/img/blog/Waves.png",
         "date": "04/24",
         "route": "https://www.bcibin.com/learn/bcis",
@@ -17,28 +19,32 @@
     },
     {
         "title": "Doom",
-        "full_title": "",
+        "full_title": "Romanticization of the Doomer in Wester Society",
+        "tag_line": "Exploring the Doomer archetype, its rise to popularity in the West.",
         "path": "/img/blog/Romanticization.jpg",
         "date": "07/23",
         "route": "/blog/doom"
     },
     {
         "title": "Context",
-        "full_title": "",
+        "full_title": "Lasting Significance of the Context Window",
+        "tag_line": "A deep dive into why issues with limited LLM context windows will last beyond the short term.",
         "path": "/img/blog/Window2.jpg",
         "date": "05/23",
         "route": "/blog/context"
     },
     {
         "title": "Cereal",
-        "full_title": "",
+        "full_title": "How to Make the World's Largest Bowl of Cereal",
+        "tag_line": "A step-by-step guide on how to construct a 9,000+ pound cereal bowl.",
         "path": "/img/blog/Bowl.jpg",
         "date": "04/23",
         "route": "/blog/cereal"
     },
     {
         "title": "Graduation",
-        "full_title": "",
+        "full_title": "For the Student Dreading the End of University",
+        "tag_line": "A letter written to my younger self, and any other students who are currently feeling lost.",
         "path": "/img/blog/Grad.jpg",
         "date": "12/22",
         "route": "/blog/graduation"

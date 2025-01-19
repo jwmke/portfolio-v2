@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Vanilla Matcha Latte",
+        "route": "/blog/matcha"
+    },
+    {
+        "name": "PX Orange Chicken",
+        "route": "/blog/panda"
+    },
+    {
+        "name": "Simple Avocado Toast",
+        "route": "/blog/avocado"
+    },
+    {
+        "name": "Zeus' Protein Shake",
+        "route": "/blog/protein"
+    },
+    {
+        "name": "Garlic Fried Rice",
+        "route": "/blog/rice"
+    },
+    {
+        "name": "Perfect NYC Pizza",
+        "route": "/blog/pizza"
+    }
+]
