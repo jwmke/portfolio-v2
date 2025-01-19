@@ -4,6 +4,7 @@ const BlogBox = ({
   full_title,
   tag_line,
   link,
+  external = false,
   className = '',
   size = 24,
   mobile = false
@@ -43,7 +44,7 @@ const BlogBox = ({
         />
       </div>
       
-      <a href={link ? link : "/"} target="_blank" referrerPolicy="noopener noreferrer">
+      <a href={link ? link : "/"} target={external ? "_blank" : ""} referrerPolicy="noopener noreferrer">
         <div
           className="relative z-10 hover:bg-teal-700 hover:cursor-ne-resize duration-75 transition-colors p-2"
           style={{ clipPath: outerClipPath }}

@@ -43,7 +43,7 @@ const Page = () => {
               </div>
               <div className="mt-12 space-y-2">
                 {blogRecents.map(blog => (
-                  <BlogBox mobile full_title={blog.full_title} link={blog.route} tag_line={blog.tag_line} key={blog.title} />
+                  <BlogBox external={blog.external} mobile full_title={blog.full_title} link={blog.route} tag_line={blog.tag_line} key={blog.title} />
                 ))}
               </div>
               <div className="min-[425px]:text-[4.7rem] text-[3.5rem] leading-[3rem] mt-12 w-full flex justify-center">
@@ -72,7 +72,7 @@ const Page = () => {
                   </div>
                   <div className="mt-9 space-y-2 h-[23.5rem] overflow-y-scroll pr-2">
                     {blogRecents.map(blog => (
-                      <BlogBox full_title={blog.full_title} link={blog.route} tag_line={blog.tag_line} key={blog.title} />
+                      <BlogBox external={blog.external} full_title={blog.full_title} link={blog.route} tag_line={blog.tag_line} key={blog.title} />
                     ))}
                   </div>
                   <div className="text-[4.7rem] leading-[3rem] ml-4 mt-8">
