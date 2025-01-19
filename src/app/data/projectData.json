@@ -2,7 +2,7 @@
     {
         "title": "Affordable EEG PCB",
         "description": "$80 BOM 8-channel EEG PCB Pi Pico W shield using the ADS1299 ADC chip",
-        "tags": ["KiCad", "Python", "Manufacturing"],
+        "tags": ["KiCad", "Python"],
         "link": "https://github.com/jwmke/eeg"
     },
     {

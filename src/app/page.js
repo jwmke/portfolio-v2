@@ -46,7 +46,7 @@ export default function Home() {
             <Image src={"/img/enhance.gif"} width={320} height={320} alt="Enhance" className="border border-white mt-1 mx-1" />
             <div className="flex flex-col mt-3 w-80 space-y-2">
               <div className="text-white ml-1.5 text-sm">
-                {"Unfortunatly, it appears that you're too far zoomed out. Or perhaps your monitor is too expensive."}
+                {"It appears that you're too far zoomed out or your monitor is too expensive."}
               </div>
               <div className="text-white ml-1.5 text-sm">
                 {"To view this website, please zoom in or shrink your browser's width to be <= 1920px."}

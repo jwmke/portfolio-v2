@@ -222,14 +222,14 @@ const YesterdayBox = () => {
                         </p>
                     </div>
                     <ul className="text-xs mt-1">
-                        <Link className="hover:text-teal-300" href="/blog/dtla">
+                        <Link className="hover:text-teal-300" href="/gallery/la">
                             <li className="flex items-center space-x-2 min-[1700px]:justify-end 2xl:justify-start min-[1300px]:justify-end justify-start">
                                 <p className="min-[1700px]:hidden 2xl:block min-[1300px]:hidden block">&#8226;</p>
                                 <p className={text.className}>Downtown LA</p>
                                 <p className="min-[1700px]:block 2xl:hidden min-[1300px]:block hidden">&#8226;</p>
                             </li>
                         </Link>
-                        <Link className="hover:text-teal-300" href="/blog/italy">
+                        <Link className="hover:text-teal-300" href="/gallery/italy">
                             <li className="flex items-center space-x-2 min-[1700px]:justify-end 2xl:justify-start min-[1300px]:justify-end justify-start">
                             <p className="min-[1700px]:hidden 2xl:block min-[1300px]:hidden block">&#8226;</p>
                                 <p className={text.className}>Italia en Autunno</p>

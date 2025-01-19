@@ -67,7 +67,7 @@ const Page = () => {
                 <div className="text-white min-w-[34rem] mt-4 mr-8">
                   <div className="text-[4.7rem] leading-[3rem] ml-4">
                     <h1 className={header.className}>
-                      Blog Posts
+                      Blog
                     </h1>
                   </div>
                   <div className="mt-9 space-y-2 h-[23.5rem] overflow-y-scroll pr-2">

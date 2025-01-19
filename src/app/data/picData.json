@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Downtown LA",
+        "route": "/gallery/la"
+    },
+    {
+        "name": "Italia en Autunno",
+        "route": "/gallery/italy"
+    }
+]
