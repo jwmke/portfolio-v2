@@ -55,7 +55,7 @@ const BlogBox = ({
                 {full_title}
               </p>
             </div>
-            <div className={`${mobile ? "font-thin" : ""} text-[.7rem] text-teal-200`}>
+            <div className={`${mobile ? "font-thin" : ""} text-[.7rem] text-teal-100`}>
               <p>
                 {tag_line}
               </p>

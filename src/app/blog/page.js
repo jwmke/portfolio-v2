@@ -38,7 +38,7 @@ const Page = () => {
             <DiagonalCornerContainer className="m-2 min-[925px]:hidden w-full max-w-[450px] text-white" size={64}>
               <div className="min-[425px]:text-[4.7rem] text-[3.5rem] leading-[3rem] mt-4 w-full flex justify-center">
                 <h1 className={header.className}>
-                  Blog
+                  Library
                 </h1>
               </div>
               <div className="mt-12 space-y-2">
@@ -67,7 +67,7 @@ const Page = () => {
                 <div className="text-white min-w-[34rem] mt-4 mr-8">
                   <div className="text-[4.7rem] leading-[3rem] ml-4">
                     <h1 className={header.className}>
-                      Blog
+                      Library
                     </h1>
                   </div>
                   <div className="mt-9 space-y-2 h-[23.5rem] overflow-y-scroll pr-2">
