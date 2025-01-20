@@ -35,10 +35,10 @@ const Page = () => {
                         <div className='text-4xl font-bold'>
                             The Lasting Significance of the Context Window Problem
                         </div>
-                        <div className='text-xl space-y-5 mt-8'>
+                        <div className='md:text-xl space-y-5 mt-8'>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                                <Image width={700} height={466} src={"/img/blog/window3.jpg"} alt="knee_deep" className='border'/>
+                                <Image width={700} height={466} src={"/img/blog/window3.jpg"} alt="knee_deep" className=''/>
                                 {/* <p>&quot;The Context Window&quot; by DALL-E</p> */}
                             </div>
                         </div>
@@ -57,7 +57,7 @@ const Page = () => {
                         <p className='text-2xl font-bold'>$$$</p>
                         <p>The first issue we run into is that the memory and time costs of inference with the attention mechanism of LLMs {styledLink("scale quadratically", "https://lilianweng.github.io/posts/2023-01-10-inference-optimization/")} with the size of their context window. In English, this means when going from 32k to 64k length of context window, it isn&apos;t 2x as expensive, but 4x more expensive.</p>
                         <div className='flex justify-center'>
-                            <Image width={468} height={244} src={"/img/blog/graph.jpg"} alt="graph" className='border'/>
+                            <Image width={468} height={244} src={"/img/blog/graph.jpg"} alt="graph" className=''/>
                         </div>
                         <div>At the moment, this is a rather big deal since it costs {styledLink("just under $2", "https://news.ycombinator.com/item?id=35841708")} to prompt GPT-4 with 32k tokens, despite OpenAI charging a flat amount per 1k tokens <p className='inline text-sm'>(if I had to speculate why they do this, I&apos;d say it&apos;s likely for increasing customer loyalty by offering a less confusing pricing model at the expense of reduced profit margins)</p>.</div>
                         <p>However, this is the weaker of my critiques against using an inflated context window since:</p>
@@ -72,7 +72,7 @@ const Page = () => {
                         <p>This is absurdly inefficient.</p>
                         <p>If you&apos;ve interacted with ChatGPT before, this might be counterintuitive, as you might recall that it can remember details from the conversation history. However, this is just an illusion, as behind the scenes, OpenAI is {styledLink("feeding the whole conversation", "https://ai.stackexchange.com/a/38262")}, or perhaps even an LLM-created summary of it, into the prompt every time you send a new message to the agent.</p>
                         <div className='flex justify-center'>
-                            <Image width={391} height={249} src={"/img/blog/silver.png"} alt="silver" className='border'/>
+                            <Image width={391} height={249} src={"/img/blog/silver.png"} alt="silver" className=''/>
                         </div>
                         <p>The second takeaway from Ma&apos;s excerpt is that by expanding the context window, all we&apos;re doing is keeping the LLM confined to its existing constraints, i.e. its &quot;current understanding zone,&quot; while throwing more data at it. As Ma puts it, &quot;You cannot count on an LLM to execute any tasks out of its zone.&quot;</p>
                         <p>Continuing down this path with the mindset of increasing the context window as an end-all solution for LLM&apos;s interactions with substantial amounts of data is pure laziness, and it will stifle future innovation if we&apos;re not cautious.</p>

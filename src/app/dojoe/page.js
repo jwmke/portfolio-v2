@@ -15,7 +15,7 @@ const Page = () => {
         >
           <Grain opacity={.95} blendMode="multiply" />
           <div className="w-full min-h-[100vh] flex justify-center py-6">
-            <DiagonalCornerContainer className="w-[50rem]" size={64}>
+            <DiagonalCornerContainer className="w-[50rem]" size={32}>
               {/* TODO */}
             </DiagonalCornerContainer>
           </div>

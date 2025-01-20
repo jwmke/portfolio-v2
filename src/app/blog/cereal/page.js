@@ -30,12 +30,12 @@ const Page = () => {
                         <div className='text-4xl font-bold'>
                             How to Make the World&apos;s Largest Bowl of Cereal
                         </div>
-                        <div className='text-xl space-y-5 mt-8'>
+                        <div className='md:text-xl space-y-5 mt-8'>
                         <div className='text-pine'>{"// TL;DR - a step-by-step guide on how to fill a "}<div className='inline line-through'>{"construction dumpster"}</div>{" bowl with over nine thousand pounds of cereal and milk because why not"}</div>
                         <div>*record scratch* Yep, that&apos;s me. You&apos;re probably wondering how I got here.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                                <Image width={700} height={466} src={"/img/blog/knee_deep.jpg"} alt="knee_deep" className='rounded-xl'/>
+                                <Image width={700} height={466} src={"/img/blog/knee_deep.jpg"} alt="knee_deep" className=''/>
                                 <div>Knee deep in an 8-foot tall dumpster full of Cocoa Puffs</div>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ const Page = () => {
                         <div>As Carl reached the end of his journey he noticed a fatal mistake he had made at the start of it. This error pertained to the tamper tag on his trailer, or rather, the lack thereof.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/tag.jpg"} alt="tag" className='rounded-xl'/>
+                            <Image width={468} height={244} src={"/img/blog/tag.jpg"} alt="tag" className=''/>
                             <div>Tamper tag</div>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ const Page = () => {
                         <div>Honestly, I don&apos;t remember a majority of the conversation that followed, likely because my brain repressed it as a response to the traumatic stress of the ensuing clown carnival ride of experiences that followed. However, in essence, my roommate wanted to do something big. Bigger than anything he, or anyone he knew, had done before. And he viewed these 24 pallets of cereal as being the gateway to doing that big thing, agnostic of what that big thing might be.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/pallet.jpg"} alt="pallet" className='rounded-xl'/>
+                            <Image width={468} height={244} src={"/img/blog/pallet.jpg"} alt="pallet" className=''/>
                             <div>Pallet containing a ~600 lb bag of Cocoa Puffs, skid-steer for scale</div>
                             </div>
                         </div>
@@ -80,7 +80,7 @@ const Page = () => {
                         <div>Once dusk was upon us, we would pack up and drive to a self-storage facility 40 minutes from the cargo yard. The second phase of the plan would then be initiated.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/uhaul.jpg"} alt="uhaul" className='rounded-xl'/>
+                            <Image width={468} height={244} src={"/img/blog/uhaul.jpg"} alt="uhaul" className=''/>
                             <div>The CocoaMobile</div>
                             </div>
                         </div>
@@ -100,7 +100,7 @@ const Page = () => {
                         <div>Out of nowhere, an NPC truck attempted to cut off CocoaMobile, causing its driver to slam on the brakes. This caused the trailer to force itself off the hitch, meaning the trailer was only attached by the safety chains as the front of it was grinding itself into nothingness against the road.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/cord.jpg"} alt="cord" className='rounded-xl'/>
+                            <Image width={468} height={244} src={"/img/blog/cord.jpg"} alt="cord" className=''/>
                             <div>Break-light cord that was guillotined by the trailer&apos;s safety chains, kept as a souvenir</div>
                             </div>
                         </div>
@@ -118,7 +118,7 @@ const Page = () => {
                         </ul>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/before-after.gif"} alt="before-after" className='rounded-xl' unoptimized={true}/>
+                            <Image width={468} height={244} src={"/img/blog/before-after.gif"} alt="before-after" className='' unoptimized={true}/>
                             <div>Proof that we cleaned up because we&apos;re not human garbage</div>
                             </div>
                         </div>
@@ -133,7 +133,7 @@ const Page = () => {
                         <div>To maximize clout, we wanted to make this thing official, so we began by reaching out to Guinness for guidelines on how to qualify for breaking the current record. We then proceeded to wait 3 months for a reply since we didn&apos;t pay for their $800 &quot;premium&quot; communication package.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={244} height={244} src={"/img/blog/da_rules.png"} alt="da-rules" className='rounded-xl'/>
+                            <Image width={244} height={244} src={"/img/blog/da_rules.png"} alt="da-rules" className=''/>
                             </div>
                         </div>
                         <div>When they eventually got back to us, they provided a few pages of requirements. Here are a few of the notable ones:</div>
@@ -148,7 +148,7 @@ const Page = () => {
                         <div>The only flaw in this choice of container was that it was obviously not round. So we decided we would design and construct a facade in an attempt to give the dumpster the illusion of being a colossal, semi-spherical, polka-dotted bowl.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/bom.jpg"} alt="schematic" className='rounded-xl'/>
+                            <Image width={468} height={244} src={"/img/blog/bom.jpg"} alt="schematic" className=''/>
                             <div>Schematic for one of the facade trusses</div>
                             </div>
                         </div>
@@ -173,7 +173,7 @@ const Page = () => {
                         <div>Another solution dropped right into our laps. If we were to have skipped step 0, this never would&apos;ve happened.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/milk.jpg"} alt="milk" className='rounded-xl'/>
+                            <Image width={468} height={244} src={"/img/blog/milk.jpg"} alt="milk" className=''/>
                             <div>A glimpse into Operation M.I.L.K.</div>
                             </div>
                         </div>
@@ -201,7 +201,7 @@ const Page = () => {
                         <div>It was 4 a.m. on a warm summer night. In less than a dozen hours, the crux of this odyssey would occur. The remaining members of the crew who were still awake duct taped the final <div className='inline italic'>food-grade</div> tarp to the inside of the dumpster and then retreated inside to scavenge any morsel of sleep they could before the day of reckoning was upon them.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/wide_inside.jpg"} alt="inside" className='rounded-xl'/>
+                            <Image width={468} height={244} src={"/img/blog/wide_inside.jpg"} alt="inside" className=''/>
                             <div>The night before, T-10 hours</div>
                             </div>
                         </div>
@@ -216,11 +216,11 @@ const Page = () => {
                         <div>Despite obstacles emerging left and right throughout the completion of these tasks, the common goal of building and filling this bowl created a sense of camaraderie that pushed us through the storm.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs px-3'>
-                            <Image width={244} height={468} src={"/img/blog/crane.jpg"} alt="crane" className='rounded-xl'/>
+                            <Image width={244} height={468} src={"/img/blog/crane.jpg"} alt="crane" className=''/>
                             <div>Unloading the scales</div>
                             </div>
                             <div className='inline-block text-center text-xs px-3'>
-                            <Image width={244} height={468} src={"/img/blog/facade.jpg"} alt="facade" className='rounded-xl'/>
+                            <Image width={244} height={468} src={"/img/blog/facade.jpg"} alt="facade" className=''/>
                             <div>Assembling the facade</div>
                             </div>
                         </div>
@@ -229,7 +229,7 @@ const Page = () => {
                         <div>After completing a few finishing touches on the bowl, we had to pick up the puffs. They were currently docked in the driveway of my roommate&apos;s neighborhood friend, all stored in lawn bags for eventual ease of emptying. Multiple trips were taken throughout the day to transport them to my roommate&apos;s front lawn.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/lawn.jpg"} alt="lawn" className='rounded-xl'/>
+                            <Image width={468} height={244} src={"/img/blog/lawn.jpg"} alt="lawn" className=''/>
                             <div>~1/3rd of the cereal</div>
                             </div>
                         </div>
@@ -241,7 +241,7 @@ const Page = () => {
                         <div>Responsible for loading the platforms with bags from the front lawn, standing on said platforms as they were lifted to the lip of the bowl by the forklift, and dumping the cereal into the bowl; additionally responsible for having someone in the bowl to evenly spread out the cereal. <div className='inline italic'>*resume flashback*</div></div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/dump.jpg"} alt="dump" className='rounded-xl'/>
+                            <Image width={468} height={244} src={"/img/blog/dump.jpg"} alt="dump" className=''/>
                             <div>Chocolate rain</div>
                             </div>
                         </div>
@@ -249,7 +249,7 @@ const Page = () => {
                         <div>Responsible for creating milk batches in an oil drum that we angle-grinded the top off of, and then pumping said milk into the other empty oil drums to later be used by Team FILL.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/pour.jpg"} alt="pour" className='rounded-xl'/>
+                            <Image width={468} height={244} src={"/img/blog/pour.jpg"} alt="pour" className=''/>
                             <div>Two lethal doses of calcium</div>
                             </div>
                         </div>
@@ -258,7 +258,7 @@ const Page = () => {
                         <div>And when you morph these teams together, add a bit of water and sunshine, and let them do their thing for 4-6 hours, bada-bing bada-boom:</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/final.jpg"} alt="bowl" className='rounded-xl'/>
+                            <Image width={468} height={244} src={"/img/blog/final.jpg"} alt="bowl" className=''/>
                             <div>The world&apos;s largest bowl of cereal</div>
                             </div>
                         </div>
@@ -269,7 +269,7 @@ const Page = () => {
                         <div>Not much to say here, just a few friends lounging in a dumpster, inhaling enough chocolate dust to cause a new form of lung cancer.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/swim.jpg"} alt="swimming" className='rounded-xl'/>
+                            <Image width={468} height={244} src={"/img/blog/swim.jpg"} alt="swimming" className=''/>
                             <div>In love with the cocoa</div>
                             </div>
                         </div>
@@ -282,7 +282,7 @@ const Page = () => {
                         <div className='text-2xl font-bold'>We regret to inform you that your world record application has been denied.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={244} height={244} src={"/img/blog/bruh.gif"} alt="bruh" className='rounded-xl' unoptimized={true}/>
+                            <Image width={244} height={244} src={"/img/blog/bruh.gif"} alt="bruh" className='' unoptimized={true}/>
                             </div>
                         </div>
                         <div className='text-3xl font-bold pt-3'>Step 8: Condemn Capitalism</div>

@@ -30,7 +30,7 @@ const Page = () => {
                           <div className='text-4xl font-bold'>
                               Panda Express Orange Chicken 🍊
                           </div>
-                          <div className='text-xl space-y-5 mt-8'>
+                          <div className='md:text-xl space-y-5 mt-8'>
                             <p>A copycat recipe of Orange Chicken from Panda Express to satisfy your craving without the commute.</p>
                             <p className='text-2xl font-bold pt-3'>Chicken</p>
                             <p>2 lbs, boneless skinless chicken breasts</p>

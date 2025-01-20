@@ -30,10 +30,10 @@ const Page = () => {
                             <div className='text-4xl font-bold'>
                                 For the Student Dreading the End of University
                             </div>
-                            <div className='text-xl space-y-5 mt-8'>
+                            <div className='md:text-xl space-y-5 mt-8'>
                             <p>It was around halfway into my final year at university when the eager anticipation of my upcoming graduation transformed into dismay.</p>
                             <div className='flex justify-center'>
-                                <Image width={700} height={466} src={"/img/blog/grad.jpg"} alt="grad" className='border'/>
+                                <Image width={700} height={466} src={"/img/blog/grad.jpg"} alt="grad" className=''/>
                             </div>
                             <p>Up until then, graduation was the light at the end of the tunnel that my peers and I had been wandering toward for the entirety of our emerging adulthood. This wandering was more or less aimless as I naively thought that all of the efforts I was contributing were in the name of escaping some sort of metaphoric prison that was infringing on my sense of agency.</p>
                             <p>In reality, that prison was a sanctuary.</p>
@@ -46,7 +46,7 @@ const Page = () => {
                             <p>When the day finally came, and I walked across that stage, nothing had ever felt more anticlimactic. I had seemingly spent my entire life working towards this exact moment, yet I was nearly entirely void of emotion. As I walked back to my seat and sat down I thought to myself, &quot;what now?&quot;</p>
                             <p className='text-3xl font-bold pt-3'>Moving Forward</p>
                             <div className='flex justify-center'>
-                                <Image width={468} height={244} src={"/img/blog/copium.jpg"} alt="copium" className='border'/>
+                                <Image width={468} height={244} src={"/img/blog/copium.jpg"} alt="copium" className=''/>
                             </div>
                             <p>You might be thinking I&apos;m just using this post to cope with my recent departure from university, or you also might assume the impression that I&apos;m not aware of how privileged I am to be in my position. While I believe I&apos;ve worked hard to get to where I am, it&apos;s not my place to agree or disagree with this assumption. However, one thing is certain, there&apos;s never a reason to not strive to be better, even when originating from a place of privilege.</p>
                             <p>Throughout university, the concept of self-betterment became a topic that I became engaged with, and for good reason. Through the effort of attempting to live every day even 1% better than the last, as opposed to simply doing what was expedient, my self-esteem grew, my mental health improved, and I was steadily moving closer to my own definition of success.</p>
@@ -56,7 +56,7 @@ const Page = () => {
                             <p>Not only is it necessary to maintain a flexible mindset and be receptive to feedback once you determine your answer, but you also mustn&apos;t be too strict on yourself in the pursuit of this success. After all, the best of life is experienced on the detours and adventures along the way, not at the destination.</p>
                             <p className='text-3xl font-bold pt-3'>It&apos;s the Journey</p>
                             <div className='flex justify-center'>
-                                <Image width={468} height={244} src={"/img/blog/obi.gif"} alt="obi" className='border' unoptimized={true}/>
+                                <Image width={468} height={244} src={"/img/blog/obi.gif"} alt="obi" className='' unoptimized={true}/>
                             </div>
                             <p className='italic'>&quot;Life moves pretty fast. If you don&apos;t stop and look around once in a while, you could miss it.&quot;<br/>Ferris Bueller</p>
                             <p>To live life to the fullest, and be present for the whole journey, you need an aim. When I sat back down in that seat after I had walked across the stage, the first thing I did was decouple my identity from being a student. The new identity I chose wasn&apos;t tied to my career, or else I&apos;d risk being miserable upon retirement, but instead built upon countless hours of introspection in which I discovered my core priorities and, along with them, my own definition of success.</p>

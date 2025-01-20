@@ -35,9 +35,9 @@ const Page = () => {
                             <div className='text-4xl font-bold'>
                                 Romanticization of the Doomer in Western Society
                                 </div>
-                                <div className='text-xl space-y-5 mt-8'>
+                                <div className='md:text-xl space-y-5 mt-8'>
                                 <div className='flex justify-center'>
-                                    <Image width={700} height={466} src={"/img/blog/doom2.jpg"} alt="doomer" className='border'/>
+                                    <Image width={700} height={466} src={"/img/blog/doom2.jpg"} alt="doomer" className=''/>
                                 </div>
                                 <p>In the shadows of our digital age, a peculiar figure has emerged, captivating the minds of a substantial subset of Western society. With melancholy and mystery, the Doomer archetype has become a symbol of detachment that serves as a welcomed distraction for those without direction.</p>
                                 <p>This post will dissect who the Doomer archetype represents, explore the cultural factors that led to its rise in popularity in the West as well as the future of its cultural impact, and finally, I&apos;ll share some advice from the OG, 19th-century Doomer philosophers, in case you find yourself in a state of empathy.</p>
@@ -53,7 +53,7 @@ const Page = () => {
                                 <p>While there are a variety of factors that have propelled the Doomer into the spotlight, increasing loneliness among the youth takes the cake by far.</p>
                                 <p>Loneliness in young adults has been on the rise for over a decade. My original intention was to regurgitate some statistics about this fact to emphasize this point. However, I&apos;ll assume you don&apos;t want to read random internet stats as much as I don&apos;t want to copy-paste them. So I&apos;ll spare your time. But, just in case you really want the numbers, {styledLink("here", "https://newsroom.osfhealthcare.org/the-pandemic-loosens-its-grip-but-loneliness-epidemic-keeps-a-tight-hold/")} {styledLink("are", "https://www.bbc.co.uk/programmes/articles/2yzhfv4DvqVp5nZyxBD8G23/who-feels-lonely-the-results-of-the-world-s-largest-loneliness-study")} {styledLink("a", "https://newsroom.thecignagroup.com/loneliness-epidemic-persists-post-pandemic-look")} {styledLink("few", "https://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/m97e4vdjnu/Results%20for%20YouGov%20RealTime%20%28Friendship%29%20164%205.7.2019.xlsx%20%20%5BGroup%5D.pdf")} {styledLink("studies", "https://www.campaigntoendloneliness.org/facts-and-statistics/")}, and let&apos;s move on.</p>
                                 <div className='flex justify-center'>
-                                    <Image width={500} height={300} src={"/img/blog/v_graph.jpg"} alt="v_graph" className='border'/>
+                                    <Image width={500} height={300} src={"/img/blog/v_graph.jpg"} alt="v_graph" className=''/>
                                 </div>
                                 <p>Those who are detached from reality might be quick to point their fingers at social media and video games as the scapegoat for this occurrence. And while they&apos;re partially correct, the core of the problem is far more multivariable.</p>
                                 <p>To start, the notion of community has been slowly disintegrating since the advent of the digital age. Not only have {styledLink("Third Places", "https://en.wikipedia.org/wiki/Third_place")} been becoming progressively {styledLink("less common", "https://www.aier.org/article/the-death-and-life-of-the-great-third-place/#:~:text=Third%20places%20are%20dying%20every,or%20work%20(second%20place).")} among younger generations, but their online replacements come with their own abundance of problems.</p>
@@ -66,7 +66,7 @@ const Page = () => {
                                 <p className='text-2xl font-bold'>The Inescapable Abyss</p>
                                 <p>Another issue with the internet is that it is an infinite abyss. Every corner of it breaks apart into infinitely smaller permutations, and for better or worse, nearly all these permutations have communities surrounding them.</p>
                                 <div className='flex justify-center'>
-                                    <Image width={400} height={300} src={"/img/blog/mandel.jpg"} alt="Mandelbrot Fractal" className='border'/>
+                                    <Image width={400} height={300} src={"/img/blog/mandel.jpg"} alt="Mandelbrot Fractal" className=''/>
                                 </div>
                                 <p>The more time you spend online, the more you&apos;re susceptible to engaging with more and more niche communities until you eventually end up in excessively esoteric territory.</p>
                                 <p>Some might see this as a great thing, after all, what type of loser wants to be the NPC who only interacts with mainstream fads? While I&apos;m not saying we should all throw critical thinking out the door and become part of the herd, I believe there&apos;s danger in aimlessly delving into the bottomless abyss.</p>
@@ -87,7 +87,7 @@ const Page = () => {
                                 <p>Hopefully, we agree that these are all relatively normal things by today&apos;s standards.</p>
                                 <p>Let&apos;s fast forward to now. Regardless of where you&apos;re geographically located, you&apos;re no longer in an average-sized town. You have new competition now &mdash; every person on this planet with an internet connection. The peak of your dominance hierarchy is occupied by the Tates, Musks, and Rogans of the world (extrapolate this to prominent figures outside the {styledLink("Manosphere", "https://en.wikipedia.org/wiki/Manosphere")} too, if you must). This large of a hierarchy has never before happened in human history.</p>
                                 <div className='flex justify-center'>
-                                    <Image width={450} height={300} src={"/img/blog/alpha.jpg"} alt="hierarchy" className='border'/>
+                                    <Image width={450} height={300} src={"/img/blog/alpha.jpg"} alt="hierarchy" className=''/>
                                 </div>
                                 <p>If you opt into playing this new game, everything turns into endless improvement and competitiveness. As you get more competitive, the risk of failing becomes increasingly daunting as it will set you back. So, instead of participating in trial and error to achieve your goals at a delayed pace, you opt to optimize your life such that you get everything right the first time.</p>
                                 <p>Everywhere there was previous trial and error, you instead apply this newfound optimization.</p>
@@ -103,7 +103,7 @@ const Page = () => {
                                 <p>While this never actually occurs in reality, the Literally Me subgenre was created as a mix between a coping mechanism and a joke to keep track of the media that contains such characters.</p>
                                 <div className='flex justify-center'>
                                     <a href='https://www.youtube.com/watch?v=MEWjPtTOMZo' target="_blank" rel="noreferrer" className='hover:cursor-nesw-resize'>
-                                    <Image width={533} height={300} src={"/img/blog/me.jpg"} alt="literally me" className='border'/>
+                                    <Image width={533} height={300} src={"/img/blog/me.jpg"} alt="literally me" className=''/>
                                     </a>
                                 </div>
                                 <p>Within it, you&apos;ll find disconnected and extreme characters who often experience tragedy due to their shortcomings. Among many others, Literally Me characters include Patrick Bateman from American Psycho, Arthur Fleck from The Joker, Tyler Durden from Fight Club, Travis Bickle from Taxi Driver, and Walter White from Breaking Bad.</p>
@@ -117,11 +117,11 @@ const Page = () => {
                                     width="90%"
                                     height="300"
                                     src={`https://www.youtube.com/embed/XuQUvdYQMlk`}
-                                    frameBorder="0"
+                                    frame="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
                                     title="Embedded youtube"
-                                    className='border border-r-1.5'
+                                    className=' -r-1.5'
                                     />
                                 </div>
                                 <p>For most, before stumbling upon these films and shows, they&apos;ve likely never associated with the lives of any of these characters. However, once they take their first drink from the firehose of this content and see the admiration shown to the characters for their resilience, they might decide to join the community of self-proclaimed outcasts.</p>
@@ -135,7 +135,7 @@ const Page = () => {
                                 <p className='text-3xl font-bold pt-3'>Existential Band-Aids</p>
                                 <p>Due to the limited reach of this post, speculating macro solutions to any of the prior phenomena likely wouldn&apos;t be of much help to anyone.</p>
                                 <div className='flex justify-center'>
-                                    <Image width={500} height={300} src={"/img/blog/n-s.png"} alt="Nietzsche and Schopenhauer" className='border'/>
+                                    <Image width={500} height={300} src={"/img/blog/n-s.png"} alt="Nietzsche and Schopenhauer" className=''/>
                                 </div>
                                 <p>Instead, I&apos;ll use this final section to pass forward the micro advice of 19th-century philosophers Nietzsche and Schopenhauer, who were Doomers before it was trendy.</p>
                                 <p className='text-2xl font-bold'>Nihilism</p>
@@ -151,7 +151,7 @@ const Page = () => {
                                 <p>The real problem isn&apos;t with this realization of life&apos;s meaningless suffering but how we handle it. Schopenhauer offered guidance in the form of two different solutions for this realization.</p>
                                 <p>The first was asceticism, that is, the disciplined avoidance of pleasure. To undertake asceticism, you must overcome your unconscious desire and pursuit for the selfish and material (i.e. vanity, sex, status, etc.)</p>
                                 <div className='flex justify-center'>
-                                    <Image width={450} height={300} src={"/img/blog/monk.jpg"} alt="Thích Quảng Đức" className='border'/>
+                                    <Image width={450} height={300} src={"/img/blog/monk.jpg"} alt="Thích Quảng Đức" className=''/>
                                 </div>
                                 <p>He claimed that by taking control over the ceaseless yearning of this world, you can find a form of happiness in the present moment. However, he also specified that due to the amount of discipline and commitment this would require, it would be a nearly impossible task, even for the wisest of individuals.</p>
                                 <p>His alternative solution was to engage in art and philosophy.</p>

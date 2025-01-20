@@ -30,7 +30,7 @@ const Page = () => {
                           <div className='text-4xl font-bold'>
                               Easy Avocado Toast 🥑
                           </div>
-                          <div className='text-xl space-y-5 mt-8'>
+                          <div className='md:text-xl space-y-5 mt-8'>
                             <p>The only snack in my diet that&apos;s both healthy and somehow tastes good. Here&apos;s how to quickly make it with minimal cleanup involved.</p>
                             <p className='text-2xl font-bold pt-3'>Ingredients</p>
                             <p>2 Slices of Bread (Sourdough or Whole Grain)</p>

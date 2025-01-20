@@ -30,7 +30,7 @@ const Page = () => {
                           <div className='text-4xl font-bold'>
                               Iced Vanilla Matcha Latte 🍵
                           </div>
-                          <div className='text-xl space-y-5 mt-8'>
+                          <div className='md:text-xl space-y-5 mt-8'>
                             <p>1/10 the price and 1/2 as much sugar as the Starbucks <a href='https://www.starbucks.com/menu/product/468/iced/nutrition' target="_blank" rel="noreferrer" className='hover:text-teal underline hover:cursor-nesw-resize'>alternative</a>, yet somehow tastes that much better since you made it yourself.</p>
                             <p className='text-2xl font-bold pt-3'>Ingredients</p>
                             <p>1.5 tsp, Matcha Powder</p>

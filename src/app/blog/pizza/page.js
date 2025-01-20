@@ -30,22 +30,22 @@ const Page = () => {
                           <div className='text-4xl font-bold'>
                             The Perfect(ish) NYC Pizza 🍕
                           </div>
-                          <div className='text-xl mt-8'>
+                          <div className='md:text-xl mt-8'>
                             My experimental journey to make the ultimate NYC slice.<br/>
                           </div>
-                          {/* <div className='text-xl mt-5'>
+                          {/* <div className='md:text-xl mt-5'>
                             <Link href='/bucketlist' target="_blank" rel="noreferrer"><span className='inline underline hover:text-teal hover:cursor-pointer'>Bucket List</span></Link> Progress as of 1/10/25: <span className='text-navy font-bold'>141/1000</span>
                           </div>
                           <div className="w-full bg-mint rounded-full h-2 mt-2">
                             <div className="bg-navy h-2 rounded-full" style={{"width": ((141/1000.0)*100) + "%"}}></div>
                           </div> */}
-                          <div className='text-xl space-y-5 mt-8'>
+                          <div className='md:text-xl space-y-5 mt-8'>
                             <div className='align-text-bottom'>
                               <span className='inline-block'>
                                 <p className='pt-2 text-2xl font-bold'>Dough</p>
                               </span>
                               <span className='inline-block ml-3'>  
-                                <p className='text-left text-teal-500 text-xl'>{"// four 14\" pies, rise in fridge for 24 hours"}</p>
+                                <p className='text-left text-teal-500 md:text-xl'>{"// four 14\" pies, rise in fridge for 24 hours"}</p>
                               </span>
                             </div>
                             <p>520g lukewarm water (~2.25 cups)</p>
@@ -59,7 +59,7 @@ const Page = () => {
                                 <p className='pt-5 text-2xl font-bold'>Sauce</p>
                               </span>
                               <span className='inline-block ml-3'>  
-                                <p className='text-left text-teal-500 text-xl'>{"// four pies worth"}</p>
+                                <p className='text-left text-teal-500 md:text-xl'>{"// four pies worth"}</p>
                               </span>
                             </div>
                             <p>12oz roma tomato sauce</p>
@@ -74,7 +74,7 @@ const Page = () => {
                                 <p className='pt-5 text-2xl font-bold'>Cheese</p>
                               </span>
                               <span className='inline-block ml-3'>  
-                                <p className='text-left text-teal-500 text-xl'>{"// per pie"}</p>
+                                <p className='text-left text-teal-500 md:text-xl'>{"// per pie"}</p>
                               </span>
                             </div>
                             <p>1oz shredded parmesan</p>

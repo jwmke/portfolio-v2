@@ -35,23 +35,23 @@ const Page = () => {
         >
           <Grain opacity={.95} blendMode="multiply" />
           <div className="w-full flex justify-center items-center min-h-[100vh]">
-            <DiagonalCornerContainer className="m-2 min-[925px]:hidden w-full max-w-[450px] text-white" size={64}>
+            <DiagonalCornerContainer className="m-2 min-[925px]:hidden w-full max-w-[450px] text-white" size={32}>
               <div className="min-[425px]:text-[4.7rem] text-[3.5rem] leading-[3rem] mt-4 w-full flex justify-center">
                 <h1 className={header.className}>
                   Library
                 </h1>
               </div>
-              <div className="mt-12 space-y-2">
+              <div className="mt-10 space-y-2">
                 {blogRecents.map(blog => (
                   <BlogBox external={blog.external} mobile full_title={blog.full_title} link={blog.route} tag_line={blog.tag_line} key={blog.title} />
                 ))}
               </div>
-              <div className="min-[425px]:text-[4.7rem] text-[3.5rem] leading-[3rem] mt-12 w-full flex justify-center">
+              <div className="min-[425px]:text-[4.7rem] text-[3.5rem] leading-[3rem] mt-14 w-full flex justify-center">
                 <h1 className={header.className}>
                   Recipes
                 </h1>
               </div>
-              <div className="mt-12 mb-16 grid grid-cols-2 gap-x-2">
+              <div className="mt-10 mb-16 grid grid-cols-2 gap-x-2 gap-y-2">
                 {recipeData.map(recipe => (
                   <Link className="hover:text-teal-300 flex justify-center" href={recipe.route} key={recipe.name}>
                     <div className="flex space-x-4 text-sm">
