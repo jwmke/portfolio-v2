@@ -1,55 +1,48 @@
-import PhotoAlbum from "react-photo-album";
-import NextJsImage from "./NextJsImage";
-import Image from "next/image";
+"use client";
 
-const ImageMosaic = ({ images, handleClick }) => {
-    // Calculate rows and their relative widths based on aspect ratios
-    const rows = [];
-    for (let i = 0; i < images.length; i += 3) {
-      rows.push(images.slice(i, i + 3));
-    }
-  
-    return (
-      <div className="w-full">
-        {rows.map((row, rowIndex) => {
-          // Calculate aspect ratios for this row
-          const aspectRatios = row.map(img => img.width / img.height);
-          // Sum of aspect ratios determines relative widths
-          const totalAspectRatio = aspectRatios.reduce((sum, ratio) => sum + ratio, 0);
-          
-          return (
-            <div key={rowIndex} className="flex w-full gap-4 mb-4">
-              {row.map((photo, photoIndex) => {
-                const aspectRatio = aspectRatios[photoIndex];
-                // Calculate relative width as a percentage of the total width
-                const relativeWidth = `${(aspectRatio / totalAspectRatio) * 100}%`;
-                
-                return (
-                  <div 
-                    key={photo.src}
-                    className="relative cursor-pointer"
-                    style={{
-                      width: relativeWidth,
-                      // Set a consistent height for the row, width will scale based on aspect ratio
-                      height: '300px'
-                    }}
-                    onClick={() => handleClick({ index: rowIndex * 3 + photoIndex })}
-                  >
-                    <Image
-                      src={photo.src}
-                      alt=""
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 33vw, 33vw"
-                    />
-                  </div>
-                );
-              })}
-            </div>
-          );
-        })}
-      </div>
-    );
-  };
-  
-export default ImageMosaic;
+import Image from "next/image";
+import {
+  RowsPhotoAlbum,
+} from "react-photo-album";
+import "react-photo-album/rows.css";
+
+function renderNextImage(
+  { alt = "", title, sizes },
+  { photo, width, height },
+) {
+  return (
+    <div
+      style={{
+        width: "100%",
+        position: "relative",
+        aspectRatio: `${width} / ${height}`,
+      }}
+    >
+      <Image
+        fill
+        src={photo}
+        alt={alt}
+        title={title}
+        sizes={sizes}
+        placeholder={"blurDataURL" in photo ? "blur" : undefined}
+      />
+    </div>
+  );
+}
+
+export default function ImageMosaic({ images, handleClick, max = 3 }) {
+  return (
+    <RowsPhotoAlbum
+      photos={images}
+      render={{ image: renderNextImage }}
+      onClick={handleClick}
+      rowConstraints={{maxPhotos: max}}
+      sizes={{
+        size: "1168px",
+        sizes: [
+          { viewport: "(max-width: 1200px)", size: "calc(100vw - 32px)" },
+        ],
+      }}
+    />
+  );
+}

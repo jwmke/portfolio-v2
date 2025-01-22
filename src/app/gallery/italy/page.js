@@ -536,11 +536,7 @@ const Page = () => {
         >
           <Grain opacity={.95} blendMode="multiply" />
           <div className="w-full min-h-[100vh] flex justify-center p-2 py-6">
-<<<<<<< HEAD
             <DiagonalCornerContainer className="w-[60rem]" size={32}>
-=======
-            <DiagonalCornerContainer className="w-[60rem]" size={64}>
->>>>>>> e3ef78ebb2a041bf7c76e464c6b9ff2010bdf762
                 <div className={text.className}>
                     <div className='mx-auto pt-8 md:px-20'>
                         <div className='text-white text-left mx-5 mb-24'>
@@ -548,7 +544,7 @@ const Page = () => {
                                 Italy on Film
                             </div>
                             <div className='text-teal-500 text-xl space-y-5 my-8'>
-                            <p>{"// Shot on a Kodak Ektar H35 with Kodak Gold 200 35mm"}</p>
+                                <p>{"// Shot on Kodak Ektar H35 w/ Kodak Gold 200 35mm"}</p>
                             </div>
                             <ImageMosaic images={images}
                                 handleClick={({ index }) => {
