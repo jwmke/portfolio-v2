@@ -15,7 +15,7 @@ const Page = () => {
 
     const images = [
       {
-          src: '/img/la_final/la1.jpg',
+          src: '/img/la_final/la1.JPG',
           height: 100,
           width: 150,
       },
