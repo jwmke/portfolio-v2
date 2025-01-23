@@ -33,9 +33,13 @@ const RightBox = () => {
             <div className="mb-[1.75rem]">
                 <CornerClip />
             </div>
-            <ImageBox className="relative inline-block">
-                <Image className="" src={"/img/eeg2t.png"} width={130} height={200} alt="EEG"/>
-            </ImageBox>
+            <a className="hover:cursor-ne-resize hover:bg-teal-900 h-[13.2rem] mb-1" href="https://github.com/jwmke/eeg" 
+                    target="_blank"
+                    rel="noopener noreferrer">
+                <ImageBox className="relative inline-block">
+                    <Image className="" src={"/img/eeg2t.png"} width={130} height={200} alt="EEG"/>
+                </ImageBox>
+            </a>
         </div>
         <div className="text-white flex flex-col items-start w-full relative pt-[1.125rem]">
             <div className="absolute bottom-[3.5rem] 2xl:bottom-[3.75rem] text-sm left-0.5">
