@@ -18,7 +18,7 @@ const RightSideExtension = ({
         calc(100% - ${size + 1}px) calc(100% - 1px),
         0px calc(100% - 1px)
       )`;
-    return <div className="relative w-6 h-28 overflow-hidden">
+    return <div className="relative w-6 h-28">
     <div
       className="absolute inset-0 bg-white"
       style={{
@@ -26,7 +26,7 @@ const RightSideExtension = ({
       }}
     >
       <div 
-      className="absolute inset-0 overflow-hidden"
+      className="absolute inset-0"
       style={{
         clipPath: innerClipPath,
         backgroundColor: 'rgb(31, 31, 31)',
@@ -43,7 +43,7 @@ const RightSideExtension = ({
     </div>
     
     <div
-      className="relative z-10 flex"
+      className="relative z-20 flex"
       style={{ clipPath: outerClipPath }}
     >
         <div className="h-[5.4rem] w-3 ml-1.5 mr-2 mt-2.5">

@@ -57,7 +57,7 @@ export default function Home() {
         <div className="min-[1921px]:hidden min-[650px]:flex hidden flex-col justify-center min-h-screen min-w-full">
         {/* <ZoomPaddingContainer> */}
           <div className="py-2 px-2 min-[1921px]:hidden min-[650px]:flex hidden">
-          <div className="w-6 h-full mt-[27rem] z-20 -right-[1px] top-[3px] relative transform translate-x-0">
+          <div className="w-6 h-full mt-[27rem] z-20 -right-[2px] top-[3px] relative transform translate-x-0">
             <LeftSideExtension />
           </div>
           <DiagonalCornerContainer className="w-full" size={64}>
