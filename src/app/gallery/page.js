@@ -33,7 +33,7 @@ const Page = () => {
         >
           <Grain opacity={.95} blendMode="multiply" />
           <div className="w-full flex justify-center items-center min-h-[100vh]">
-            <DiagonalCornerContainer className="m-2 min-[925px]:hidden w-full max-w-[450px] text-white" size={32}>
+            <DiagonalCornerContainer className="m-4 min-[925px]:hidden w-full max-w-[450px] text-white" size={32}>
               <div className="min-[425px]:text-[4.7rem] text-[3.5rem] leading-[3rem] mt-12 w-full flex justify-center">
                 <h1 className={header.className}>
                   Gallery

@@ -208,7 +208,7 @@ const YesterdayBox = () => {
                             <p className={text.className}>Perfect NYC Pizza</p>
                         </li>
                         </Link>
-                        <Link className="hover:text-teal-300 text-teal-500" href="/blog">
+                        <Link className="hover:text-teal-300 text-teal-500" href="/blog/#recipes">
                         <li className="flex items-center space-x-2 mt-1 ">
                             <p className={text.className}>All Recipes...</p>
                         </li>
