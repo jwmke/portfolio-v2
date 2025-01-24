@@ -173,7 +173,7 @@ const Page = () => {
                         <div>Another solution dropped right into our laps. If we were to have skipped step 0, this never would&apos;ve happened.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/milk.jpg"} alt="milk" className=''/>
+                            <Image width={468} height={244} src={"/img/blog/milk_b.jpg"} alt="milk" className=''/>
                             <div>A glimpse into Operation M.I.L.K.</div>
                             </div>
                         </div>
@@ -241,7 +241,7 @@ const Page = () => {
                         <div>Responsible for loading the platforms with bags from the front lawn, standing on said platforms as they were lifted to the lip of the bowl by the forklift, and dumping the cereal into the bowl; additionally responsible for having someone in the bowl to evenly spread out the cereal. <div className='inline italic'>*resume flashback*</div></div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs'>
-                            <Image width={468} height={244} src={"/img/blog/dump.jpg"} alt="dump" className=''/>
+                            <Image width={468} height={244} src={"/img/blog/dumping.jpg"} alt="dump" className=''/>
                             <div>Chocolate rain</div>
                             </div>
                         </div>

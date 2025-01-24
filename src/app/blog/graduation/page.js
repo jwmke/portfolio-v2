@@ -33,7 +33,7 @@ const Page = () => {
                             <div className='md:text-xl space-y-5 mt-8'>
                             <p>It was around halfway into my final year at university when the eager anticipation of my upcoming graduation transformed into dismay.</p>
                             <div className='flex justify-center'>
-                                <Image width={700} height={466} src={"/img/blog/grad.jpg"} alt="grad" className=''/>
+                                <Image width={700} height={466} src={"/img/blog/graduation.jpg"} alt="grad" className=''/>
                             </div>
                             <p>Up until then, graduation was the light at the end of the tunnel that my peers and I had been wandering toward for the entirety of our emerging adulthood. This wandering was more or less aimless as I naively thought that all of the efforts I was contributing were in the name of escaping some sort of metaphoric prison that was infringing on my sense of agency.</p>
                             <p>In reality, that prison was a sanctuary.</p>
