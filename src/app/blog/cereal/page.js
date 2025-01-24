@@ -216,7 +216,7 @@ const Page = () => {
                         <div>Despite obstacles emerging left and right throughout the completion of these tasks, the common goal of building and filling this bowl created a sense of camaraderie that pushed us through the storm.</div>
                         <div className='flex justify-center'>
                             <div className='inline-block text-center text-xs px-3'>
-                            <Image width={244} height={468} src={"/img/blog/crane.jpg"} alt="crane" className=''/>
+                            <Image width={255} height={468} src={"/img/blog/crane.jpg"} alt="crane" className=''/>
                             <div>Unloading the scales</div>
                             </div>
                             <div className='inline-block text-center text-xs px-3'>

@@ -541,7 +541,7 @@ const Page = () => {
                     <div className='mx-auto pt-8 md:px-20'>
                         <div className='text-white text-left mx-5 mb-24'>
                             <div className='text-4xl font-bold'>
-                                Italy on Film
+                                Italy in Autumn
                             </div>
                             <div className='text-teal-500 text-xl space-y-5 my-8'>
                                 <p>{"// Shot on Kodak Ektar H35 w/ Kodak Gold 200 35mm"}</p>
