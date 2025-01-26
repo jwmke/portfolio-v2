@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const PolyCornerClip = ({ 
   size = 65,
   strokeWidth = 1,

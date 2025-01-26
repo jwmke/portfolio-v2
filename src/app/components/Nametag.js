@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Grain from "./Grain";
 
-import { Libre_Barcode_128, Protest_Revolution, Saira_Stencil_One } from "next/font/google";
+import { Libre_Barcode_128, Saira_Stencil_One } from "next/font/google";
 
 const barcode = Libre_Barcode_128({
     subsets: ['latin'],

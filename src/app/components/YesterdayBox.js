@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
 import { Lato } from "next/font/google";
 import ProjectBox from "./ProjectBox";
-import ImageBox from "./ImageBox";
 import Image from "next/image";
 import projectData from '../data/projectData';
 import Link from "next/link";
