@@ -230,7 +230,7 @@ const Page = () => {
             <DiagonalCornerContainer className="w-[60rem]" size={32}>
                 <div className={text.className}>
                     <div className='mx-auto pt-8 md:px-20'>
-                        <div className='text-white text-left mx-5 mb-24'>
+                        <div className='text-white text-left sm:mx-5 mb-4 sm:mb-24'>
                             <div className='text-4xl font-bold'>
                                 Downtown Los Angeles
                             </div>

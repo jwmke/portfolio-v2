@@ -5,14 +5,9 @@ import ImageBox from "./ImageBox";
 import CornerClip from "./CornerClip";
 import Link from "next/link";
 
-import { Flow_Block, Lato, Protest_Revolution } from "next/font/google";
+import { Flow_Block, Lato } from "next/font/google";
 
 const block = Flow_Block({
-    subsets: ['latin'],
-    weight: ["400"]
-});
-
-const protest = Protest_Revolution({
     subsets: ['latin'],
     weight: ["400"]
 });

@@ -49,17 +49,17 @@ const Page = () => {
             <DiagonalCornerContainer className="w-[60rem]" size={32}>
               <div className='mx-auto pt-8'>
                 <div className={text.className}>
-                  <div className='text-white text-left mx-5'>
+                  <div className='text-white text-left sm:mx-5'>
                     <span className='text-4xl font-bold'>
                       Welcome to The Dojoe&nbsp;
                     </span>
                     <span className='text-4xl'>
                       (My Hall of Fame)
                     </span>
-                      <p className='md:text-xl leading-9 mt-8'>
+                      <p className='md:text-xl sm:leading-9 mt-8'>
                         I&apos;ve been fortunate to meet some fantastic people throughout my life. These people have been the Mr. Miyagis in my journeys who have all impacted who I am today. They&apos;ve taught me technical skills and life lessons, given me opportunities, and have been there when I needed help.
                       </p>
-                      <p className='md:text-xl my-5 leading-9'>
+                      <p className='md:text-xl my-5 sm:leading-9'>
                       The Dojoe not only exists to show my appreciation to these folks; but it&apos;s also for you, the reader, to reflect on who would be in your hall of fame.
                       </p>
                       <p className='md:text-xl mt-5 mb-8'>

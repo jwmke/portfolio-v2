@@ -1,5 +1,3 @@
-import Grain from "./Grain";
-
 const BlogBox = ({ 
   full_title,
   tag_line,

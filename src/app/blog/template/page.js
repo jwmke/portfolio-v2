@@ -26,7 +26,7 @@ const Page = () => {
             <DiagonalCornerContainer className="w-[60rem]" size={64}>
                 <div className={text.className}>
                     <div className='mx-auto pt-8 md:px-20'>
-                        <div className='text-white text-left mx-5 mb-8'>
+                        <div className='text-white text-left sm:mx-5 mb-8'>
                             
                         </div>
                     </div>

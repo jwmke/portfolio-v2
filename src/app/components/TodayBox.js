@@ -1,4 +1,4 @@
-import { Lato, Vollkorn_SC } from "next/font/google";
+import { Lato } from "next/font/google";
 import localFont from "next/font/local";
 import Image from "next/image";
 import Link from 'next/link';
