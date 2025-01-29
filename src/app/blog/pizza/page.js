@@ -10,6 +10,11 @@ const text = Lato({
 });
 
 const Page = () => {
+    const styledLink = (text, link) => (
+      <a href={link} target="_blank" rel="noreferrer" className='hover:text-teal-300 underline hover:cursor-nesw-resize'>
+          {text}
+      </a>
+    )
     return (
       <div className="bg-black">
         <div
@@ -32,6 +37,12 @@ const Page = () => {
                           </div>
                           <div className='md:text-xl mt-8'>
                             My experimental journey to make the ultimate NYC slice.<br/>
+                          </div>
+                          <div className="md:text-xl mt-8 text-teal-500">
+                            // this recipe was made for those who already know how to make a pizza from scratch, (It contains the best portions and tips I&apos;ve found when making 100+ pies)
+                          </div>
+                          <div className="md:text-xl mt-4 text-teal-500">
+                            // if you haven&apos;t happened to make a pizza from scratch before, I highly recommend watching {styledLink("this video", "https://www.youtube.com/watch?v=SDpCzJw2xm4")} first
                           </div>
                           {/* <div className='md:text-xl mt-5'>
                             <Link href='/bucketlist' target="_blank" rel="noreferrer"><span className='inline underline hover:text-teal hover:cursor-pointer'>Bucket List</span></Link> Progress as of 1/10/25: <span className='text-navy font-bold'>141/1000</span>

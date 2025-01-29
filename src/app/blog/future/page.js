@@ -27,7 +27,25 @@ const Page = () => {
                 <div className={text.className}>
                     <div className='mx-auto pt-8 md:px-20'>
                         <div className='text-white text-left sm:mx-5 mb-8'>
-                            
+                            <div className='text-4xl font-bold'>
+                                Techno Future Litmus Test 
+                            </div>
+                            <div className='md:text-xl space-y-5 mt-8'>
+                                <div className='flex justify-center'>
+                                  <Image width={700} height={466} src={"/img/blog/doom2.jpg"} alt="doomer" className=''/>
+                                </div>
+                                <p>pandoras box</p>
+                                <p>modern examples</p>
+                                <p>backwards is impossible</p>
+                                <p className='text-3xl font-bold pt-3'>Lenses</p>
+                                <p>Andreessen</p>
+                                <p>Kaczynski</p> 
+                                <p>Evola</p>
+                                <p className='text-3xl font-bold pt-3'>Future</p>
+                                <p>future examples</p>
+                                <p className='text-3xl font-bold pt-3'>Conclusion</p>
+                                <p>???</p>
+                            </div>
                         </div>
                     </div>
                 </div>
