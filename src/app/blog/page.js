@@ -20,6 +20,52 @@ const text = Lato({
   weight: ["100", "400"]
 });
 
+const blogroll = [
+  {
+    "name": "Tim Urban",
+    "link": "https://waitbutwhy.com/"
+  },
+  {
+    "name": "Paul Graham",
+    "link": "http://www.paulgraham.com/articles.html"
+  },
+  {
+    "name": "Derek Sivers",
+    "link": "https://sive.rs/blog"
+  },
+  {
+    "name": "George Hotz",
+    "link": "https://geohot.github.io/blog/"
+  },
+  {
+    "name": "James de Llis",
+    "link": "https://web.archive.org/web/20211006105800/https://www.meta-nomad.net/"
+  },
+  {
+    "name": "Curtis Yarvin",
+    "link": "https://graymirror.substack.com/"
+  },
+  {
+    "name": "Ludic Mataroa",
+    "link": "https://ludic.mataroa.blog/"
+  },
+  {
+    "name": "Paul Stamatiou",
+    "link": "https://paulstamatiou.com/"
+  },
+  {
+    "name": "Nick Bostrom",
+    "link": "https://nickbostrom.com/"
+  },
+  {
+    "name": "Alex Mango",
+    "link": "https://mango.pdf.zone/"
+  },
+  {
+    "name": "Ran Prieur",
+    "link": "https://ranprieur.com/index.html"
+  }
+];
 
 const Page = () => {
     return (
@@ -100,7 +146,36 @@ const Page = () => {
                     {"― Marcus Cicero, 102 BC"} 
                     </div>
                 </div>
-                  <Image className="border-white border" src={"/img/libg.jpg"} width={320} height={600} alt="Library"/>
+                  <div className="group border-white border relative text-white">
+                    <Image 
+                      className="group-hover:opacity-50 transition-all duration-150" 
+                      src="/img/libg.jpg" 
+                      width={320} 
+                      height={600} 
+                      alt="Library"
+                    />
+                    <div className="absolute w-full h-full top-0 opacity-0 group-hover:opacity-100 transition-all duration-150">
+                      <div className="text-[3.5rem] leading-[3rem] mt-4 w-full ml-5">
+                        <h1 className={header.className}>
+                          Blogroll
+                        </h1>
+                      </div>
+                      <div className="ml-5 mt-8">
+                        <ul>
+                          {blogroll.map(({ name, link }) => (
+                            <li key={name}>
+                              <a href={link} target="_blank" rel="noopener noreferrer">
+                                <div className="flex space-x-4 hover:cursor-ne-resize hover:text-teal-300">
+                                  <p>&#8226;</p>
+                                  <p className={text.className}>{name}</p>
+                                </div>
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </DiagonalCornerContainer>
