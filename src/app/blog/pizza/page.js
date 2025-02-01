@@ -39,11 +39,17 @@ const Page = () => {
                             My experimental journey to make the ultimate NYC slice.<br/>
                           </div>
                           <div className="md:text-xl mt-8 text-teal-500">
-                            {"// "}This recipe was made for those who already know how to make a pizza from scratch, (It contains the best portions and tips I've found when making 100+ pies)
+                            {"// "}this recipe was made for those who already know how to make a pizza from scratch, (It contains the best portions and tips I&apos;ve found when making 100+ pies)
                           </div>
                           <div className="md:text-xl mt-4 text-teal-500">
-                            {"// "}If you haven't happened to make a pizza from scratch before, I highly recommend watching {styledLink("this video", "https://www.youtube.com/watch?v=SDpCzJw2xm4")} first
+                            {"// "}if you haven&apos;t happened to make a pizza from scratch before, I highly recommend watching {styledLink("this video", "https://www.youtube.com/watch?v=SDpCzJw2xm4")} first
                           </div>
+                          {/* <div className='md:text-xl mt-5'>
+                            <Link href='/bucketlist' target="_blank" rel="noreferrer"><span className='inline underline hover:text-teal hover:cursor-pointer'>Bucket List</span></Link> Progress as of 1/10/25: <span className='text-navy font-bold'>141/1000</span>
+                          </div>
+                          <div className="w-full bg-mint rounded-full h-2 mt-2">
+                            <div className="bg-navy h-2 rounded-full" style={{"width": ((141/1000.0)*100) + "%"}}></div>
+                          </div> */}
                           <div className='md:text-xl space-y-5 mt-8'>
                             <div className='align-text-bottom'>
                               <span className='inline-block'>
