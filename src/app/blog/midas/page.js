@@ -28,23 +28,40 @@ const Page = () => {
                     <div className='mx-auto pt-8 md:px-20'>
                         <div className='text-white text-left sm:mx-5 mb-8'>
                             <div className='text-4xl font-bold'>
-                                Techno Future Litmus Test 
+                              Midas’ Monocle and the Heat Death of the Universe
                             </div>
                             <div className='md:text-xl space-y-5 mt-8'>
                                 <div className='flex justify-center'>
-                                  <Image width={700} height={466} src={"/img/blog/doom2.jpg"} alt="doomer" className=''/>
+                                  <Image width={700} height={466} src={"/img/blog/alch.jpg"} alt="alch" className=''/>
                                 </div>
-                                <p>pandoras box</p>
                                 <p>modern examples</p>
+                                <div className='flex justify-center'>
+                                  <Image width={500} height={300} src={"/img/blog/cars.jpg"} alt="cars" className=''/>
+                                </div>
                                 <p>backwards is impossible</p>
                                 <p className='text-3xl font-bold pt-3'>Lenses</p>
                                 <p>Andreessen</p>
-                                <p>Kaczynski</p> 
+                                <div className='flex justify-center'>
+                                  <Image width={300} height={300} src={"/img/blog/midas.jpg"} alt="midas" className=''/>
+                                </div>
+                                <p>Kaczynski</p>
+                                <div className='flex justify-center'>
+                                  <Image width={500} height={300} src={"/img/blog/shrooms.png"} alt="shrooms" className=''/>
+                                </div>
                                 <p>Evola</p>
+                                <div className='flex justify-center'>
+                                  <Image width={300} height={300} src={"/img/blog/tiger.jpg"} alt="tiger" className=''/>
+                                </div>
                                 <p className='text-3xl font-bold pt-3'>Future</p>
                                 <p>future examples</p>
+                                <div className='flex justify-center'>
+                                  <Image width={500} height={300} src={"/img/blog/fountain.jpg"} alt="fountain" className=''/>
+                                </div>
                                 <p className='text-3xl font-bold pt-3'>Conclusion</p>
                                 <p>???</p>
+                                <div className='flex justify-center'>
+                                  <Image width={500} height={300} src={"/img/blog/black.png"} alt="death" className=''/>
+                                </div>
                             </div>
                         </div>
                     </div>
