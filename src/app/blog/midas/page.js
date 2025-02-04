@@ -36,27 +36,37 @@ const Page = () => {
                                 </div>
                                 <p className='text-3xl font-bold pt-3'>Technology of Today</p>
                                 <p>modern examples</p>
+                                <p className='text-2xl font-bold'>Surveillance</p>
+                                <p className='text-2xl font-bold'>Defense</p>
+                                <p className='text-2xl font-bold'>Cars</p>
+                                <p className='text-2xl font-bold'>Medicine</p>
                                 <div className='flex justify-center'>
                                   <Image width={500} height={300} src={"/img/blog/cars.jpg"} alt="cars" className=''/>
                                 </div>
                                 <p>backwards is impossible</p>
                                 <p className='text-3xl font-bold pt-3'>Lenses</p>
-                                <p className='text-3xl font-bold pt-3'>Techno-Optimism</p>
+                                <p className='text-2xl font-bold'>Techno-Optimism</p>
                                 <p>Andreessen</p>
                                 <div className='flex justify-center'>
                                   <Image width={300} height={300} src={"/img/blog/midas.jpg"} alt="midas" className=''/>
                                 </div>
-                                <p className='text-3xl font-bold pt-3'>Techno-Skepticism</p>
+                                <p className='text-2xl font-bold'>Techno-Skepticism</p>
                                 <p>Kaczynski</p>
                                 <div className='flex justify-center'>
                                   <Image width={500} height={300} src={"/img/blog/shrooms.png"} alt="shrooms" className=''/>
                                 </div>
-                                <p className='text-3xl font-bold pt-3'>Techno-Traditionalism</p>
+                                <p className='text-2xl font-bold'>Techno-Traditionalism</p>
                                 <p>Evola</p>
                                 <div className='flex justify-center'>
                                   <Image width={300} height={300} src={"/img/blog/tiger.jpg"} alt="tiger" className=''/>
                                 </div>
                                 <p className='text-3xl font-bold pt-3'>Technology of Tomorrow</p>
+                                
+                                <p className='text-2xl font-bold'>Genetic Engineering</p>
+                                <p className='text-2xl font-bold'>BCIs</p>
+                                <p className='text-2xl font-bold'>Virtual Reality</p>
+                                <p className='text-2xl font-bold'>Unlimited Power</p>
+                                <p className='text-2xl font-bold'>Immortality</p>
                                 <div className='flex justify-center'>
                                   <Image width={500} height={300} src={"/img/blog/fountain.jpg"} alt="fountain" className=''/>
                                 </div>
