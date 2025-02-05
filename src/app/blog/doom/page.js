@@ -166,7 +166,7 @@ const Page = () => {
                                     <Image width={132} height={42} src={"/img/blog/human.png"} alt="human"/>
                                     </a>
                                 </div>
-                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

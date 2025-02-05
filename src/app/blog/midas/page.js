@@ -34,45 +34,94 @@ const Page = () => {
                                 <div className='flex justify-center'>
                                   <Image width={700} height={466} src={"/img/blog/alch.jpg"} alt="alch" className=''/>
                                 </div>
+                                <p></p>
+                                <p></p>
                                 <p className='text-3xl font-bold pt-3'>Technology of Today</p>
-                                <p>modern examples</p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
                                 <p className='text-2xl font-bold'>Surveillance</p>
+                                <p></p>
                                 <p className='text-2xl font-bold'>Defense</p>
+                                <p></p>
                                 <p className='text-2xl font-bold'>Cars</p>
-                                <p className='text-2xl font-bold'>Medicine</p>
+                                <p></p>
                                 <div className='flex justify-center'>
                                   <Image width={500} height={300} src={"/img/blog/cars.jpg"} alt="cars" className=''/>
                                 </div>
-                                <p>backwards is impossible</p>
+                                <p></p>
+                                <p className='text-2xl font-bold'>Medicine</p>
+                                <p></p>
+                                <p></p>
                                 <p className='text-3xl font-bold pt-3'>Lenses</p>
+                                <p></p>
                                 <p className='text-2xl font-bold'>Techno-Optimism</p>
-                                <p>Andreessen</p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
                                 <div className='flex justify-center'>
                                   <Image width={300} height={300} src={"/img/blog/midas.jpg"} alt="midas" className=''/>
                                 </div>
+                                <p></p>
+                                <p></p>
                                 <p className='text-2xl font-bold'>Techno-Skepticism</p>
-                                <p>Kaczynski</p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
                                 <div className='flex justify-center'>
                                   <Image width={500} height={300} src={"/img/blog/shrooms.png"} alt="shrooms" className=''/>
                                 </div>
+                                <p></p>
                                 <p className='text-2xl font-bold'>Techno-Traditionalism</p>
-                                <p>Evola</p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
                                 <div className='flex justify-center'>
                                   <Image width={300} height={300} src={"/img/blog/tiger.jpg"} alt="tiger" className=''/>
                                 </div>
+                                <p></p>
+                                <p></p>
+                                <p></p>
                                 <p className='text-3xl font-bold pt-3'>Technology of Tomorrow</p>
-                                
+                                <p></p>
                                 <p className='text-2xl font-bold'>Genetic Engineering</p>
+                                <p></p>
+                                <div className='flex justify-center'>
+                                  <Image width={500} height={300} src={"/img/blog/10x.png"} alt="10x" className=''/>
+                                </div>
+                                <p></p>
                                 <p className='text-2xl font-bold'>BCIs</p>
+                                <p></p>
                                 <p className='text-2xl font-bold'>Virtual Reality</p>
+                                <p></p>
                                 <p className='text-2xl font-bold'>Unlimited Power</p>
+                                <p></p>
                                 <p className='text-2xl font-bold'>Immortality</p>
+                                <p></p>
                                 <div className='flex justify-center'>
                                   <Image width={500} height={300} src={"/img/blog/fountain.jpg"} alt="fountain" className=''/>
                                 </div>
+                                <p></p>
                                 <p className='text-3xl font-bold pt-3'>The End</p>
+                                <p></p>
+                                <p></p>
                                 <div className='flex justify-center'>
                                   <Image width={500} height={300} src={"/img/blog/black.png"} alt="death" className=''/>
+                                </div>
+                                <p></p>
+                                <p></p>
+                                <div className='flex justify-center pt-4'>
+                                    <a target="_blank" rel="noreferrer" href='https://notbyai.fyi/' className='hover:cursor-pointer hover:shadow-2xl'>
+                                    <Image width={132} height={42} src={"/img/blog/human.png"} alt="human"/>
+                                    </a>
                                 </div>
                             </div>
                         </div>
