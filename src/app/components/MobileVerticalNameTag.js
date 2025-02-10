@@ -73,7 +73,7 @@ const VerticalNameTag = ({
                     <div className="mt-auto min-[400px]:flex hidden flex-col items-center gap-2 mb-16 h-[30rem] w-12 absolute right-0.5 min-[410px]:top-[2.75rem] top-[4.5rem]">
                         <div className="text-[1.75rem] ml-2 min-[410px]:ml-0">00</div>
                         <Image src={'/img/right.svg'} height={16} width={30} alt="Triangle" className="my-1 rotate-90 ml-2 min-[410px]:ml-0"/>
-                        <div className="text-[1.75rem] ml-2 min-[410px]:ml-0">24</div>
+                        <div className="text-[1.75rem] ml-2 min-[410px]:ml-0">25</div>
                         <Image src={'/img/globe.png'} height={20} width={50} alt="Globe" className="mt-[1.35rem] min-[410px]:mt-[3.25rem] rotate-90 hidden min-[410px]:flex"/>
                         <div className="min-[410px]:text-[1.9rem] text-[1.7rem] min-[410px]:mt-24 mt-[10.75rem] mr-3 rotate-90 w-[12.5rem] ml-3 min-[410px]:ml-0">
                             <p className={barcode.className}>Ride the Tiger</p>
