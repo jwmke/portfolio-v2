@@ -1,5 +1,13 @@
 [
     {
+        "title": "Midas",
+        "full_title": "Midas' Monocle and the Heat Death of the Universe",
+        "tag_line": "Three philosophical lenses to view humanity's technological future through.",
+        "path": "/img/blog/monopoly.jpg",
+        "date": "02/25",
+        "route": "/blog/midas"
+    },
+    {
         "title": "Neuroscience",
         "full_title": "Neuroscience Fundamentals",
         "tag_line": "All of the essentials from your 9th grade biology course that you'll need to fully understand BCIs.",
