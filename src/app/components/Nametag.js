@@ -80,7 +80,7 @@ const NameTag = ({
                     <div className="flex items-center gap-3 pt-1">
                         <span className="text-3xl font-thin">00</span>
                         <Image className="mx-2" src={'/img/right.svg'} height={20} width={30} alt="Right" />
-                        <span className="text-3xl font-thin">24</span>
+                        <span className="text-3xl font-thin">25</span>
                         
                         <div className="flex items-center gap-2 ml-auto">
                             <Image className="pb-1" src={'/img/globe.png'} height={30} width={50} alt="Globe" />
