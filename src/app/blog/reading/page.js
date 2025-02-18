@@ -32,7 +32,30 @@ const Page = () => {
                 <div className={text.className}>
                     <div className='mx-auto pt-8 md:px-20'>
                         <div className='text-white text-left sm:mx-5 mb-8'>
-                            
+                            {/* The Museum of Contemporary Art Plaza */}
+                            {/* California Plaza */}
+                            {/* Aquarius - Jerome Kirk Plaza */}
+                            {/* Site Memory Reflection  */}
+                            {/* Beach cities plaza */}
+                            {/* Lakers complex */}
+                            {/* Coffee Connection terrace */}
+                            {/* Blue butterfly patio */}
+                            {/* Last bookstore */}
+                            {/* Manhattan beach library 2nd story */}
+                            {/* Barns n noble coffee shop */}
+                            {/* DTLA library garden */}
+                            {/* Plaza El Segundo */}
+                            {/* Turf lawn at the point */}
+                            {/* Coridor flow */}
+                            {/* Playa vista urban strip */}
+                            {/* LMU campus overlook */}
+                            {/* Tiger labs */}
+                            {/* Central Park */}
+                            {/* Bench overlooking manhattan beach */}
+                            {/* Main park downtown top by fountain */}
+                            {/* Side benches lil tokyo or weller court */}
+                            {/* Rooftop cafe city courthouse */}
+                            {/* Patio behind the DLTA equinox cafe */}
                         </div>
                     </div>
                 </div>
