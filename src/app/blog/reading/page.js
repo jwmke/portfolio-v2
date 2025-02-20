@@ -10,11 +10,67 @@ const text = Lato({
 });
 
 const Page = () => {
-    const styledLink = (text, link) => (
-      <a href={link} target="_blank" rel="noreferrer" className='hover:text-teal-300 underline hover:cursor-nesw-resize'>
-          {text}
-      </a>
-    )
+    const meta = (name, overall, seating, busy, coffee, bathroom, beauty, img, latlong) => {
+      latlong = latlong.split(', ')
+      .map(num => parseFloat(num).toFixed(3))
+      .join(', ');
+
+      return <div>
+        <div className="flex h-full items-center space-x-4 pb-4">
+          <p className="text-base font-bold sm:font-normal sm:text-2xl">{name}</p>
+          <p className="text-teal-500 text-xs sm:text-base flex space-x-1 pt-1.5">
+            <p>// </p>
+            <a href={"https://www.google.com/maps/search/?api=1&query="+latlong} target="_blank" rel="noreferrer" className='hover:text-teal-300 underline hover:cursor-nesw-resize'>
+              {latlong}
+            </a>
+          </p>
+        </div>
+        {img && <div className='flex justify-center pb-4'>
+          <Image width={466} height={466} src={`/img/blog/${img}.jpg`} alt={img} className=''/>
+        </div>}
+        <div className="w-full overflow-hidden">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-0">
+            
+            {/* Beauty Score */}
+            <div className="flex flex-col border border-white py-2 text-center">
+              <div className="text-white text-xs font-medium pb-2 border-b border-white">Beauty Score</div>
+              <div className="text-white text-base font-bold mt-2">{beauty}</div>
+            </div>
+
+            {/* Plush Seating */}
+            <div className="flex flex-col border border-white py-2 text-center">
+              <div className="text-white text-xs font-medium pb-2 border-b border-white">Plush Seating</div>
+              <div className="text-white text-base font-bold mt-2">{seating}</div>
+            </div>
+            
+            {/* Other People */}
+            <div className="flex flex-col border border-white py-2 text-center">
+              <div className="text-white text-xs font-medium pb-2 border-b border-white">Other People</div>
+              <div className="text-white text-base font-bold mt-2">{busy}</div>
+            </div>
+            
+            {/* Coffee / Food */}
+            <div className="flex flex-col border border-white py-2 text-center">
+              <div className="text-white text-xs font-medium pb-2 border-b border-white">Coffee / Food</div>
+              <div className="text-white text-base font-bold mt-2">{coffee}</div>
+            </div>
+            
+            {/* Free Bathrooms */}
+            <div className="flex flex-col border border-white py-2 text-center">
+              <div className="text-white text-xs font-medium pb-2 border-b border-white">Free Bathrooms</div>
+              <div className="text-white text-base font-bold mt-2">{bathroom}</div>
+            </div>
+            
+            
+            {/* Overall Rating */}
+            <div className="flex flex-col border border-white py-2 text-center">
+              <div className="text-white text-xs font-medium pb-2 border-b border-white">Overall Rating</div>
+              <div className="text-white text-base font-bold mt-2">{overall}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
     return (
       <div className="bg-black">
         <div
@@ -33,41 +89,68 @@ const Page = () => {
                     <div className='mx-auto pt-8 md:px-20'>
                         <div className='text-white text-left sm:mx-5 mb-8'>
                             <div className='text-4xl font-bold'>
-                              My Favorite Locations to Read in Los Angeles
+                              Favorite Places to Read at in Los Angeles
                             </div>
                             <div className='md:text-xl space-y-5 mt-8'>
                               <div className='flex justify-center'>
                                 <Image width={466} height={466} src={"/img/blog/vibe.jpg"} alt="vibe" className=''/>
                               </div>
-                              <p>While reading for vanity is something I deeply disagree with, one of the greatest benefits of books comes from when your mind starts to wander when reading them. A rigid individual might view this wandering as an annoyance that needs to be cut out. However, these brief episodes of distraction allow you to explore your imagination and reshape your inner perceptions and values.</p>
+                              <p>One of the greatest benefits of books comes from when your mind starts to wander when reading. These brief episodes of distraction allow you to explore your own mind and reshape your inner perceptions and values.</p>
                               <p>Due to this, the environment in which you read can sometimes be just as important as your book&apos;s content (the ratio is probably closer to 90% content, 10% environment, but I digress.)</p>
-                              <p>It&apos;s nearly been a year since I moved to Los Angeles, and there&apos;s an extreme lack of beautiful parks and tranquil spaces here. Therefore I set out to make this post, to highlight the favorite places I&apos;ve stumbled upon (both on my own and friend&apos;s recommendations) so that you too can enjoy them, assuming you live in LA.</p>
-                              <p>Since I live in Hawthorne and am the one person in all of LA who doesn&apos;t own a car, most of these will be within biking distance of South Bay, with a few downtown from when I&apos;ll take the occasional weekend venture down there via metro.</p>
+                              <p>It&apos;s nearly been a year since I moved to Los Angeles. When I first moved, I thought there&apos;s an extreme lack of beautiful parks and tranquil spaces here.</p>
+                              <p>Therefore, I set out to find as many public reading spots as I could, and this post will highlight the favorite places I&apos;ve stumbled upon (both on my own and through friend&apos;s recommendations) so that you too can enjoy them.</p>
+                              <p>I live in Hawthorne, and since I&apos;m the one person in all of LA who doesn&apos;t own a car, half of these will be within biking distance of South Bay, and the other half will be downtown for the occasional weekend venture via metro.</p>
+                              <p className='text-3xl font-bold'>Locations</p>
+                              {/* Blue butterfly patio */}
+                              {meta("Blue Butterfly Patio", "3/5", "No", "Sometimes", "Yes", "Yes", "4/5", "butterfly", "33.920558949294325, -118.41627942411804")}
+                              {/* The Museum of Contemporary Art Plaza */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* California Plaza */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Aquarius - Jerome Kirk Plaza */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Site Memory Reflection  */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* DTLA library garden */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Main park downtown top by fountain */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Side benches lil tokyo or weller court */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Rooftop cafe city courthouse */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Patio behind the DLTA equinox cafe */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Last bookstore */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Beach cities plaza */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Lakers complex */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Coffee Connection terrace */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Manhattan beach library 2nd story */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Barns n noble coffee shop */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Plaza El Segundo */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Turf lawn at the point */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Coridor flow */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Playa vista urban strip */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* LMU campus overlook */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Tiger labs */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Central Park */}
+                              {meta("", "", "", "", "", "", "", "", "")}
+                              {/* Bench overlooking manhattan beach */}
+                              {meta("", "", "", "", "", "", "", "", "")}
                             </div>
-                            {/* The Museum of Contemporary Art Plaza */}
-                            {/* California Plaza */}
-                            {/* Aquarius - Jerome Kirk Plaza */}
-                            {/* Site Memory Reflection  */}
-                            {/* Beach cities plaza */}
-                            {/* Lakers complex */}
-                            {/* Coffee Connection terrace */}
-                            {/* Blue butterfly patio */}
-                            {/* Last bookstore */}
-                            {/* Manhattan beach library 2nd story */}
-                            {/* Barns n noble coffee shop */}
-                            {/* DTLA library garden */}
-                            {/* Plaza El Segundo */}
-                            {/* Turf lawn at the point */}
-                            {/* Coridor flow */}
-                            {/* Playa vista urban strip */}
-                            {/* LMU campus overlook */}
-                            {/* Tiger labs */}
-                            {/* Central Park */}
-                            {/* Bench overlooking manhattan beach */}
-                            {/* Main park downtown top by fountain */}
-                            {/* Side benches lil tokyo or weller court */}
-                            {/* Rooftop cafe city courthouse */}
-                            {/* Patio behind the DLTA equinox cafe */}
+                            
                         </div>
                     </div>
                 </div>
