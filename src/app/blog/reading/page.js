@@ -18,12 +18,12 @@ const Page = () => {
       return <div>
         <div className="flex h-full items-center space-x-4 pb-4">
           <p className="text-base font-bold sm:font-normal sm:text-2xl">{name}</p>
-          <p className="text-teal-500 text-xs sm:text-base flex space-x-1 pt-1.5">
+          <div className="text-teal-500 text-xs sm:text-base flex space-x-1 pt-1.5">
             <p>// </p>
             <a href={"https://www.google.com/maps/search/?api=1&query="+latlong} target="_blank" rel="noreferrer" className='hover:text-teal-300 underline hover:cursor-nesw-resize'>
               {latlong}
             </a>
-          </p>
+          </div>
         </div>
         {img && <div className='flex justify-center pb-4'>
           <Image width={466} height={466} src={`/img/blog/${img}.jpg`} alt={img} className=''/>
@@ -100,55 +100,58 @@ const Page = () => {
                               <p>It&apos;s nearly been a year since I moved to Los Angeles. When I first moved, I thought there&apos;s an extreme lack of beautiful parks and tranquil spaces here.</p>
                               <p>Therefore, I set out to find as many public reading spots as I could, and this post will highlight the favorite places I&apos;ve stumbled upon (both on my own and through friend&apos;s recommendations) so that you too can enjoy them.</p>
                               <p>I live in Hawthorne, and since I&apos;m the one person in all of LA who doesn&apos;t own a car, half of these will be within biking distance of South Bay, and the other half will be downtown for the occasional weekend venture via metro.</p>
+                              
+                              {/* name, overall, plush seating, other people, coffee/food, bathroom, beauty, img, latlong */}
+
                               <p className='text-3xl font-bold'>Locations</p>
                               {/* Blue butterfly patio */}
                               {meta("Blue Butterfly Patio", "3/5", "No", "Sometimes", "Yes", "Yes", "4/5", "butterfly", "33.920558949294325, -118.41627942411804")}
                               {/* The Museum of Contemporary Art Plaza */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("The Museum of Contemporary Art Plaza", "3/5", "No", "Sometimes", "No", "Yes", "3/5", "", "34.05325928863944, -118.25045898651463")}
                               {/* California Plaza */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("California Plaza Park", "2/5", "No", "Not Often", "No", "No", "4/5", "", "34.051751414173225, -118.25102103241822")}
                               {/* Aquarius - Jerome Kirk Plaza */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("Aquarius @ Union Bank Plaza", "2/5", "No", "Almost Never", "No", "No", "4/5", "", "34.05344616344884, -118.25662926140906")}
                               {/* Site Memory Reflection  */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("Site Memory Reflection", "3/5", "Yes", "Almost Never", "No", "No", "3/5", "", "34.04941104258684, -118.2557127039912")}
                               {/* DTLA library garden */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("Maguire Gardens", "2/5", "No", "Most of the Time", "No", "Yes", "3/5", "", "34.050975805726004, -118.25602709418831")}
                               {/* Main park downtown top by fountain */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "2/5", "", "", "", "", "", "", "")}
                               {/* Side benches lil tokyo or weller court */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "3/5", "", "", "", "", "", "", "")}
                               {/* Rooftop cafe city courthouse */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "3/5", "", "", "", "", "", "", "")}
                               {/* Patio behind the DLTA equinox cafe */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "4/5", "", "", "", "", "", "", "")}
                               {/* Last bookstore */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("The Last Bookstore", "5/5", "Yes", "Often", "No", "Yes", "5/5", "", "34.0477128104877, -118.24989269392711")}
                               {/* Beach cities plaza */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "4/5", "", "", "", "", "", "", "")}
                               {/* Lakers complex */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "4/5", "", "", "", "", "", "", "")}
                               {/* Coffee Connection terrace */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "4/5", "", "", "", "", "", "", "")}
                               {/* Manhattan beach library 2nd story */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "4/5", "", "", "", "", "", "", "")}
                               {/* Barns n noble coffee shop */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "3/5", "", "", "", "", "", "", "")}
                               {/* Plaza El Segundo */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "2/5", "", "", "", "", "", "", "")}
                               {/* Turf lawn at the point */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "2/5", "", "", "", "", "", "", "")}
                               {/* Coridor flow */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "4/5", "", "", "", "", "", "", "")}
                               {/* Playa vista urban strip */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "2/5", "", "", "", "", "", "", "")}
                               {/* LMU campus overlook */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "4/5", "", "", "", "", "", "", "")}
                               {/* Tiger labs */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "3/5", "", "", "", "", "", "", "")}
                               {/* Central Park */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "3/5", "", "", "", "", "", "", "")}
                               {/* Bench overlooking manhattan beach */}
-                              {meta("", "", "", "", "", "", "", "", "")}
+                              {meta("", "2/5", "", "", "", "", "", "", "")}
                             </div>
                             
                         </div>
