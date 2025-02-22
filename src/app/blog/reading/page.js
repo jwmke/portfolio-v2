@@ -26,7 +26,7 @@ const Page = () => {
           </div>
         </div>
         {img && <div className='flex justify-center pb-4'>
-          <Image width={466} height={466} src={`/img/blog/${img}.jpg`} alt={img} className=''/>
+          <Image width={466} height={466} src={`/img/blog/${img}`} alt={img} className=''/>
         </div>}
         <div className="w-full overflow-hidden">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2 sm:gap-0">
@@ -105,7 +105,7 @@ const Page = () => {
 
                               <p className='text-3xl font-bold'>Locations</p>
                               {/* Blue butterfly patio */}
-                              {meta("Blue Butterfly Patio", "3/5", "No", "Sometimes", "Yes", "Yes", "4/5", "butterfly", "33.920558949294325, -118.41627942411804")}
+                              {meta("Blue Butterfly Patio", "3/5", "No", "Sometimes", "Yes", "Yes", "4/5", "butterfly.jpg", "33.920558949294325, -118.41627942411804")}
                               {/* The Museum of Contemporary Art Plaza */}
                               {meta("The Museum of Contemporary Art Plaza", "3/5", "No", "Sometimes", "No", "Yes", "3/5", "", "34.05325928863944, -118.25045898651463")}
                               {/* California Plaza */}
@@ -115,43 +115,43 @@ const Page = () => {
                               {/* Site Memory Reflection  */}
                               {meta("Site Memory Reflection", "3/5", "Yes", "Almost Never", "No", "No", "3/5", "", "34.04941104258684, -118.2557127039912")}
                               {/* DTLA library garden */}
-                              {meta("Maguire Gardens", "2/5", "No", "Most of the Time", "No", "Yes", "3/5", "", "34.050975805726004, -118.25602709418831")}
+                              {meta("Maguire Gardens", "2/5", "No", "Often", "No", "Yes", "3/5", "", "34.050975805726004, -118.25602709418831")}
                               {/* Main park downtown top by fountain */}
-                              {meta("", "2/5", "", "", "", "", "", "", "")}
+                              {meta("Gloria Molina Grand Park", "3/5", "", "", "", "", "", "", "")}
                               {/* Side benches lil tokyo or weller court */}
-                              {meta("", "3/5", "", "", "", "", "", "", "")}
+                              {meta("Benches in Little Tokyo", "3/5", "", "", "", "", "", "", "")}
                               {/* Rooftop cafe city courthouse */}
-                              {meta("", "3/5", "", "", "", "", "", "", "")}
+                              {meta("Panorama Café", "3/5", "", "", "", "", "", "", "")}
                               {/* Patio behind the DLTA equinox cafe */}
-                              {meta("", "4/5", "", "", "", "", "", "", "")}
+                              {meta("Public Patio in DTLA Equinox", "4/5", "", "", "", "", "", "", "34.05158161230905, -118.25498869779938")}
                               {/* Last bookstore */}
                               {meta("The Last Bookstore", "5/5", "Yes", "Often", "No", "Yes", "5/5", "", "34.0477128104877, -118.24989269392711")}
                               {/* Beach cities plaza */}
-                              {meta("", "4/5", "", "", "", "", "", "", "")}
+                              {meta("Beach Cities Plaza", "4/5", "", "", "", "", "", "", "33.902429685568784, -118.38910455092012")}
                               {/* Lakers complex */}
-                              {meta("", "4/5", "", "", "", "", "", "", "")}
+                              {meta("Lakers Complex", "4/5", "", "", "", "", "", "", "33.92598916728364, -118.3842892913526")}
                               {/* Coffee Connection terrace */}
-                              {meta("", "4/5", "", "", "", "", "", "", "")}
+                              {meta("Coffee Connection Terrace", "4/5", "", "", "", "", "", "", "34.00312026717867, -118.4328734261084")}
                               {/* Manhattan beach library 2nd story */}
-                              {meta("", "4/5", "", "", "", "", "", "", "")}
+                              {meta("Manhattan Beach Library (2nd Story)", "4/5", "", "", "", "", "", "", "33.886847283745915, -118.41044054057366")}
                               {/* Barns n noble coffee shop */}
-                              {meta("", "3/5", "", "", "", "", "", "", "")}
+                              {meta("Barnes & Noble Café", "3/5", "", "", "", "", "", "", "")}
                               {/* Plaza El Segundo */}
-                              {meta("", "2/5", "", "", "", "", "", "", "")}
+                              {meta("Plaza El Segundo", "2/5", "", "", "", "", "", "", "33.904442710981456, -118.39574657651686")}
                               {/* Turf lawn at the point */}
-                              {meta("", "2/5", "", "", "", "", "", "", "")}
+                              {meta("The Point", "2/5", "", "", "", "", "", "", "33.9027287385624, -118.3948010010989")}
                               {/* Coridor flow */}
-                              {meta("", "4/5", "", "", "", "", "", "", "")}
+                              {meta("Corridor Flow", "4/5", "Yes", "", "", "", "", "", "33.80206955188868, -118.31982987137044")}
                               {/* Playa vista urban strip */}
-                              {meta("", "2/5", "", "", "", "", "", "", "")}
+                              {meta("Playa Vista Urban Strip", "2/5", "", "", "", "", "", "playa.png", "33.97531597700462, -118.41614845995426")}
                               {/* LMU campus overlook */}
-                              {meta("", "4/5", "", "", "", "", "", "", "")}
+                              {meta("LMU Overlook", "4/5", "", "", "", "", "", "", "33.9731047605077, -118.41579908256898")}
                               {/* Tiger labs */}
-                              {meta("", "3/5", "", "", "", "", "", "", "")}
+                              {meta("Smoking Tiger Coffee Lab", "3/5", "", "", "", "", "", "", "33.89201697542193, -118.31007084176585")}
                               {/* Central Park */}
-                              {meta("", "3/5", "", "", "", "", "", "", "")}
+                              {meta("Central Park", "3/5", "", "", "", "", "4/5", "", "33.98191114717258, -118.40452192255496")}
                               {/* Bench overlooking manhattan beach */}
-                              {meta("", "2/5", "", "", "", "", "", "", "")}
+                              {meta("Bench Overlooking Manhattan Beach", "2/5", "", "", "", "", "5/5", "", "33.88570458605538, -118.4124860326432")}
                             </div>
                             
                         </div>
