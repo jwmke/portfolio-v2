@@ -19,7 +19,7 @@ const Page = () => {
         <div className="flex h-full items-center space-x-4 pb-4">
           <p className="text-base font-bold sm:font-normal sm:text-2xl">{name}</p>
           <div className="text-teal-500 text-xs sm:text-base flex space-x-1 pt-1.5">
-            <p>// </p>
+            <p>{"// "}</p>
             <a href={"https://www.google.com/maps/search/?api=1&query="+latlong} target="_blank" rel="noreferrer" className='hover:text-teal-300 underline hover:cursor-nesw-resize'>
               {latlong}
             </a>
