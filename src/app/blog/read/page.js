@@ -11,7 +11,7 @@ const text = Lato({
 
 const Page = () => {
     const meta = (name, overall, seating, busy, coffee, bathroom, beauty, img, latlong) => {
-      latlong = latlong.split(', ')
+      const newlatlong = latlong.split(', ')
       .map(num => parseFloat(num).toFixed(3))
       .join(', ');
 
@@ -21,7 +21,7 @@ const Page = () => {
           <div className="text-teal-500 text-xs sm:text-base flex space-x-1 pt-1.5">
             <p>{"// "}</p>
             <a href={"https://www.google.com/maps/search/?api=1&query="+latlong} target="_blank" rel="noreferrer" className='hover:text-teal-300 underline hover:cursor-nesw-resize'>
-              {latlong}
+              {newlatlong}
             </a>
           </div>
         </div>
@@ -98,7 +98,7 @@ const Page = () => {
                               <p>One of the greatest benefits of books comes from when your mind starts to wander when reading. These brief episodes of distraction allow you to explore your own mind and reshape your inner perceptions and values.</p>
                               <p>Due to this, the environment in which you read can sometimes be just as important as your book&apos;s content (the ratio is probably closer to 90% content, 10% environment, but I digress.)</p>
                               <p>It&apos;s nearly been a year since I moved to Los Angeles. When I first moved, I thought there&apos;s an extreme lack of beautiful parks and tranquil spaces here.</p>
-                              <p>Therefore, I set out to find as many public reading spots as I could, and this post will highlight the favorite places I&apos;ve stumbled upon (both on my own and through friend&apos;s recommendations) so that you too can enjoy them.</p>
+                              <p>Therefore, I set out to find as many public reading spots as I could, and this post will highlight the favorite places I&apos;ve stumbled upon (both on my own and through friend&apos;s recommendations) so that you can enjoy them too.</p>
                               <p>I live in Hawthorne, and since I&apos;m the one person in all of LA who doesn&apos;t own a car, half of these will be within biking distance of South Bay, and the other half will be downtown for the occasional weekend venture via metro.</p>
                               
                               {/* name, overall, plush seating, other people, coffee/food, bathroom, beauty, img, latlong */}
@@ -113,7 +113,7 @@ const Page = () => {
                               {meta("Gloria Molina Grand Park", "4/5", "No", "Sometimes", "Yes", "Yes", "4/5", "gloria.jpg", "34.056340578054055, -118.24677133769866")}
                               {meta("Benches in Little Tokyo", "3/5", "No", "Often", "Yes", "No", "4/5", "tokyo.jpg", "34.04889241791202, -118.24029932837401")}
                               {meta("Panorama Café", "3/5", "No", "Sometimes", "Yes", "Yes", "3/5", "pan.jpg", "34.055837615053115, -118.2477438003257")}
-                              {meta("Public Patio in DTLA Equinox", "4/5", "No", "Almost Never", "Yes", "No", "4/5", "equinox.jpg", "34.05158161230905, -118.25498869779938")}
+                              {meta("Public Patio in DTLA Equinox", "4/5", "Yes", "Almost Never", "Yes", "No", "4/5", "equinox.jpg", "34.05158161230905, -118.25498869779938")}
                               {meta("The Last Bookstore", "5/5", "Yes", "Often", "No", "Yes", "5/5", "last.jpg", "34.0477128104877, -118.24989269392711")}
                               {meta("Beach Cities Plaza", "4/5", "Yes", "Almost Never", "No", "No", "3/5", "plaza.jpg", "33.902429685568784, -118.38910455092012")}
                               {meta("Lakers Complex", "3/5", "Yes", "Sometimes", "Yes", "No", "2/5", "lakers.png", "33.92598916728364, -118.3842892913526")}
