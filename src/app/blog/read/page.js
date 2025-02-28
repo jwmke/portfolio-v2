@@ -37,6 +37,7 @@ const Page = () => {
     { name: "LMU Overlook", overall: "4/5", seating: "No", busy: "Sometimes", coffee: "Nearby", bathroom: "Yes", beauty: "5/5", img: "lmu.jpg", latlong: "33.9731047605077, -118.41579908256898" },
     { name: "Smoking Tiger Coffee Lab", overall: "3/5", seating: "No", busy: "Sometimes", coffee: "Yes", bathroom: "Yes", beauty: "2/5", img: "smoke.jpg", latlong: "33.89201697542193, -118.31007084176585" },
     { name: "Central Park", overall: "3/5", seating: "No", busy: "Sometimes", coffee: "No", bathroom: "Yes", beauty: "4/5", img: "central.jpg", latlong: "33.98191114717258, -118.40452192255496" },
+    { name: "Long Beach Lighthouse", overall: "3/5", seating: "No", busy: "Often", coffee: "No", bathroom: "Yes", beauty: "4/5", img: "long.jpg", latlong: "33.76026486897493, -118.1941091192069" },
     { name: "Bench Overlooking Manhattan Beach", overall: "2/5", seating: "No", busy: "Very Often", coffee: "No", bathroom: "No", beauty: "5/5", img: "beach.jpg", latlong: "33.88570458605538, -118.4124860326432" }
   ];
 
@@ -111,10 +112,11 @@ const Page = () => {
         {/* Tablet/Desktop view (hidden on small screens) */}
         <div className="w-full overflow-hidden hidden sm:block">
           <div className="grid grid-cols-3 lg:grid-cols-6 gap-0">
-            {/* Beauty Score */}
+            
+            {/* Overall Rating */}
             <div className="flex flex-col border border-white py-2 text-center">
-              <div className="text-white text-xs font-medium pb-2 border-b border-white">Beauty Score</div>
-              <div className="text-white text-base font-bold mt-2">{beauty}</div>
+              <div className="text-white text-xs font-medium pb-2 border-b border-white">Overall Rating</div>
+              <div className="text-white text-base font-bold mt-2">{overall}</div>
             </div>
     
             {/* Plush Seating */}
@@ -140,11 +142,11 @@ const Page = () => {
               <div className="text-white text-xs font-medium pb-2 border-b border-white">Free Bathrooms</div>
               <div className="text-white text-base font-bold mt-2">{bathroom}</div>
             </div>
-            
-            {/* Overall Rating */}
+
+            {/* Beauty Score */}
             <div className="flex flex-col border border-white py-2 text-center">
-              <div className="text-white text-xs font-medium pb-2 border-b border-white">Overall Rating</div>
-              <div className="text-white text-base font-bold mt-2">{overall}</div>
+              <div className="text-white text-xs font-medium pb-2 border-b border-white">Beauty Score</div>
+              <div className="text-white text-base font-bold mt-2">{beauty}</div>
             </div>
           </div>
         </div>

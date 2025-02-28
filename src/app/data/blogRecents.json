@@ -1,10 +1,18 @@
 [
     {
+        "title": "LA Reading",
+        "full_title": "Favorite Places to Read in Los Angeles",
+        "tag_line": "A list of 25 public locations I enjoy turning pages at.",
+        "path": "/img/blog/books.jpg",
+        "date": "02/25",
+        "route": "/blog/read"
+    },
+    {
         "title": "Midas",
         "full_title": "Midas' Monocle and the Heat Death of the Universe",
         "tag_line": "Three philosophical lenses to view humanity's technological future through.",
         "path": "/img/blog/monopoly.jpg",
-        "date": "02/25",
+        "date": "01/25",
         "route": "/blog/midas"
     },
     {
