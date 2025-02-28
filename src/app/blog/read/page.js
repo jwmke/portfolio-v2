@@ -112,7 +112,7 @@ const Page = () => {
         {/* Tablet/Desktop view (hidden on small screens) */}
         <div className="w-full overflow-hidden hidden sm:block">
           <div className="grid grid-cols-3 lg:grid-cols-6 gap-0">
-            
+
             {/* Overall Rating */}
             <div className="flex flex-col border border-white py-2 text-center">
               <div className="text-white text-xs font-medium pb-2 border-b border-white">Overall Rating</div>
@@ -179,10 +179,10 @@ const Page = () => {
                       <Image width={466} height={466} src={"/img/blog/vibe.jpg"} alt="vibe" className=''/>
                     </div>
                     <p>{"One of the greatest benefits of books comes from the brief episodes when your mind starts to wander while reading. These moments of contemplation allow you to explore your own thoughts and reshape your inner perceptions and values."}</p>
-                    <p>{"The physical environment where you read directly influences this experience — a peaceful setting can invite more meaningful wandering, while a busier environment might spark your imagination to explore directions it wouldn't have discovered in the quiet comfort of home."}</p>
-                    <p>{"Though the content of your book carries 90+% of weight of your experience, the atmosphere around you can transform a good reading session into a transcendent one."}</p>
-                    <p>{"It's nearly been a year since I moved to Los Angeles, and what began as disappointment in LA's sparse offering of tranquil spaces has evolved into a deep appreciation for the city's hidden sanctuaries. This post highlights some of the favorite places I've stumbled upon (both on my own and from friends' recommendations) so you can enjoy them too."}</p>
-                    <p>{"I live in Hawthorne, and since I'm the one person in all of LA who doesn't own a car, half of these will be within biking distance of South Bay, and the other half will be downtown for the occasional weekend venture via metro."}</p>
+                    <p>{"The physical environment where you read directly influences this experience — a peaceful setting can invite more meaningful mind wandering, while busier environments might spark your imagination to explore directions it wouldn't have discovered in the isolation of your home."}</p>
+                    <p>{"Though the content of your book carries 90% of weight of your experience, the atmosphere around you can transform a good reading session into a transcendent one."}</p>
+                    <p>{"It's nearly been a year since I moved to Los Angeles, and what began as disappointment in LA's sparse offering of public reading spaces has evolved into a deep appreciation for the city's hidden sanctuaries. This post highlights some of the favorite places I've stumbled upon (both on my own and from friends' recommendations) so you can enjoy them too."}</p>
+                    {/* <p>{"I live in Hawthorne, and since I'm the one person in all of LA who doesn't own a car, half of these will be within biking distance of South Bay, and the other half will be downtown for the occasional weekend venture via metro."}</p> */}
                     
                     <p className='text-3xl font-bold'>Locations</p>
                     <div className="flex space-x-2 items-center">
