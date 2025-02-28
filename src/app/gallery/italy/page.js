@@ -535,7 +535,7 @@ const Page = () => {
           }}
         >
           <Grain opacity={.95} blendMode="multiply" />
-          <div className="w-full min-h-[100vh] flex justify-center p-2">
+          <div className="w-full min-h-[100vh] flex justify-center p-2 lg:py-12">
             <DiagonalCornerContainer className="w-[60rem]" size={32}>
                 <div className={text.className}>
                     <div className='mx-auto pt-8 md:px-20'>

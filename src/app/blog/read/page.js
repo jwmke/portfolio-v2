@@ -14,31 +14,31 @@ const text = Lato({
 const Page = () => {
   // Array of all location data
   const locationData = [
-    { name: "Blue Butterfly Patio", overall: "3/5", seating: "No", busy: "Sometimes", coffee: "Yes", bathroom: "Yes", beauty: "4/5", img: "butterfly.jpg", latlong: "33.920558949294325, -118.41627942411804" },
-    { name: "The Museum of Contemporary Art Plaza", overall: "3/5", seating: "No", busy: "Sometimes", coffee: "No", bathroom: "Yes", beauty: "3/5", img: "moca.jpg", latlong: "34.05325928863944, -118.25045898651463" },
-    { name: "California Plaza Park", overall: "2/5", seating: "No", busy: "Not Often", coffee: "No", bathroom: "No", beauty: "4/5", img: "cal.jpg", latlong: "34.051751414173225, -118.25102103241822" },
-    { name: "Aquarius @ Union Bank Plaza", overall: "3/5", seating: "Yes", busy: "Almost Never", coffee: "No", bathroom: "No", beauty: "4/5", img: "ubp.jpg", latlong: "34.05344616344884, -118.25662926140906" },
-    { name: "Site Memory Reflection", overall: "3/5", seating: "Yes", busy: "Almost Never", coffee: "No", bathroom: "No", beauty: "3/5", img: "reflection.png", latlong: "34.04941104258684, -118.2557127039912" },
-    { name: "Maguire Gardens", overall: "2/5", seating: "No", busy: "Often", coffee: "No", bathroom: "Yes", beauty: "3/5", img: "mag.jpg", latlong: "34.050975805726004, -118.25602709418831" },
-    { name: "Gloria Molina Grand Park", overall: "4/5", seating: "No", busy: "Sometimes", coffee: "Yes", bathroom: "Yes", beauty: "4/5", img: "gloria.jpg", latlong: "34.056340578054055, -118.24677133769866" },
-    { name: "Benches in Little Tokyo", overall: "3/5", seating: "No", busy: "Often", coffee: "Yes", bathroom: "No", beauty: "4/5", img: "tokyo.jpg", latlong: "34.04889241791202, -118.24029932837401" },
-    { name: "Panorama Café", overall: "3/5", seating: "No", busy: "Sometimes", coffee: "Yes", bathroom: "Yes", beauty: "3/5", img: "pan.jpg", latlong: "34.055837615053115, -118.2477438003257" },
-    { name: "Public Patio in DTLA Equinox", overall: "4/5", seating: "Yes", busy: "Almost Never", coffee: "Yes", bathroom: "No", beauty: "4/5", img: "equinox.jpg", latlong: "34.05158161230905, -118.25498869779938" },
-    { name: "The Last Bookstore", overall: "5/5", seating: "Yes", busy: "Often", coffee: "No", bathroom: "Yes", beauty: "5/5", img: "last.jpg", latlong: "34.0477128104877, -118.24989269392711" },
-    { name: "Beach Cities Plaza", overall: "4/5", seating: "Yes", busy: "Almost Never", coffee: "No", bathroom: "No", beauty: "3/5", img: "plaza.jpg", latlong: "33.902429685568784, -118.38910455092012" },
-    { name: "Lakers Complex", overall: "3/5", seating: "Yes", busy: "Sometimes", coffee: "Yes", bathroom: "No", beauty: "2/5", img: "lakers.png", latlong: "33.92598916728364, -118.3842892913526" },
-    { name: "Coffee Connection Terrace", overall: "5/5", seating: "Yes", busy: "Often", coffee: "Yes", bathroom: "Yes", beauty: "5/5", img: "connect.jpg", latlong: "34.00312026717867, -118.4328734261084" },
-    { name: "Manhattan Beach Library (2nd Story)", overall: "4/5", seating: "Yes", busy: "Often", coffee: "Nearby", bathroom: "Yes", beauty: "4/5", img: "mbl.jpg", latlong: "33.886847283745915, -118.41044054057366" },
-    { name: "Barnes & Noble Café", overall: "2/5", seating: "No", busy: "Sometimes", coffee: "Yes", bathroom: "Yes", beauty: "1/5", img: "bnn.jpg", latlong: "33.90077253269358, -118.3805161576652" },
-    { name: "Plaza El Segundo", overall: "2/5", seating: "No", busy: "Almost Never", coffee: "Nearby", bathroom: "No", beauty: "3/5", img: "elsegundo.jpeg", latlong: "33.904442710981456, -118.39574657651686" },
-    { name: "The Point", overall: "2/5", seating: "Yes", busy: "Very Often", coffee: "Yes", bathroom: "No", beauty: "3/5", img: "point.jpg", latlong: "33.9027287385624, -118.3948010010989" },
-    { name: "Corridor Flow", overall: "4/5", seating: "Yes", busy: "Often", coffee: "Yes", bathroom: "Yes", beauty: "3/5", img: "coridor.jpg", latlong: "33.80206955188868, -118.31982987137044" },
-    { name: "Playa Vista Urban Strip", overall: "2/5", seating: "No", busy: "Very Often", coffee: "Yes", bathroom: "No", beauty: "4/5", img: "playa.png", latlong: "33.97531597700462, -118.41614845995426" },
-    { name: "LMU Overlook", overall: "4/5", seating: "No", busy: "Sometimes", coffee: "Nearby", bathroom: "Yes", beauty: "5/5", img: "lmu.jpg", latlong: "33.9731047605077, -118.41579908256898" },
-    { name: "Smoking Tiger Coffee Lab", overall: "3/5", seating: "No", busy: "Sometimes", coffee: "Yes", bathroom: "Yes", beauty: "2/5", img: "smoke.jpg", latlong: "33.89201697542193, -118.31007084176585" },
-    { name: "Central Park", overall: "3/5", seating: "No", busy: "Sometimes", coffee: "No", bathroom: "Yes", beauty: "4/5", img: "central.jpg", latlong: "33.98191114717258, -118.40452192255496" },
-    { name: "Long Beach Lighthouse", overall: "3/5", seating: "No", busy: "Often", coffee: "No", bathroom: "Yes", beauty: "4/5", img: "long.jpg", latlong: "33.76026486897493, -118.1941091192069" },
-    { name: "Bench Overlooking Manhattan Beach", overall: "2/5", seating: "No", busy: "Very Often", coffee: "No", bathroom: "No", beauty: "5/5", img: "beach.jpg", latlong: "33.88570458605538, -118.4124860326432" }
+    { name: "Blue Butterfly Patio", overall: "★★★", seating: "No", busy: "Sometimes", coffee: "Yes", bathroom: "Yes", beauty: "★★★★", img: "butterfly.jpg", latlong: "33.920558949294325, -118.41627942411804" },
+    { name: "The Museum of Contemporary Art Plaza", overall: "★★★", seating: "No", busy: "Sometimes", coffee: "No", bathroom: "Yes", beauty: "★★★", img: "moca.jpg", latlong: "34.05325928863944, -118.25045898651463" },
+    { name: "California Plaza Park", overall: "★★", seating: "No", busy: "Not Often", coffee: "No", bathroom: "No", beauty: "★★★★", img: "cal.jpg", latlong: "34.051751414173225, -118.25102103241822" },
+    { name: "Aquarius @ Union Bank Plaza", overall: "★★★", seating: "Yes", busy: "Almost Never", coffee: "No", bathroom: "No", beauty: "★★★★", img: "ubp.jpg", latlong: "34.05344616344884, -118.25662926140906" },
+    { name: "Site Memory Reflection", overall: "★★★", seating: "Yes", busy: "Almost Never", coffee: "No", bathroom: "No", beauty: "★★★", img: "reflection.png", latlong: "34.04941104258684, -118.2557127039912" },
+    { name: "Maguire Gardens", overall: "★★", seating: "No", busy: "Often", coffee: "No", bathroom: "Yes", beauty: "★★★", img: "mag.jpg", latlong: "34.050975805726004, -118.25602709418831" },
+    { name: "Gloria Molina Grand Park", overall: "★★★★", seating: "No", busy: "Sometimes", coffee: "Yes", bathroom: "Yes", beauty: "★★★★", img: "gloria.jpg", latlong: "34.056340578054055, -118.24677133769866" },
+    { name: "Benches in Little Tokyo", overall: "★★★", seating: "No", busy: "Often", coffee: "Yes", bathroom: "No", beauty: "★★★★", img: "tokyo.jpg", latlong: "34.04889241791202, -118.24029932837401" },
+    { name: "Panorama Café", overall: "★★★", seating: "No", busy: "Sometimes", coffee: "Yes", bathroom: "Yes", beauty: "★★★", img: "pan.jpg", latlong: "34.055837615053115, -118.2477438003257" },
+    { name: "Public Patio in DTLA Equinox", overall: "★★★★", seating: "Yes", busy: "Almost Never", coffee: "Yes", bathroom: "No", beauty: "★★★★", img: "equinox.jpg", latlong: "34.05158161230905, -118.25498869779938" },
+    { name: "The Last Bookstore", overall: "★★★★★", seating: "Yes", busy: "Often", coffee: "No", bathroom: "Yes", beauty: "★★★★★", img: "last.jpg", latlong: "34.0477128104877, -118.24989269392711" },
+    { name: "Beach Cities Plaza", overall: "★★★★", seating: "Yes", busy: "Almost Never", coffee: "No", bathroom: "No", beauty: "★★★", img: "plaza.jpg", latlong: "33.902429685568784, -118.38910455092012" },
+    { name: "Lakers Complex", overall: "★★★", seating: "Yes", busy: "Sometimes", coffee: "Yes", bathroom: "No", beauty: "★★", img: "lakers.png", latlong: "33.92598916728364, -118.3842892913526" },
+    { name: "Coffee Connection Terrace", overall: "★★★★★", seating: "Yes", busy: "Often", coffee: "Yes", bathroom: "Yes", beauty: "★★★★★", img: "connect.jpg", latlong: "34.00312026717867, -118.4328734261084" },
+    { name: "Manhattan Beach Library (2nd Story)", overall: "★★★★", seating: "Yes", busy: "Often", coffee: "Nearby", bathroom: "Yes", beauty: "★★★★", img: "mbl.jpg", latlong: "33.886847283745915, -118.41044054057366" },
+    { name: "Barnes & Noble Café", overall: "★★", seating: "No", busy: "Sometimes", coffee: "Yes", bathroom: "Yes", beauty: "★", img: "bnn.jpg", latlong: "33.90077253269358, -118.3805161576652" },
+    { name: "Plaza El Segundo", overall: "★★", seating: "No", busy: "Almost Never", coffee: "Nearby", bathroom: "No", beauty: "★★★", img: "elsegundo.jpeg", latlong: "33.904442710981456, -118.39574657651686" },
+    { name: "The Point", overall: "★★", seating: "Yes", busy: "Very Often", coffee: "Yes", bathroom: "No", beauty: "★★★", img: "point.jpg", latlong: "33.9027287385624, -118.3948010010989" },
+    { name: "Corridor Flow", overall: "★★★★", seating: "Yes", busy: "Often", coffee: "Yes", bathroom: "Yes", beauty: "★★★", img: "coridor.jpg", latlong: "33.80206955188868, -118.31982987137044" },
+    { name: "Playa Vista Urban Strip", overall: "★★", seating: "No", busy: "Very Often", coffee: "Yes", bathroom: "No", beauty: "★★★★", img: "playa.png", latlong: "33.97531597700462, -118.41614845995426" },
+    { name: "LMU Overlook", overall: "★★★★", seating: "No", busy: "Sometimes", coffee: "Nearby", bathroom: "Yes", beauty: "★★★★★", img: "lmu.jpg", latlong: "33.9731047605077, -118.41579908256898" },
+    { name: "Smoking Tiger Coffee Lab", overall: "★★★", seating: "No", busy: "Sometimes", coffee: "Yes", bathroom: "Yes", beauty: "★★", img: "smoke.jpg", latlong: "33.89201697542193, -118.31007084176585" },
+    { name: "Central Park", overall: "★★★", seating: "No", busy: "Sometimes", coffee: "No", bathroom: "Yes", beauty: "★★★★", img: "central.jpg", latlong: "33.98191114717258, -118.40452192255496" },
+    { name: "Long Beach Lighthouse", overall: "★★★", seating: "No", busy: "Often", coffee: "No", bathroom: "Yes", beauty: "★★★★", img: "long.jpg", latlong: "33.76026486897493, -118.1941091192069" },
+    { name: "Bench Overlooking Manhattan Beach", overall: "★★", seating: "No", busy: "Very Often", coffee: "No", bathroom: "No", beauty: "★★★★★", img: "beach.jpg", latlong: "33.88570458605538, -118.4124860326432" }
   ];
 
   // State to hold the shuffled locations
@@ -84,7 +84,7 @@ const Page = () => {
       <div key={name} className="mb-8">
         <div className="flex h-full items-center space-x-4 pb-4">
           <p className="text-base font-bold sm:font-normal sm:text-2xl">{name}</p>
-          <div className="text-teal-500 text-xs sm:text-base flex space-x-1 pt-1.5">
+          <div className="text-teal-500 text-base sm:pt-1.5 sm:text-sm flex space-x-1 ">
             <p>{"// "}</p>
             <a href={"https://www.google.com/maps/search/?api=1&query="+latlong} target="_blank" rel="noreferrer" className='hover:text-teal-300 underline hover:cursor-nesw-resize'>
               {newlatlong}
@@ -98,7 +98,7 @@ const Page = () => {
         )}
         
         {/* Mobile view (visible only on small screens) */}
-        <div className="w-full overflow-hidden block sm:hidden">
+        <div className="w-full overflow-hidden block sm:hidden mb-8">
           <div className="border border-white">
             {scoreData.map((item, index) => (
               <div key={index} className={`flex flex-row ${index !== 0 ? 'border-t border-white' : ''}`}>
@@ -110,7 +110,7 @@ const Page = () => {
         </div>
         
         {/* Tablet/Desktop view (hidden on small screens) */}
-        <div className="w-full overflow-hidden hidden sm:block">
+        <div className="w-full overflow-hidden hidden sm:block mb-8">
           <div className="grid grid-cols-3 lg:grid-cols-6 gap-0">
 
             {/* Overall Rating */}
@@ -166,7 +166,7 @@ const Page = () => {
         }}
       >
         <Grain opacity={.95} blendMode="multiply" />
-        <div className="w-full min-h-[100vh] flex justify-center p-2">
+        <div className="w-full min-h-[100vh] flex justify-center p-2 lg:py-12">
           <DiagonalCornerContainer className="w-[60rem]" size={32}>
             <div className={text.className}>
               <div className='mx-auto pt-8 md:px-20'>
@@ -188,7 +188,7 @@ const Page = () => {
                     <div className="flex space-x-2 items-center">
                       <p>The ordering is random.</p>
                       <GrCycle 
-                        className="text-teal-500 hover:text-teal-300 hover:cursor-pointer text-xl"
+                        className="text-teal-500 hover:text-teal-300 hover:cursor-pointer text-xl animate-pulse hover:animate-none"
                         onClick={shuffleLocations}
                       />
                     </div>
