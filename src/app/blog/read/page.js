@@ -15,15 +15,15 @@ const Page = () => {
   // Array of all location data
   const locationData = [
     { name: "Blue Butterfly Patio", overall: "★★★", seating: "No", busy: "Sometimes", coffee: "Yes", bathroom: "Yes", beauty: "★★★★", img: "butterfly.jpg", latlong: "33.920558949294325, -118.41627942411804" },
-    { name: "The Museum of Contemporary Art Plaza", overall: "★★★", seating: "No", busy: "Sometimes", coffee: "No", bathroom: "Yes", beauty: "★★★", img: "moca.jpg", latlong: "34.05325928863944, -118.25045898651463" },
-    { name: "California Plaza Park", overall: "★★", seating: "No", busy: "Not Often", coffee: "No", bathroom: "No", beauty: "★★★★", img: "cal.jpg", latlong: "34.051751414173225, -118.25102103241822" },
-    { name: "Aquarius @ Union Bank Plaza", overall: "★★★", seating: "Yes", busy: "Almost Never", coffee: "No", bathroom: "No", beauty: "★★★★", img: "ubp.jpg", latlong: "34.05344616344884, -118.25662926140906" },
-    { name: "Site Memory Reflection", overall: "★★★", seating: "Yes", busy: "Almost Never", coffee: "No", bathroom: "No", beauty: "★★★", img: "reflection.png", latlong: "34.04941104258684, -118.2557127039912" },
+    { name: "The Museum of Contemporary Art Plaza", overall: "★★★", seating: "No", busy: "Sometimes", coffee: "Nearby", bathroom: "Yes", beauty: "★★★", img: "moca.jpg", latlong: "34.05325928863944, -118.25045898651463" },
+    { name: "California Plaza Park", overall: "★★★", seating: "No", busy: "Not Often", coffee: "No", bathroom: "No", beauty: "★★★★", img: "cal.jpg", latlong: "34.051751414173225, -118.25102103241822" },
+    { name: "Aquarius @ Union Bank Plaza", overall: "★★", seating: "No", busy: "Almost Never", coffee: "No", bathroom: "No", beauty: "★★★", img: "ubp.jpg", latlong: "34.05344616344884, -118.25662926140906" },
+    { name: "The MOCA Reading Lounge", overall: "★★★★", seating: "Yes", busy: "Sometimes", coffee: "Nearby", bathroom: "Yes", beauty: "★★", img: "moca2.jpg", latlong: "34.053271259743255, -118.25055506478829" },
     { name: "Maguire Gardens", overall: "★★", seating: "No", busy: "Often", coffee: "No", bathroom: "Yes", beauty: "★★★", img: "mag.jpg", latlong: "34.050975805726004, -118.25602709418831" },
     { name: "Gloria Molina Grand Park", overall: "★★★★", seating: "No", busy: "Sometimes", coffee: "Yes", bathroom: "Yes", beauty: "★★★★", img: "gloria.jpg", latlong: "34.056340578054055, -118.24677133769866" },
     { name: "Benches in Little Tokyo", overall: "★★★", seating: "No", busy: "Often", coffee: "Yes", bathroom: "No", beauty: "★★★★", img: "tokyo.jpg", latlong: "34.04889241791202, -118.24029932837401" },
     { name: "Panorama Café", overall: "★★★", seating: "No", busy: "Sometimes", coffee: "Yes", bathroom: "Yes", beauty: "★★★", img: "pan.jpg", latlong: "34.055837615053115, -118.2477438003257" },
-    { name: "Public Patio in DTLA Equinox", overall: "★★★★", seating: "Yes", busy: "Almost Never", coffee: "Yes", bathroom: "No", beauty: "★★★★", img: "equinox.jpg", latlong: "34.05158161230905, -118.25498869779938" },
+    { name: "Public Patio in DTLA Equinox", overall: "★★★★", seating: "Yes", busy: "Almost Never", coffee: "Yes", bathroom: "No", beauty: "★★★★★", img: "equinox.jpg", latlong: "34.05158161230905, -118.25498869779938" },
     { name: "The Last Bookstore", overall: "★★★★★", seating: "Yes", busy: "Often", coffee: "No", bathroom: "Yes", beauty: "★★★★★", img: "last.jpg", latlong: "34.0477128104877, -118.24989269392711" },
     { name: "Beach Cities Plaza", overall: "★★★★", seating: "Yes", busy: "Almost Never", coffee: "No", bathroom: "No", beauty: "★★★", img: "plaza.jpg", latlong: "33.902429685568784, -118.38910455092012" },
     { name: "Lakers Complex", overall: "★★★", seating: "Yes", busy: "Sometimes", coffee: "Yes", bathroom: "No", beauty: "★★", img: "lakers.png", latlong: "33.92598916728364, -118.3842892913526" },
@@ -175,9 +175,9 @@ const Page = () => {
                     Favorite Places to Read in Los Angeles
                   </div>
                   <div className='md:text-xl space-y-5 mt-8'>
-                    <div className='flex justify-center'>
+                    {/* <div className='flex justify-center'>
                       <Image width={466} height={466} src={"/img/blog/vibe.jpg"} alt="vibe" className=''/>
-                    </div>
+                    </div> */}
                     <p>{"One of the greatest benefits of books comes from the brief episodes when your mind starts to wander while reading. These moments of contemplation allow you to explore your own thoughts and reshape your inner perceptions and values."}</p>
                     <p>{"The physical environment where you read directly influences this experience — a peaceful setting can invite more meaningful mind wandering, while busier environments might spark your imagination to explore directions it wouldn't have discovered in the isolation of your home."}</p>
                     <p>{"Though the content of your book carries 90% of weight of your experience, the atmosphere around you can transform a good reading session into a transcendent one."}</p>
