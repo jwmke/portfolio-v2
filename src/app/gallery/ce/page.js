@@ -604,7 +604,7 @@ const Page = () => {
                           
                           {/* Krakow Section */}
                           <div className="text-2xl font-bold pb-4 pt-8">
-                            5 Days - Krakow, Poland
+                            3 Days - Krakow, Poland
                           </div>
                           <div 
                             className="relative w-full aspect-[3/2] mb-4 cursor-pointer"
