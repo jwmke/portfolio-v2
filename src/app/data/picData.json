@@ -1,5 +1,9 @@
 [
     {
+        "name": "Central Europe",
+        "route": "/gallery/ce"
+    },
+    {
         "name": "Downtown LA",
         "route": "/gallery/la"
     },
