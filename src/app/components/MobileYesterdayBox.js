@@ -219,7 +219,7 @@ const MobileYesterdayBox = () => {
                             <Link className="hover:text-teal-300" href="/gallery/ce">
                                 <li className="flex items-center space-x-2">
                                     <p>&#8226;</p>
-                                    <p className={text.className}>Central Europe</p>
+                                    <p className={text.className}>Central Europe 125</p>
                                 </li>
                             </Link>
                             <Link className="hover:text-teal-300" href="/gallery/la">
