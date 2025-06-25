@@ -3,8 +3,8 @@ import Grain from "../../components/Grain"
 import DiagonalCornerContainer from "../../components/DiagonalCornerContainer";
 import { Lato } from "next/font/google";
 import { useState } from "react";
-import CustomLightBox from "@/app/components/CustomLightBox";
-import ImageMosaic from "@/app/components/ImageMosaic";
+import OriginalCustomLightBox from "@/app/components/OriginalCustomLightBox";
+import OriginalImageMosaic from "@/app/components/OriginalImageMosaic";
 
 const text = Lato({
   subsets: ['latin'],
@@ -546,12 +546,12 @@ const Page = () => {
                             <div className='text-teal-500 text-xl space-y-5 my-8'>
                                 <p>{"// Shot on Kodak Ektar H35 w/ Kodak Gold 200 35mm"}</p>
                             </div>
-                            <ImageMosaic images={images}
+                            <OriginalImageMosaic images={images}
                                 handleClick={({ index }) => {
                                 setCurrentIndex(index);
                                 setOpen(true);
                             }}/>
-                            <CustomLightBox images={images} currentImageIndex={currentImageIndex} setCurrentIndex={setCurrentIndex} isOpen={isOpen} onClose={() => setOpen(false)}/>
+                            <OriginalCustomLightBox images={images} currentImageIndex={currentImageIndex} setCurrentIndex={setCurrentIndex} isOpen={isOpen} onClose={() => setOpen(false)}/>
                         </div>
                     </div>
                 </div>

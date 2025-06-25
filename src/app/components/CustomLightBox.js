@@ -2,18 +2,18 @@ import Lightbox from "react-spring-lightbox";
 
 const CustomLightBox = ({
     images,
-    currentImageIndex,
+    currentIndex,
     setCurrentIndex,
     isOpen,
     onClose
   }) => {
 
     const gotoPrevious = () =>
-      currentImageIndex > 0 && setCurrentIndex(currentImageIndex - 1);
+      currentIndex > 0 && setCurrentIndex(currentIndex - 1);
   
     const gotoNext = () =>
-      currentImageIndex + 1 < images.length &&
-      setCurrentIndex(currentImageIndex + 1);
+      currentIndex + 1 < images.length &&
+      setCurrentIndex(currentIndex + 1);
   
     return (
       <Lightbox
@@ -21,7 +21,7 @@ const CustomLightBox = ({
         onPrev={gotoPrevious}
         onNext={gotoNext}
         images={images}
-        currentIndex={currentImageIndex}
+        currentIndex={currentIndex}
         style={{ background: "rgba(0, 0, 0, .7)" }}
         onClose={onClose}
         singleClickToZoom
@@ -40,9 +40,7 @@ const CustomLightBox = ({
                 padding: 3,
                 fontFamily: "Times New Roman, Times, serif",
               }}
-            >
-              {images[currentImageIndex].title}
-            </div>
+            />
           );
         }}
       />

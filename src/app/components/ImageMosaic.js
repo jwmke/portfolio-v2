@@ -31,11 +31,19 @@ function renderNextImage(
 }
 
 export default function ImageMosaic({ images, handleClick, max = 3 }) {
+  // Transform the images array to match what react-photo-album expects
+  const transformedImages = images.map(img => ({
+    src: img.src,  // Keep the src for the lightbox
+    width: img.width,
+    height: img.height,
+    photo: img.src  // This is what renderNextImage uses
+  }));
+
   return (
     <RowsPhotoAlbum
-      photos={images}
+      photos={transformedImages}
       render={{ image: renderNextImage }}
-      onClick={handleClick}
+      onClick={({ photo }) => handleClick(photo.src)}
       rowConstraints={{maxPhotos: max}}
       sizes={{
         size: "1168px",

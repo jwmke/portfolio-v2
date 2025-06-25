@@ -50,7 +50,7 @@ const RightBox = () => {
         </div>
         <div className="w-[calc(100%-2.4rem)] h-[1px] bg-white"/>
         <div className="h-48 w-full flex 2xl:justify-between min-[1400px]:justify-end justify-between">
-            <div className="w-[33rem] absolute -top-[17rem] -left-[32.75rem] h-[30rem] rotate-90 text-white text-[.25rem] tracking-[.65em]">
+            <div className="w-[33rem] absolute -top-[3rem] -left-[18.85rem] h-[2rem] rotate-90 text-white text-[.25rem] tracking-[.65em]">
                 <p className={block.className}>
                     &quot;The Industrial Revolution and its consequences have been a disaster for the human race.&quot; - Dr. Kaczynski
                 </p>
