@@ -1,5 +1,13 @@
 [
     {
+        "title": "Torch",
+        "full_title": "Passing the Torch",
+        "tag_line": "Every time you wake up, your passing the torch yourself.",
+        "path": "/img/blog/tthumb.jpg",
+        "date": "06/25",
+        "route": "/blog/torch"
+    },
+    {
         "title": "LA Reading",
         "full_title": "Favorite Places to Read in Los Angeles",
         "tag_line": "A list of 25 public locations I enjoy turning pages at.",

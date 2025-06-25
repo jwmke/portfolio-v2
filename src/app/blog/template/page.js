@@ -32,7 +32,20 @@ const Page = () => {
                 <div className={text.className}>
                     <div className='mx-auto pt-8 md:px-20'>
                         <div className='text-white text-left sm:mx-5 mb-8'>
-                            
+                            <div className='text-4xl font-bold'>
+                              title
+                            </div>
+                            <div className='md:text-xl space-y-5 mt-8'>
+                              <div className='flex justify-center'>
+                                  <Image width={975} height={550} src={"/img/blog/torch.jpg"} alt="torch" className=''/>
+                              </div>
+                              <p>text</p>
+                              <div className='flex justify-center pt-4'>
+                                  <a target="_blank" rel="noreferrer" href='https://notbyai.fyi/' className='hover:cursor-pointer hover:shadow-2xl'>
+                                  <Image width={132} height={42} src={"/img/blog/human.png"} alt="human"/>
+                                  </a>
+                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
