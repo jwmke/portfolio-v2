@@ -39,7 +39,7 @@ const Page = () => {
                                 <div className='flex justify-center'>
                                     <Image width={975} height={550} src={"/img/blog/torch.jpg"} alt="torch" className=''/>
                                 </div>
-                                <p>Recently, one of my recent favorite ways to burn blocks of free time is watching Minecraft speedruns.</p>
+                                <p>Recently, one of my favorite ways to burn blocks of free time is watching Minecraft speedruns.</p>
                                 <p>More specifically, the occasional video that the algorithm sneaks in will be some sort of speedrun variation, such as &quot;Full Inventory of Furnaces&quot; or, most recently, &quot;Beating Minecraft, but Every Minute the Player Changes.&quot;</p>
                                 <p>For the latter, minimal elaboration is needed apart from the title, but within it, I noticed a parallel to life.</p>
                                 <p>Every time a new player was placed in the hot seat, they had no idea where they were, what their collection of items was, or any context at all from the players before them. They only knew the common goal, to kill the ender dragon, and they had to use their trained instincts to perform anything in that minute to move the run closer to that goal.</p>
