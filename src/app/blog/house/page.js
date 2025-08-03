@@ -41,7 +41,7 @@ const Page = () => {
                                 </div>
                                 <p>Homeownership has long been a cornerstone of the American Dream, but in recent years, this dream has become a nightmare. There are many reasons for this, but it&apos;s primarily due to the federal interest rates and private equity firms competing for supply.</p>
                                 
-                                <p>This post won&apos;t go into either of these reasons; instead, it will serve as an information piece as to why you should personally avoid purchasing a house unless a major economic shift occurs. When this shift happens (if it does), I&apos;ll delete this post. And, in the end, you&apos;ll see why renting can leave you with over $870k more in spending money across 20 years.</p>
+                                <p>This post won&apos;t go into either of these reasons; instead, it will serve as an information piece as to why you should personally avoid purchasing a house unless a major economic shift occurs. When this shift happens (if it does), I&apos;ll delete this post.</p>
 
                                 <div className='text-3xl font-bold mt-8 mb-4'>
                                     Life Is Multicolored
@@ -56,7 +56,7 @@ const Page = () => {
                                     
                                     <li><strong>To start a family</strong> - starting a family, on its own, is an act filled with disorder and ambiguity; not having a consistent foundation to raise this family in just adds to the chaos</li>
                                     
-                                    <li><strong>Social signaling</strong> - if your aims in life lean towards hedonism, the perceived status from responsibility of homeownership is undeniable</li>
+                                    {/* <li><strong>Social signaling</strong> - if your aims in life lean towards hedonism, the perceived status from responsibility of homeownership is undeniable</li> */}
                                     
                                     <li><strong>Hedge against other assets</strong> - if your investment portfolio is oversaturated with every other asset class, and you&apos;re paranoid about a market crash to the point of losing sleep, diversification through owning real estate might bring you peace</li>
                                     
@@ -99,19 +99,19 @@ const Page = () => {
 
                                 <p>You crunch some numbers, and, assuming you&apos;ll put 20% down and stay the full 20 years, you&apos;ll end up paying $429k in interest over that timespan, and have around $277k towards the principal.</p>
 
-                                <p>Luckily, your house has appreciated above the historical averages of 3-5% and has consistently grown in value by 6% year over year, and is now worth $1.6m, meaning you own $1.38m in equity.</p>
+                                <p>Your estimate that your house has appreciated within the bounds of the historical averages of 3-5% and has consistently grown in value by 4% year over year, and is now worth $1.09m, meaning you own $867k in equity.</p>
 
                                 <p>You try to gather all the other recurring expenses that come to your mind. You Google the average cost of each of these expenses, and then conservatively assume they&apos;ll go up by 3% each year (aside from property tax). Homeowners insurance $3000/yr, maintenance $6000/yr, HOA $500/yr, 1.5% property tax $7500/yr. After 20 years, you will have spent $430k on these recurring costs with almost nothing to show for it.</p>
 
-                                <p>If you had invested these payments directly into the S&P 500, assuming the annual return rate from the past 10 years of 12%, you would have ended up with $1.57m.</p>
+                                <p>If you had invested these payments directly into the S&P 500, assuming its lifetime return rate of 10%, you would have ended up with $1.23m.</p>
 
                                 <p>Lastly, you think of all of the one-time payments you&apos;ll need to pay. The $100k down payment that goes straight to equity, closing costs (Loan Origination, Appraisal, Inspection, Escrow, Reporting, Attorney, and other fees) add up to 2-5% of the property value, in your case, 3%, and immediate repairs range from 2-5%; you get lucky and only end up needing 2% worth.</p>
 
-                                <p>If you had invested this $125,000 at the start of your mortgage term instead, making the same assumptions about the S&P 500 above, it would have grown to $1.21m in the 20 years.</p>
+                                <p>If you had invested this $130,000 at the start of your mortgage term instead, making the same assumptions about the S&P 500 above, it would have grown to $875k in the 20 years.</p>
 
-                                <p>And the final fuck you comes when you&apos;ve decided you&apos;ve finally had enough of this house in those 20 years and want to sell it to move to a new box. The moment you buy the property, 5-6% of its future value is locked up. This is because the seller pays the realtor fees for both the buying and selling agents. So when you&apos;re ready to sell your house at its peak value, you must forfeit 5% of its new valuation of 1.6m in addition to the average closing costs the seller will pay (average is 3% but you&apos;ll assume 2%).</p>
+                                <p>And the final fuck you comes when you&apos;ve decided you&apos;ve finally had enough of this house in those 20 years and want to sell it to move to a new box. The moment you buy the property, 5-6% of its future value is locked up. This is because the seller pays the realtor fees for both the buying and selling agents. So when you&apos;re ready to sell your house at its peak value, you must forfeit 5% of its new valuation of 1.09m in addition to the average closing costs the seller will pay (average is 3% but you&apos;ll assume 2%).</p>
 
-                                <p>So that&apos;s $112k of your future money that you can look forward to being destroyed.</p>
+                                <p>So that&apos;s $76k of your future money that you can look forward to being destroyed.</p>
 
                                 <p>You know how you thought that was the final fuck you, it looks like you forgot about one more.</p>
 
@@ -119,7 +119,7 @@ const Page = () => {
                                     <Image width={400} height={400} src={"/img/blog/sam.jpg"} alt="sam" className=''/>
                                 </div>
 
-                                <p>Since your house will have appreciated by $1.1m, and assuming you take advantage of the Principal Residence Exclusion for a $250k deduction, you&apos;ll owe long-term capital gains of $127k, assuming you don&apos;t do any tax loophole black magic.</p>
+                                <p>Since your house will have appreciated by $590k, and assuming you take advantage of the Principal Residence Exclusion for a $250k deduction, you&apos;ll owe long-term capital gains of $51k, assuming you don&apos;t do any tax loophole black magic.</p>
 
                                 <div className='text-2xl font-bold mt-8 mb-4'>
                                     Napkin #2
@@ -135,9 +135,9 @@ const Page = () => {
 
                                 <p>Then you turn back to the amounts you had written down on the first napkin and start writing:</p>
                                 <br/>
-                                    1.57m + 1.21m = 2.78m - ((investment - profit) * 15% LTCG tax) = 2.23m<br/>
-                                    1.6m - $112k seller fees - $127k LTCG tax = 1.36m<br/>
-                                    2.23m - 1.36m = 870k extra dollars in your pocket if you stick to renting.
+                                    1.23m + 875k = 2.11m - ((profit - initial investment) * 15% LTCG tax) = 1.88m<br/>
+                                    1.09m - $76k seller fees - $51k LTCG tax = 963k<br/>
+                                    1.88m - 963k = 917k extra dollars in your pocket if you stick to renting.
 
                                 <p>You crumple up both napkins and throw them away.</p>
 
@@ -152,14 +152,14 @@ const Page = () => {
                                     
                                     <li>The study also ignores niche tax rules for both scenarios. For the housing side of the argument, you could defer capital gains tax through a 1031 Exchange, and for the renting side, you could use tax-advantaged brokerage accounts. Both of these would result in more dollars in your pocket, but if we were to outline every tax loophole, this blog post could easily turn into a book.</li>
                                     
-                                    <li>I tried to give homeownership the benefit of the doubt wherever possible, choosing to make their profit margins higher and expenses on the low range of averages, so depending on how unlucky you are, the actual difference will likely be much greater. Additionally, the S&P500 was set at a 12% YoY return, which might seem controversial, but if you have a portfolio that&apos;s even slightly more involved, I believe a 12% return rate is not only highly attainable but slightly on the lower end.</li>
+                                    <li>I tried to give homeownership the benefit of the doubt wherever possible, choosing to make their profit margins higher and expenses on the low range of averages, so depending on how unlucky you are, the actual difference will likely be much greater.</li>
                                 </ol>
 
-                                <p>Finally, I&apos;d like to mention that I&apos;m not trying to be a dick by writing this. As mentioned in the Life is Multicolored section, there are indeed reasons to own a house. But when you break down the $870k over 20 years, it amounts to $120/day.</p>
+                                <p>Finally, I&apos;d like to mention that I&apos;m not trying to be a dick by writing this. As mentioned in the Life is Multicolored section, there are indeed reasons to own a house. But when you break down the $917k over 20 years, it amounts to $126/day.</p>
 
-                                <p>If you&apos;re able to extract $120 of value from your house every day for 20 years for any of the previous reasons, then by all means, buy a house.</p>
+                                <p>If you&apos;re able to extract $126 of value from your house every day for 20 years for any of the previous reasons, then by all means, buy a house.</p>
 
-                                <p>But be aware, that&apos;s $120 a day to live in a box you can paint any color you want.</p>
+                                <p>But be aware, that&apos;s $126 a day to live in a box you can paint any color you want.</p>
 
                                 <div className='flex justify-center pt-4'>
                                     <a target="_blank" rel="noreferrer" href='https://notbyai.fyi/' className='hover:cursor-pointer hover:shadow-2xl'>
