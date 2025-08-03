@@ -62,7 +62,7 @@ const Page = () => {
                                     
                                     <li><strong>Forced savings mechanism</strong> - if you&apos;re a normie who is truly incapable of saving money, a mortgage might be the only mental gymnastics that can help you get your shit together</li>
                                     
-                                    <li><strong>It supports your crackhead hobby</strong> - if you need to have a car lift in your garage, <span className="text-teal-400">5</span> acres of land to raise cows for your raw milk addiction, or set up a blacksmith&apos;s forge in your basement, renting probably isn&apos;t the way to go</li>
+                                    <li><strong>It supports your crackhead hobby</strong> - if you need to have a car lift in your garage, 5 acres of land to raise cows for your raw milk addiction, or set up a blacksmith&apos;s forge in your basement, renting probably isn&apos;t the way to go</li>
                                 </ul>
 
                                 <p>That&apos;s it. That&apos;s the whole list. Every other reason for ownership I&apos;ve ever heard either falls into one of the above buckets or is pure cope.</p>
