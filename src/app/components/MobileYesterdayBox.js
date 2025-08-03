@@ -179,24 +179,24 @@ const MobileYesterdayBox = () => {
                                     <p className={text.className}>PX Orange Chicken</p>
                                 </li>
                             </Link>
-                            <Link className="hover:text-teal-300" href="/blog/avocado">
+                            {/* <Link className="hover:text-teal-300" href="/blog/avocado">
                                 <li className="flex items-center space-x-2">
                                     <p>&#8226;</p>
                                     <p className={text.className}>Easy Avocado Toast</p>
                                 </li>
-                            </Link>
+                            </Link> */}
                             <Link className="hover:text-teal-300" href="/blog/protein">
                                 <li className="flex items-center space-x-2">
                                     <p>&#8226;</p>
                                     <p className={text.className}>Zeus&apos; Protein Shake</p>
                                 </li>
                             </Link>
-                            <Link className="hover:text-teal-300" href="/blog/rice">
+                            {/* <Link className="hover:text-teal-300" href="/blog/rice">
                                 <li className="flex items-center space-x-2">
                                     <p>&#8226;</p>
                                     <p className={text.className}>Garlic Fried Rice</p>
                                 </li>
-                            </Link>
+                            </Link> */}
                             <Link className="hover:text-teal-300" href="/blog/pizza">
                                 <li className="flex items-center space-x-2">
                                     <p>&#8226;</p>

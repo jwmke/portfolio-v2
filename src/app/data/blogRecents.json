@@ -1,5 +1,13 @@
 [
     {
+        "title": "House",
+        "full_title": "The House Always Wins",
+        "tag_line": "A comprehensive case study on why homeownership is financial suicide.",
+        "path": "/img/blog/house.jpg",
+        "date": "08/25",
+        "route": "/blog/house"
+    },
+    {
         "title": "Torch",
         "full_title": "Passing the Torch",
         "tag_line": "Every day you wake up, you're passed the torch.",
