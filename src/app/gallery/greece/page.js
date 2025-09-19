@@ -108,11 +108,11 @@ const IMAGES = [
 
     { src: '/img/greece_final/g58.jpg', height: 2, width: 3, full: true },
 
-    { src: '/img/greece_final/g59.jpg', height: 2, width: 3 },
     { src: '/img/greece_final/g60.jpg', height: 3, width: 2 },
+    { src: '/img/greece_final/g59.jpg', height: 2, width: 3 },
     
-    { src: '/img/greece_final/g68.jpg', height: 3, width: 2 },
     { src: '/img/greece_final/g62.jpg', height: 2, width: 3 },
+    { src: '/img/greece_final/g68.jpg', height: 3, width: 2 },
 
     { src: '/img/greece_final/g63.jpg', height: 21.78, width: 62.4, full: true },
 
