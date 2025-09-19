@@ -215,7 +215,12 @@ const MobileYesterdayBox = () => {
                             </p>
                         </div>
                         <ul className="text-[.7rem] mt-1 text-white">
-
+                            <Link className="hover:text-teal-300" href="/gallery/greece">
+                                <li className="flex items-center space-x-2">
+                                    <p>&#8226;</p>
+                                    <p className={text.className}>Modern Mythology</p>
+                                </li>
+                            </Link>
                             <Link className="hover:text-teal-300" href="/gallery/ce">
                                 <li className="flex items-center space-x-2">
                                     <p>&#8226;</p>

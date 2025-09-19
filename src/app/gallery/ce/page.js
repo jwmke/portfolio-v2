@@ -182,32 +182,6 @@ const Page = () => {
     { src: '/img/ce_final/ce125.jpg', height: 100, width: 150 },
   ]
 
-  // Featured images that appear individually
-  const featuredImages = [
-    { src: '/img/ce_final/ce5.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce47.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce23.jpg', height: 150, width: 100 },
-    { src: '/img/ce_final/ce17.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce26.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce37.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce44.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce11.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce67.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce55.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce95.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce68.jpg', height: 150, width: 100 },
-    { src: '/img/ce_final/ce71.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce83.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce84.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce90.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce105.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce104.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce109.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce117.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce118.jpg', height: 100, width: 150 },
-    { src: '/img/ce_final/ce124.jpg', height: 100, width: 150 },
-  ];
-
   // State for lightbox
   const [isOpen, setOpen] = useState(false);
   const [currentImageIndex, setCurrentIndex] = useState(0);

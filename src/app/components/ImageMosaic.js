@@ -31,26 +31,104 @@ function renderNextImage(
 }
 
 export default function ImageMosaic({ images, handleClick, max = 3 }) {
-  // Transform the images array to match what react-photo-album expects
-  const transformedImages = images.map(img => ({
-    src: img.src,  // Keep the src for the lightbox
-    width: img.width,
-    height: img.height,
-    photo: img.src  // This is what renderNextImage uses
-  }));
+  // If no full-width images, use original simple logic
+  if (!images.some(img => img.full)) {
+    const transformedImages = images.map((img, index) => ({
+      src: img.src,
+      width: img.width,
+      height: img.height,
+      photo: img.src,
+      index: index
+    }));
 
-  return (
-    <RowsPhotoAlbum
-      photos={transformedImages}
-      render={{ image: renderNextImage }}
-      onClick={({ photo }) => handleClick(photo.src)}
-      rowConstraints={{maxPhotos: max}}
-      sizes={{
-        size: "1168px",
-        sizes: [
-          { viewport: "(max-width: 1200px)", size: "calc(100vw - 32px)" },
-        ],
-      }}
-    />
-  );
+    return (
+      <RowsPhotoAlbum
+        photos={transformedImages}
+        render={{ image: renderNextImage }}
+        onClick={({ photo }) => handleClick({ index: photo.index })}
+        rowConstraints={{maxPhotos: max}}
+        sizes={{
+          size: "1168px",
+          sizes: [
+            { viewport: "(max-width: 1200px)", size: "calc(100vw - 32px)" },
+          ],
+        }}
+      />
+    );
+  }
+
+  // For full-width images, render each image/group manually
+  const elements = [];
+  let currentGroup = [];
+
+  const addGroup = () => {
+    if (currentGroup.length === 0) return;
+    
+    const groupPhotos = currentGroup.map((img) => ({
+      src: img.src,
+      width: img.width,
+      height: img.height,
+      photo: img.src,
+      index: img.globalIndex
+    }));
+
+    elements.push(
+      <div key={`group-${elements.length}`} className="mb-4">
+        <RowsPhotoAlbum
+          photos={groupPhotos}
+          render={{ image: renderNextImage }}
+          onClick={({ photo }) => handleClick({ index: photo.index })}
+          rowConstraints={{maxPhotos: max}}
+          sizes={{
+            size: "1168px",
+            sizes: [
+              { viewport: "(max-width: 1200px)", size: "calc(100vw - 32px)" },
+            ],
+          }}
+        />
+      </div>
+    );
+    currentGroup = [];
+  };
+
+  for (let i = 0; i < images.length; i++) {
+    const image = images[i];
+    
+    if (image.full) {
+      // Add any pending group
+      addGroup();
+      
+      // Add full-width image
+      elements.push(
+        <div key={`full-${i}`} className="mb-4">
+          <div
+            className="relative w-full cursor-pointer"
+            style={{ aspectRatio: `${image.width} / ${image.height}` }}
+            onClick={() => handleClick({ index: i })}
+          >
+            <Image
+              fill
+              src={image.src}
+              alt={`Image ${i + 1}`}
+              className="object-cover rounded-lg"
+              sizes="(max-width: 1200px) calc(100vw - 32px), 1168px"
+            />
+          </div>
+        </div>
+      );
+    } else {
+      // Add to group (filter out custom properties to avoid React warnings)
+      currentGroup.push({ 
+        src: image.src,
+        width: image.width,
+        height: image.height,
+        globalIndex: i 
+      });
+    }
+  }
+
+  // Add final group
+  addGroup();
+
+  return <div>{elements}</div>;
 }

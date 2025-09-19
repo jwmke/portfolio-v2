@@ -46,6 +46,7 @@ const Page = () => {
                                 <p>{"// Shot on Fujifilm X-T30ii, 27mm w/ Reggie's Portra"}</p>
                             </div>
                             <ImageMosaic images={images}
+                                max={2}
                                 handleClick={({ index }) => {
                                 setCurrentIndex(index);
                                 setOpen(true);

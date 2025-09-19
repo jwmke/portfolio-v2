@@ -1,5 +1,9 @@
 [
     {
+        "name": "Modern Mythology",
+        "route": "/gallery/greece"
+    },
+    {
         "name": "Central Europe 125",
         "route": "/gallery/ce"
     },
