@@ -251,7 +251,7 @@ const YesterdayBox = () => {
                         </Link>
                         <Link className="hover:text-teal-300 text-teal-500" href="/gallery">
                             <li className="flex items-center space-x-2 min-[1700px]:justify-end 2xl:justify-start min-[1300px]:justify-end justify-start mt-1">
-                                <p className={text.className}>More coming soon...</p>
+                                <p className={text.className}>All Pictures...</p>
                             </li>
                         </Link>
                     </ul>
