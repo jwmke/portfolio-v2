@@ -45,7 +45,7 @@ export default function ImageMosaic({ images, handleClick, max = 3 }) {
       <RowsPhotoAlbum
         photos={transformedImages}
         render={{ image: renderNextImage }}
-        onClick={({ photo }) => handleClick({ index: photo.index })}
+        onClick={({ photo }) => handleClick(photo.photo)}
         rowConstraints={{maxPhotos: max}}
         sizes={{
           size: "1168px",
