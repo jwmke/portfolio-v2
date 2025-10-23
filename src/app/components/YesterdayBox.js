@@ -171,12 +171,18 @@ const YesterdayBox = () => {
                         </p>
                     </div>
                     <ul className="text-xs mt-1">
-                        <Link className="hover:text-teal-300" href="/blog/matcha">
+                        <Link className="hover:text-teal-300" href="/blog/umami">
+                                <li className="flex items-center space-x-2">
+                                    <p>&#8226;</p>
+                                    <p className={text.className}>Cheesy Umami Rice</p>
+                                </li>
+                            </Link>
+                        {/* <Link className="hover:text-teal-300" href="/blog/matcha">
                         <li className="flex items-center space-x-2">
                             <p>&#8226;</p>
                             <p className={text.className}>Vanilla Matcha Latte</p>
                         </li>
-                        </Link>
+                        </Link> */}
                         <Link className="hover:text-teal-300" href="/blog/panda">
                         <li className="flex items-center space-x-2">
                             <p>&#8226;</p>

@@ -1,5 +1,9 @@
 [
     {
+        "name": "Cheesy Umami Rice",
+        "route": "/blog/umami"
+    },
+    {
         "name": "Vanilla Matcha Latte",
         "route": "/blog/matcha"
     },
