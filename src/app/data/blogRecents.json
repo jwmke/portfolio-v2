@@ -1,5 +1,13 @@
 [
     {
+        "title": "Involuntarily",
+        "full_title": "Involuntarily",
+        "tag_line": "I wake up. I cannot remember. I cannot leave. I cannot stop.",
+        "path": "/img/blog/hammr.jpg",
+        "date": "11/25",
+        "route": "/blog/involuntarily"
+    },
+    {
         "title": "House",
         "full_title": "The House Always Wins",
         "tag_line": "A comprehensive case study on why homeownership is financial suicide.",
