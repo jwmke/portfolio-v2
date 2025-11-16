@@ -2,7 +2,14 @@ import Grain from "../../components/Grain"
 import DiagonalCornerContainer from "../../components/DiagonalCornerContainer";
 import Image from "next/image";
 import { Lato } from "next/font/google";
+import recipeData from '../../data/recipeData.json';
 
+const recipeData_item = recipeData.find(r => r.route === '/blog/protein');
+
+export const metadata = {
+  title: recipeData_item.name,
+  description: `A delicious recipe for ${recipeData_item.name}`,
+}
 
 const text = Lato({
   subsets: ['latin'],

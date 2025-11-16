@@ -5,7 +5,14 @@ import Image from "next/image";
 import { Lato } from "next/font/google";
 import { GrCycle } from "react-icons/gr";
 import { useState, useEffect } from "react";
+import blogRecents from '../../data/blogRecents.json';
 
+const blogData = blogRecents.find(b => b.route === '/blog/read');
+
+export const metadata = {
+  title: blogData.full_title,
+  description: blogData.tag_line,
+}
 const text = Lato({
   subsets: ['latin'],
   weight: ["100", "400"]

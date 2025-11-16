@@ -8,6 +8,12 @@ import recipeData from '../data/recipeData';
 import BlogBox from "../components/BlogBox";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Joe Weller's Blog",
+  description: "Where I infrequently write about interesting things.",
+}
+
+
 const header = localFont({
     src: "../fonts/NicoMoji.ttf",
     subsets: ['latin'],

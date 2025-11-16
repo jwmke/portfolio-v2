@@ -2,7 +2,14 @@ import Grain from "../../components/Grain"
 import DiagonalCornerContainer from "../../components/DiagonalCornerContainer";
 import Image from "next/image";
 import { Lato } from "next/font/google";
+import blogRecents from '../../data/blogRecents.json';
 
+const blogData = blogRecents.find(b => b.route === '/blog/TODO - FILL THIS IN'); // TODO
+
+export const metadata = {
+  title: blogData.full_title,
+  description: blogData.tag_line,
+}
 
 const text = Lato({
   subsets: ['latin'],
